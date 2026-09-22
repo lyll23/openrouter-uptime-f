@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-20T04:16:01+00:00",
- "count": 446,
+ "generated": "2026-09-22T05:39:32+00:00",
+ "count": 445,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -105,12 +105,6 @@
    "context_length": 200000
   },
   {
-   "id": "anthropic/claude-opus-4",
-   "name": "Anthropic: Claude Opus 4",
-   "created": 1747931245,
-   "context_length": 200000
-  },
-  {
    "id": "anthropic/claude-opus-4.1",
    "name": "Anthropic: Claude Opus 4.1",
    "created": 1754411591,
@@ -186,7 +180,7 @@
    "id": "anthropic/claude-sonnet-4",
    "name": "Anthropic: Claude Sonnet 4",
    "created": 1747930371,
-   "context_length": 1000000
+   "context_length": 200000
   },
   {
    "id": "anthropic/claude-sonnet-4.5",
@@ -933,12 +927,6 @@
    "context_length": 1048576
   },
   {
-   "id": "minimax/minimax-m3:batch",
-   "name": "MiniMax: MiniMax M3 (batch)",
-   "created": 1780245374,
-   "context_length": 524288
-  },
-  {
    "id": "mistralai/codestral-2508",
    "name": "Mistral: Codestral 2508",
    "created": 1754079630,
@@ -1125,12 +1113,6 @@
    "context_length": 1048576
   },
   {
-   "id": "moonshotai/kimi-k3:batch",
-   "name": "MoonshotAI: Kimi K3 (batch)",
-   "created": 1784215858,
-   "context_length": 1048576
-  },
-  {
    "id": "morph/morph-v3-fast",
    "name": "Morph: Morph V3 Fast",
    "created": 1751910002,
@@ -1143,9 +1125,21 @@
    "context_length": 262144
   },
   {
+   "id": "nex-agi/nex-n2.5-mini",
+   "name": "Nex AGI: Nex-N2.5-Mini",
+   "created": 1788890061,
+   "context_length": 262144
+  },
+  {
    "id": "nex-agi/nex-n2.5-mini:free",
    "name": "Nex AGI: Nex-N2.5-Mini (free)",
    "created": 1788890061,
+   "context_length": 262144
+  },
+  {
+   "id": "nex-agi/nex-n2.5-pro",
+   "name": "Nex AGI: Nex-N2.5-Pro",
+   "created": 1788890050,
    "context_length": 262144
   },
   {
@@ -1695,12 +1689,6 @@
    "context_length": 131072
   },
   {
-   "id": "openai/gpt-oss-120b:batch",
-   "name": "OpenAI: gpt-oss-120b (batch)",
-   "created": 1754414231,
-   "context_length": 131072
-  },
-  {
    "id": "openai/gpt-oss-20b",
    "name": "OpenAI: gpt-oss-20b",
    "created": 1754414229,
@@ -2097,12 +2085,6 @@
    "context_length": 262144
   },
   {
-   "id": "qwen/qwen3.5-9b:batch",
-   "name": "Qwen: Qwen3.5-9B (batch)",
-   "created": 1773152396,
-   "context_length": 262144
-  },
-  {
    "id": "qwen/qwen3.5-flash-02-23",
    "name": "Qwen: Qwen3.5-Flash",
    "created": 1772053776,
@@ -2173,12 +2155,6 @@
    "name": "Qwen: Qwen3.8 2.4T A95B",
    "created": 1786551702,
    "context_length": 1048576
-  },
-  {
-   "id": "qwen/qwen3.8-2.4t-a95b:batch",
-   "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-   "created": 1786551702,
-   "context_length": 1010000
   },
   {
    "id": "qwen/qwen3.8-27b",
@@ -2361,12 +2337,6 @@
    "context_length": 1048576
   },
   {
-   "id": "thinkingmachines/inkling:batch",
-   "name": "Thinking Machines: Inkling (batch)",
-   "created": 1784325956,
-   "context_length": 524288
-  },
-  {
    "id": "thinkingmachines/inkling:free",
    "name": "Thinking Machines: Inkling (free)",
    "created": 1784325956,
@@ -2439,6 +2409,12 @@
    "context_length": 500000
   },
   {
+   "id": "x-ai/grok-4.7",
+   "name": "SpaceXAI: Grok 4.7",
+   "created": 1790007541,
+   "context_length": 500000
+  },
+  {
    "id": "x-ai/grok-build-0.1",
    "name": "SpaceXAI: Grok Build 0.1",
    "created": 1779298123,
@@ -2455,6 +2431,24 @@
    "name": "Xiaomi: MiMo-V2.5-Pro",
    "created": 1776874273,
    "context_length": 1050000
+  },
+  {
+   "id": "xiaomi/mimo-v2.6-flash",
+   "name": "Xiaomi: MiMo-V2.6-Flash",
+   "created": 1790021264,
+   "context_length": 1048576
+  },
+  {
+   "id": "xiaomi/mimo-v2.6-pro",
+   "name": "Xiaomi: MiMo-V2.6-Pro",
+   "created": 1790021259,
+   "context_length": 1048576
+  },
+  {
+   "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+   "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+   "created": 1790021267,
+   "context_length": 1048576
   },
   {
    "id": "z-ai/glm-4.5",

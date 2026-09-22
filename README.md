@@ -85,29 +85,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-20T04:16:01+00:00 UTC)
+## Current status (2026-09-22T05:39:32+00:00 UTC)
 
-446 models polled, 1338 inference endpoints:
-up 794, degraded 84, down 14, idle 446.
+445 models polled, 1339 inference endpoints:
+up 812, degraded 85, down 13, idle 429.
 
-Currently down (14):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 10% | 11% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 77% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 8% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 15% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 59% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 23% | n/a |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 57% | n/a |
-| `qwen/qwen3.5-9b` | `siliconflow/fp8` | SiliconFlow | 53% | 86% |
-| `qwen/qwen3.5-9b` | `together` | Together | 67% | 100% |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 78% | 100% |
-| `z-ai/glm-4.5-air` | `siliconflow/fp8` | SiliconFlow | 64% | 9% |
-| `z-ai/glm-4.5-air` | `z-ai/fp8` | Z.AI | 77% | 100% |
-| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 60% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 55% | 41% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 46% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 11% | 5% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 79% | 93% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 78% | 74% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 64% | n/a |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 1% | n/a |
+| `openai/gpt-oss-120b` | `phala` | Phala | 30% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 62% | 50% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 74% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -116,8 +115,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-08-31 19:31** — **10 models added to the catalog in one poll**: `openai/gpt-5-mini:batch`, `openai/gpt-5-nano:batch`, `openai/gpt-5.1:batch`, `openai/gpt-5.2:batch`, `openai/gpt-5.4-mini:batch`, `openai/gpt-5.4-nano:batch`, `openai/gpt-5.4:batch`, `openai/gpt-5.5-pro:batch`, +2 more.
-- **2026-09-01 05:45** — **5 models removed from the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-06 08:31** — provider `relace` changed its status page.
 - **2026-09-08 15:46** — **3 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-vision-exp:batch`, `z-ai/glm-5.2:batch`, `z-ai/glm-5.3:batch`.
 - **2026-09-08 18:46** — **3 models added to the catalog in one poll**: `inception/mercury-2.5`, `nex-agi/nex-n2.5-mini:free`, `nex-agi/nex-n2.5-pro:free`.
@@ -128,6 +125,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-11 13:01** — **3 models added to the catalog in one poll**: `~openai/gpt-astra-latest`, `~openai/gpt-luna-latest`, `~openai/gpt-terra-latest`.
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
+- **2026-09-22 05:39** — **6 models added to the catalog in one poll**: `nex-agi/nex-n2.5-mini`, `nex-agi/nex-n2.5-pro`, `x-ai/grok-4.7`, `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
+- **2026-09-22 05:39** — **7 models removed from the catalog in one poll**: `anthropic/claude-opus-4`, `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
