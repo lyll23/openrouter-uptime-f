@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-23T14:59:27+00:00 UTC)
+## Current status (2026-09-23T19:03:21+00:00 UTC)
 
-458 models polled, 1388 inference endpoints:
-up 846, degraded 135, down 24, idle 383.
+456 models polled, 1385 inference endpoints:
+up 840, degraded 107, down 19, idle 419.
 
-Currently down (24):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 55% | 44% |
-| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 76% | 100% |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 76% | 47% |
-| `deepseek/deepseek-v4-flash-0731` | `cloudflare` | Cloudflare | 77% | 87% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 79% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 80% |
-| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 77% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 3% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 79% | 94% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 64% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 40% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 21% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 55% | 100% |
-| plus 9 more | | | | |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 66% | 98% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 65% | 64% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 74% | 90% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 2% | 0% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 68% | 98% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 64% | 70% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 100% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 49% | n/a |
+| `openai/gpt-oss-120b` | `together` | Together | 30% | n/a |
+| `openai/gpt-oss-120b` | `mara` | Mara | 79% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 20% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 48% | 58% |
+| `qwen/qwen3-235b-a22b-2507` | `novita/fp8` | Novita | 76% | 58% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
