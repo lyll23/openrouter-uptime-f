@@ -85,30 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T19:33:27+00:00 UTC)
+## Current status (2026-09-24T22:47:20+00:00 UTC)
 
-458 models polled, 1394 inference endpoints:
-up 882, degraded 98, down 15, idle 399.
+460 models polled, 1404 inference endpoints:
+up 863, degraded 80, down 20, idle 441.
 
-Currently down (15):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 62% | 69% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 78% | 81% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 75% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 66% | 38% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 25% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 74% |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 73% | 85% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 67% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 76% | 41% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 60% | 100% |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 70% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 78% |
-| `z-ai/glm-5.3-flash` | `morph` | Morph | 59% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 31% | 99% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 58% | 46% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 71% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 9% | n/a |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | n/a | n/a |
+| `meta/muse-spark-1.3` | `meta` | Meta | 0% | n/a |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 0% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 42% | 100% |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 40% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 12% | n/a |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 72% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 49% | 33% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 61% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 78% | 99% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
