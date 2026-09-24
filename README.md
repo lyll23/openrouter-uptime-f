@@ -85,29 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-24T10:35:32+00:00 UTC)
+## Current status (2026-09-24T15:34:50+00:00 UTC)
 
-458 models polled, 1385 inference endpoints:
-up 891, degraded 90, down 14, idle 390.
+458 models polled, 1388 inference endpoints:
+up 880, degraded 109, down 32, idle 367.
 
-Currently down (14):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 60% | 56% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 92% |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | 0% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 68% | 1% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 75% | 77% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 33% | n/a |
-| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 77% | n/a |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 30% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 67% | 89% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 55% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 75% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 61% | n/a |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 23% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 62% | 24% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 73% | 24% |
+| `deepseek/deepseek-chat-v3-0324` | `deepinfra/fp4` | DeepInfra | 74% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `makora` | Makora | 75% | 100% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8` | DeepInfra | 64% | 55% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 77% | 75% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | 87% |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 78% | 95% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 2% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 60% | 61% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 51% | 52% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 62% | n/a |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
