@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-26T16:49:50+00:00 UTC)
+## Current status (2026-09-26T19:31:18+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 836, degraded 95, down 24, idle 450.
+up 862, degraded 75, down 22, idle 446.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 74% | 100% |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 58% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 73% | 70% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | 0% |
+| `deepseek/deepseek-v4-pro` | `azure/us` | Azure | 80% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 66% | 59% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 80% | 59% |
 | `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 31% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 51% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 77% |
+| `moonshotai/kimi-k3` | `wafer` | Wafer | 58% | n/a |
 | `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 61% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 5% |
-| plus 9 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 34% | 29% |
+| `qwen/qwen-2.5-coder-32b-instruct` | `cloudflare` | Cloudflare | 69% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 76% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
