@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T20:08:17+00:00 UTC)
+## Current status (2026-09-27T23:02:43+00:00 UTC)
 
-458 models polled, 1405 inference endpoints:
-up 857, degraded 86, down 29, idle 433.
+458 models polled, 1403 inference endpoints:
+up 857, degraded 69, down 17, idle 460.
 
-Currently down (29):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 56% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 66% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 52% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 20% |
-| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | 96% |
-| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 73% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
-| plus 14 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 29% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 29% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
