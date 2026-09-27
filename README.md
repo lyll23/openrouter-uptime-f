@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T16:57:22+00:00 UTC)
+## Current status (2026-09-27T20:08:17+00:00 UTC)
 
 458 models polled, 1405 inference endpoints:
-up 834, degraded 88, down 24, idle 459.
+up 857, degraded 86, down 29, idle 433.
 
-Currently down (24):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 12% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
 | `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 44% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 51% | n/a |
 | `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 52% | n/a |
-| `minimax/minimax-m2.5` | `digitalocean` | DigitalOcean | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 35% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 66% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 55% | 52% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | 20% |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 76% | 96% |
+| `meta/muse-glimmer-30b` | `fireworks` | Fireworks | n/a | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 48% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 73% | 100% |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 62% |
-| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 51% | 58% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 13% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 76% | n/a |
-| `qwen/qwen-2.5-72b-instruct` | `deepinfra/fp8` | DeepInfra | 54% | 22% |
-| plus 9 more | | | | |
+| `moonshotai/kimi-k2.7-code` | `fireworks` | Fireworks | n/a | n/a |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
