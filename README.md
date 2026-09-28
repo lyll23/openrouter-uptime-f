@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-27T23:02:43+00:00 UTC)
+## Current status (2026-09-28T01:37:38+00:00 UTC)
 
-458 models polled, 1403 inference endpoints:
-up 857, degraded 69, down 17, idle 460.
+458 models polled, 1402 inference endpoints:
+up 851, degraded 84, down 22, idle 445.
 
-Currently down (17):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 56% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 62% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 57% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 74% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
-| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 62% | n/a |
+| `deepseek/deepseek-v4-flash-vision-exp` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `fireworks` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 60% | 47% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 57% | n/a |
+| `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | 79% | n/a |
+| `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 46% | 100% |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 19% | n/a |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 44% | n/a |
 | `moonshotai/kimi-k2.6` | `fireworks` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 29% |
-| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 29% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `deepinfra/fp8` | DeepInfra | 77% | 100% |
-| plus 2 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 68% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 35% | 38% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 48% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `gmicloud/bf16` | GMICloud | 65% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
