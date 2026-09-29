@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T15:00:09+00:00 UTC)
+## Current status (2026-09-29T20:04:51+00:00 UTC)
 
-460 models polled, 1408 inference endpoints:
-up 859, degraded 126, down 51, idle 372.
+464 models polled, 1425 inference endpoints:
+up 892, degraded 94, down 34, idle 405.
 
-Currently down (51):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 45% | n/a |
-| `anthropic/claude-fable-5` | `claude-on-aws` | Claude Platform on AWS | 17% | n/a |
-| `anthropic/claude-fable-5` | `azure` | Azure | 2% | n/a |
-| `anthropic/claude-fable-5` | `anthropic` | Anthropic | 77% | 100% |
-| `anthropic/claude-fable-5.1` | `anthropic` | Anthropic | 63% | 100% |
-| `anthropic/claude-opus-4.6` | `claude-on-aws` | Claude Platform on AWS | 13% | 13% |
-| `anthropic/claude-opus-4.6` | `azure/global` | Azure | 44% | n/a |
-| `anthropic/claude-opus-4.6` | `anthropic` | Anthropic | 75% | 100% |
-| `anthropic/claude-opus-4.7` | `claude-on-aws` | Claude Platform on AWS | 12% | 10% |
-| `anthropic/claude-opus-4.8` | `claude-on-aws` | Claude Platform on AWS | 13% | 12% |
-| `anthropic/claude-opus-5` | `claude-on-aws` | Claude Platform on AWS | 17% | 19% |
-| `anthropic/claude-opus-5.5` | `claude-on-aws` | Claude Platform on AWS | 18% | 14% |
-| `anthropic/claude-sonnet-4.5` | `claude-on-aws` | Claude Platform on AWS | 40% | n/a |
-| `anthropic/claude-sonnet-4.6` | `claude-on-aws` | Claude Platform on AWS | 15% | 12% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 23% | n/a |
-| plus 36 more | | | | |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 44% | 0% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 48% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 75% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 55% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 11% | 100% |
+| `minimax/minimax-m2.7` | `mara` | Mara | 46% | 0% |
+| `minimax/minimax-m3` | `mara` | Mara | 76% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 13% |
+| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 75% | n/a |
+| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 60% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | 45% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 75% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -118,7 +118,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-08 20:31** — provider `ncompass` left the platform.
 - **2026-09-08 21:45** — provider `prime-intellect` left the platform.
 - **2026-09-09 21:31** — provider `inference-net` changed its status page.
 - **2026-09-10 02:01** — **5 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
@@ -130,6 +129,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-22 18:54** — **13 models added to the catalog in one poll**: `anthropic/claude-opus-5.5`, `anthropic/claude-opus-5.5:batch`, `deepseek/deepseek-v4.1-flash:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-6-luna`, `openai/gpt-6-luna-pro`, `openai/gpt-6-luna-pro:batch`, `openai/gpt-6-luna:batch`, +5 more.
 - **2026-09-22 18:54** — **5 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-flash-vision-exp:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `meta/muse-glimmer-30b:batch`, `z-ai/glm-5.2:batch`.
 - **2026-09-23 14:59** — **4 models added to the catalog in one poll**: `aion-labs/aion-3.5`, `aion-labs/aion-3.5-mini`, `stealth/space-bunny-alpha`, `upstage/solar-mini4`.
+- **2026-09-29 20:04** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
