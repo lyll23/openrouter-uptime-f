@@ -85,31 +85,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-29T20:04:51+00:00 UTC)
+## Current status (2026-09-29T23:44:00+00:00 UTC)
 
-464 models polled, 1425 inference endpoints:
-up 892, degraded 94, down 34, idle 405.
+464 models polled, 1427 inference endpoints:
+up 882, degraded 71, down 21, idle 453.
 
-Currently down (34):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 67% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp8` | OpenInference | 44% | 0% |
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp8` | OpenInference | 48% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 75% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 55% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 11% | 100% |
-| `minimax/minimax-m2.7` | `mara` | Mara | 46% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | 76% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 31% | 13% |
-| `moonshotai/kimi-k2.5` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 75% | n/a |
-| `moonshotai/kimi-k3` | `morph/fp8` | Morph | 60% | n/a |
-| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 65% | 45% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 77% | 75% |
-| plus 19 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 51% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 74% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 8% | n/a |
+| `moonshotai/kimi-k2.6` | `crusoe/bf16` | Crusoe | 79% | 33% |
+| `moonshotai/kimi-k2.6` | `moonshotai/int4` | Moonshot AI | 39% | 0% |
+| `moonshotai/kimi-k3` | `makora` | Makora | 64% | n/a |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 40% | 16% |
+| `moonshotai/kimi-k3` | `moonshotai/mxfp4` | Moonshot AI | 25% | 0% |
+| `openai/gpt-6-luna` | `amazon-bedrock/us-east-1` | Amazon Bedrock | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 63% | 63% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 71% | 75% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 62% | 100% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
