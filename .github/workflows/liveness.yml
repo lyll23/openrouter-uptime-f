@@ -1,25 +1,17 @@
 name: liveness
 
-# The collectors' failure mode is silence. A crashed cron leaves the data
-# thinning rather than gone, and the only alarm until now lived in the daily
-# publish job: a 6-hour threshold checked once a day. On 2026-09-01 the
-# collector was down for 105 minutes before a person happened to look, and
-# the daily alarm would not have fired for it at all.
-#
-# This asks one question every hour -- how old is the latest poll on main --
-# and fails, which is what emails the repository owner, when the answer is
-# longer than the collectors could plausibly explain. Healthy cadence is 15
-# minutes with a 12-minute floor; the longest gap in a normal day is about
-# 30. Sixty minutes is three consecutive missed Railway ticks with all three
-# Actions attempts in that hour dropped too.
-#
-# Deliberately its own workflow. An alarm that shares a job with heavy work
-# inherits that work's failures: an OOM in the audit step is how the daily
-# alarm went silent for four days.
+# Check this repository's default branch, including in forks. GitHub cron is
+# best-effort: a configured cadence is not evidence that collection happened.
+# Keep the alarm separate from collection and publishing, so their failures
+# cannot suppress the check. A failed check also gives poll.yml one recovery
+# attempt; it is not a substitute for an independent reliable scheduler.
 
 on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/liveness.yml"]
   schedule:
-    # Off the top of the hour; GitHub drops runs at :00 rather than delaying them.
+    # Avoid the busiest slot; scheduled runs can still be delayed or dropped.
     - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
@@ -34,26 +26,37 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Age of latest poll on main
+      - name: Age of latest poll on the default branch
         env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           MAX_AGE_MINUTES: ${{ inputs.max_age_minutes || '60' }}
         run: |
           python3 - <<'PY'
-          import json, os, sys, urllib.request
+          import json, math, os, sys, urllib.parse, urllib.request
           from datetime import datetime, timezone
-          # No checkout: the repository is ~1 GB of archives and this needs one
-          # file. raw.githubusercontent.com caches for a few minutes, which the
-          # threshold absorbs.
-          url = ("https://raw.githubusercontent.com/dthinkr/openrouter-uptime/"
-                 "main/status/latest.json")
+          # No checkout: the public repository is >1 GB and this needs one file.
+          # Raw CDN caching can add a few minutes; the threshold absorbs that.
+          repo = os.environ["GITHUB_REPOSITORY"]
+          branch = os.environ["DEFAULT_BRANCH"]
+          url = ("https://raw.githubusercontent.com/"
+                 f"{urllib.parse.quote(repo, safe='/')}/"
+                 f"{urllib.parse.quote(branch, safe='')}/status/latest.json")
           limit = float(os.environ["MAX_AGE_MINUTES"])
+          if not math.isfinite(limit) or limit < 0:
+              sys.exit("::error::MAX_AGE_MINUTES must be finite and non-negative")
+          print(f"checking {repo}@{branch}: {url}")
           with urllib.request.urlopen(url, timeout=30) as r:
               generated = json.load(r)["generated"]
           ts = datetime.fromisoformat(generated)
+          if ts.tzinfo is None:
+              sys.exit("::error::latest poll timestamp has no timezone")
           age = (datetime.now(timezone.utc) - ts).total_seconds() / 60
           print(f"latest poll {generated}, {age:.1f} min ago (limit {limit:g} min)")
+          if age < -5:
+              sys.exit("::error::latest poll timestamp is in the future")
           if age > limit:
               sys.exit(f"::error::collector is silent: latest poll is {age:.0f} min "
-                       f"old, limit {limit:g}. Check the Railway service "
-                       f"openrouter-uptime-collector and the poll workflow.")
+                       f"old, limit {limit:g}. Check this repository's poll "
+                       f"workflow and any independently configured collector.")
           PY
+

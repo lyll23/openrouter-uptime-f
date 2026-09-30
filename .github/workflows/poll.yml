@@ -2,15 +2,20 @@ name: poll
 
 on:
   schedule:
-    # Three attempts an hour, deliberately off the top of the hour.
-    #
-    # GitHub's scheduler drops runs outright rather than merely delaying them,
-    # and :00 is its most congested slot -- under `cron: "0 * * * *"` this
-    # collector delivered 43% of its nominal rate over 33 days, with the 01:00
-    # UTC hour never sampled at all. Over-scheduling converts a dropped run
-    # into a late one; scripts/should_poll.py turns the surplus attempts into
-    # no-ops, so the extra fires cost a few seconds each and nothing else.
-    - cron: "7,27,47 * * * *"
+    # Nominal 15-minute cadence, with the existing 12-minute duplicate guard.
+    # GitHub can delay/drop scheduled events. This does not guarantee cadence.
+    - cron: "7,22,37,52 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/poll.yml"
+      - "scripts/poll.py"
+      - "scripts/should_poll.py"
+  workflow_run:
+    # A failed independent alarm can recover one missed window. This cannot
+    # loop: liveness does not listen to poll, and data pushes match no paths.
+    workflows: [liveness]
+    types: [completed]
   workflow_dispatch:
     inputs:
       force:
@@ -28,15 +33,31 @@ permissions:
 
 jobs:
   poll:
+    # Never consume a triggering run's code/artifacts. Recovery uses only this
+    # repository's default branch and its existing contents:write permission.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'failure' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       github.event.workflow_run.head_branch == github.event.repository.default_branch)
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     env:
-      # Floor between polls. Under half the 15-minute target cadence, so a
-      # late-but-not-dropped run still counts instead of being suppressed by
-      # the one before it.
+      # Keep a small margin below the nominal 15-minute cadence so delayed
+      # attempts are not needlessly suppressed.
       MIN_INTERVAL_MIN: "12"
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Sparse checkout automatically fetches with blob:none. Historical
+          # archives/CSVs are not needed to append today's observation.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/
+            /status/
+            /README.md
+            /.gitignore
 
       - uses: actions/setup-python@v5
         with:
@@ -47,12 +68,17 @@ jobs:
         env:
           FORCE_POLL: ${{ inputs.force }}
         run: |
-          # Checkout's snapshot can already be seconds stale, and the other
-          # collector polls every 15 minutes. Fetching first narrows the window
-          # in which both decide they are due; the push-race check in Commit
-          # closes what is left.
+          # Include both dates in case the run crosses UTC midnight. Existing
+          # rows for either date must be materialized before poll.py appends.
+          today="$(date -u +%F)"
+          tomorrow="$(date -u -d "${today} +1 day" +%F)"
+          for day in "$today" "$tomorrow"; do
+            git sparse-checkout add "/derived/${day}.csv" "/raw/${day}/"
+          done
+          # Refresh the whole selected snapshot before writing, not just
+          # latest.json, to keep append-only logs and today's CSV consistent.
           git fetch --quiet origin "${GITHUB_REF_NAME}"
-          git checkout --quiet "origin/${GITHUB_REF_NAME}" -- status/latest.json || true
+          git reset --hard --quiet "origin/${GITHUB_REF_NAME}"
           python3 scripts/should_poll.py
 
       # The only step whose failure should abort the run. What it writes --
@@ -131,3 +157,4 @@ jobs:
             echo "- due: \`${{ steps.guard.outputs.poll }}\`"
             echo "- age of previous poll: \`${{ steps.guard.outputs.age_minutes }}\` min"
           } >> "$GITHUB_STEP_SUMMARY"
+

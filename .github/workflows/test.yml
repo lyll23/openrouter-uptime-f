@@ -8,7 +8,7 @@ on:
     paths:
       - "scripts/**"
       - "tests/**"
-      - ".github/workflows/test.yml"
+      - ".github/workflows/**"
   workflow_dispatch: {}
 
 permissions:
@@ -19,6 +19,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            tests
+            railway
+            .github
 
       - uses: actions/setup-python@v5
         with:
@@ -29,3 +35,4 @@ jobs:
 
       - name: Scripts compile
         run: python3 -m py_compile scripts/*.py
+

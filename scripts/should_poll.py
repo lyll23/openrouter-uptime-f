@@ -34,9 +34,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LATEST = Path(os.environ["LATEST_OVERRIDE"]) if os.environ.get("LATEST_OVERRIDE") \
     else ROOT / "status" / "latest.json"
 
-# Minimum spacing between polls. Kept a little under half the 15-minute target
-# cadence so a late-but-not-dropped run still counts rather than being
-# suppressed by the run before it.
+# Minimum spacing between polls. Kept below the 15-minute target cadence so
+# a late run can still count rather than being suppressed by the previous one.
 DEFAULT_MIN_INTERVAL_MIN = 12.0
 
 
@@ -44,11 +43,11 @@ def last_poll_utc() -> datetime | None:
     """Timestamp of the most recent successful poll, or None if unknown."""
     try:
         generated = json.loads(LATEST.read_text())["generated"]
-    except (OSError, ValueError, KeyError):
+    except (OSError, ValueError, KeyError, TypeError):
         return None
     try:
         ts = datetime.fromisoformat(generated)
-    except ValueError:
+    except (ValueError, TypeError):
         return None
     return ts if ts.tzinfo else ts.replace(tzinfo=timezone.utc)
 
@@ -99,3 +98,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     sys.exit(main())
+

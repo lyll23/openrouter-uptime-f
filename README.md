@@ -3,15 +3,20 @@
 An independent, git-timestamped uptime registry for **every model on
 [OpenRouter](https://openrouter.ai)** and each of its inference providers.
 
-Two independent collectors poll OpenRouter's public API every 15 minutes --
-a Railway cron as the primary and a GitHub Action as the fallback, each
-standing down when the other has polled recently. Every run saves the raw
-responses, records the status of every routing endpoint (~1,150 across ~400
-catalog models) plus provider metadata, and commits the result. Every poll is
-a timestamped snapshot in `raw/` and `derived/`, so any endpoint's
-availability can be reconstructed over time from the files themselves.
-Measured sampling characteristics -- duty cycle, gaps, per-hour density --
-are published in [`status/coverage.json`](status/coverage.json).
+This fork collects through GitHub Actions, configured to attempt a poll every
+15 minutes with a 12-minute minimum spacing. GitHub's scheduler is best-effort
+and can delay or drop runs; that configured interval is **not a guaranteed
+sampling rate**. The independent liveness workflow checks this repository's
+latest observation and a failed check triggers one guarded recovery poll.
+A separately configured collector is still needed for dependable cadence;
+forking this repository does not copy the upstream Railway service.
+
+Every run saves raw responses, endpoint status and provider metadata. Each
+poll is a timestamped snapshot in `raw/` and `derived/`, so availability can be
+reconstructed from actual observations. See `status/latest.json` for the
+latest collection time and [`status/coverage.json`](status/coverage.json)
+for measured coverage, checking the report's own `generated` and
+`span.last_poll` timestamps because the daily publishing workflow may lag.
 
 No API key required. Everything comes from OpenRouter's public endpoints.
 
@@ -134,4 +139,5 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
 <!-- AUTOGEN:EVENTS:END -->
+
 
