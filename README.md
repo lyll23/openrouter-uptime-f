@@ -90,31 +90,28 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-09-30T02:29:31+00:00 UTC)
+## Current status (2026-09-30T03:59:56+00:00 UTC)
 
-464 models polled, 1427 inference endpoints:
-up 874, degraded 91, down 21, idle 441.
+464 models polled, 1426 inference endpoints:
+up 877, degraded 91, down 13, idle 445.
 
-Currently down (21):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `google-vertex/global` | Google | 61% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 63% | 72% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 59% | 61% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | 75% |
 | `google/gemma-4-31b-it` | `deepinfra/ultra` | DeepInfra | n/a | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 33% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 77% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 35% |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 72% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 71% | 56% |
-| plus 6 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 43% | 34% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 76% | 84% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 68% | 100% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 79% | 87% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 37% | n/a |
+| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 59% | 100% |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 62% | n/a |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 72% | 62% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -139,5 +136,4 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
 <!-- AUTOGEN:EVENTS:END -->
-
 
