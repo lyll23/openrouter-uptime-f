@@ -6,8 +6,17 @@ An independent, git-timestamped uptime registry for **every model on
 This fork collects through GitHub Actions, configured to attempt a poll every
 15 minutes with a 12-minute minimum spacing. GitHub's scheduler is best-effort
 and can delay or drop runs; that configured interval is **not a guaranteed
-sampling rate**. The independent liveness workflow checks this repository's
-latest observation and a failed check triggers one guarded recovery poll.
+sampling rate**. The poll workflow also checks this repository's latest
+observation hourly.
+Both schedules share the 12-minute duplicate guard; the hourly attempt usually
+skips just after the preceding scheduled poll, or collects if that was missed.
+A stale (over 60 minutes) or invalid sample triggers guarded recovery in that
+same run. Only after checking the committed fresh snapshot, raw archive and
+CSV does the run succeed; unsuccessful collection or persistence still fails
+and uses GitHub's existing failure notifications. Successful recovery records
+the gap in the run summary without first emitting a failed workflow.
+The old separate liveness/failure-triggered recovery chain has been removed;
+the hourly check uses the existing poll writer and its unchanged permissions.
 A separately configured collector is still needed for dependable cadence;
 forking this repository does not copy the upstream Railway service.
 

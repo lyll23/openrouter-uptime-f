@@ -15,77 +15,6 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def liveness_code():
-    workflow = (ROOT / '.github/workflows/liveness.yml').read_text()
-    code = workflow.split("python3 - <<'PY'\n", 1)[1].split('\n          PY', 1)[0]
-    return compile(textwrap.dedent(code), 'liveness.yml', 'exec')
-
-
-class LivenessTest(unittest.TestCase):
-    def check(self, generated, limit='60', branch='main', repository='lyll23/openrouter-uptime-f', attempt='1'):
-        env = {'GITHUB_REPOSITORY': repository, 'DEFAULT_BRANCH': branch,
-               'MAX_AGE_MINUTES': limit, 'GITHUB_RUN_ID': '123', 'GITHUB_RUN_ATTEMPT': attempt}
-        payload = io.BytesIO(json.dumps({'generated': generated}).encode())
-        output = io.StringIO()
-        with mock.patch.dict(os.environ, env), contextlib.redirect_stdout(output), \
-             mock.patch('urllib.request.urlopen', return_value=payload) as fetch:
-            error = None
-            try:
-                exec(liveness_code(), {})
-            except SystemExit as exc:
-                error = str(exc)
-        return fetch, output.getvalue(), error
-
-    def test_checks_fork_instead_of_upstream(self):
-        now = datetime.now(timezone.utc).isoformat()
-        fetch, output, error = self.check(now)
-        self.assertIsNone(error)
-        fetch.assert_called_once()
-        self.assertEqual(fetch.call_args.kwargs, {'timeout': 30})
-        request = fetch.call_args.args[0]
-        self.assertEqual(request.full_url,
-            'https://raw.githubusercontent.com/lyll23/openrouter-uptime-f/main/status/latest.json?check=123-1')
-        self.assertEqual(request.get_header('Cache-control'), 'no-cache')
-        self.assertIn('lyll23/openrouter-uptime-f@main', output)
-
-    def test_retry_does_not_reuse_the_stale_cached_url(self):
-        now = datetime.now(timezone.utc).isoformat()
-        first, _, _ = self.check(now, attempt='1')
-        second, _, _ = self.check(now, attempt='2')
-        self.assertNotEqual(first.call_args.args[0].full_url, second.call_args.args[0].full_url)
-
-    def test_default_branch_is_not_assumed_to_be_main(self):
-        fetch, _, error = self.check(datetime.now(timezone.utc).isoformat(), branch='stable')
-        self.assertIsNone(error)
-        self.assertIn('/stable/status/latest.json', fetch.call_args.args[0].full_url)
-
-    def test_stale_poll_fails(self):
-        old = datetime.now(timezone.utc) - timedelta(minutes=61)
-        _, _, error = self.check(old.isoformat())
-        self.assertIn('collector is silent', error)
-
-    def test_zero_limit_can_prove_failure(self):
-        old = datetime.now(timezone.utc) - timedelta(seconds=1)
-        _, _, error = self.check(old.isoformat(), limit='0')
-        self.assertIn('collector is silent', error)
-
-    def test_future_timestamp_cannot_mask_outage(self):
-        future = datetime.now(timezone.utc) + timedelta(minutes=10)
-        _, _, error = self.check(future.isoformat())
-        self.assertIn('in the future', error)
-
-    def test_naive_timestamp_is_not_silently_accepted(self):
-        _, _, error = self.check('2026-09-30T00:00:00')
-        self.assertIn('no timezone', error)
-
-    def test_nonfinite_and_negative_limits_fail(self):
-        for limit in ['nan', 'inf', '-1']:
-            with self.subTest(limit=limit):
-                fetch, _, error = self.check(datetime.now(timezone.utc).isoformat(), limit=limit)
-                self.assertIn('finite and non-negative', error)
-                fetch.assert_not_called()
-
-
 class PollGuardTest(unittest.TestCase):
     def setUp(self):
         spec = importlib.util.spec_from_file_location('should_poll', ROOT / 'scripts/should_poll.py')
@@ -166,8 +95,8 @@ class SparseCollectionTest(unittest.TestCase):
             git('checkout', '-q', 'main', cwd=work)
             # Run the workflow's actual pre-guard shell, including date logic.
             block = workflow.split('          # Include both dates', 1)[1]
-            block = '          # Include both dates' + block.split('          python3 scripts/should_poll.py', 1)[0]
-            env = dict(os.environ, GITHUB_REF_NAME='main')
+            block = '          # Include both dates' + block.split('\n      - name: Detect stale', 1)[0]
+            env = dict(os.environ, DEFAULT_BRANCH='main')
             subprocess.run(['bash', '-euc', textwrap.dedent(block)], cwd=work, env=env,
                            check=True, capture_output=True, text=True)
             self.assertFalse((work / f'derived/{yesterday}.csv').exists())

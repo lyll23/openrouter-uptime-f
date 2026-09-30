@@ -5,17 +5,16 @@ on:
     # Nominal 15-minute cadence, with the existing 12-minute duplicate guard.
     # GitHub can delay/drop scheduled events. This does not guarantee cadence.
     - cron: "7,22,37,52 * * * *"
+    # Former liveness cadence: check first, recover within the same run.
+    # Usually deduplicates against :22; if that attempt was missed, collect.
+    - cron: "23 * * * *"
   push:
     branches: [main]
     paths:
       - ".github/workflows/poll.yml"
       - "scripts/poll.py"
       - "scripts/should_poll.py"
-  workflow_run:
-    # A failed independent alarm can recover one missed window. This cannot
-    # loop: liveness does not listen to poll, and data pushes match no paths.
-    workflows: [liveness]
-    types: [completed]
+      - "scripts/collection_health.py"
   workflow_dispatch:
     inputs:
       force:
@@ -33,23 +32,21 @@ permissions:
 
 jobs:
   poll:
-    # Never consume a triggering run's code/artifacts. Recovery uses only this
-    # repository's default branch and its existing contents:write permission.
-    if: >-
-      github.event_name != 'workflow_run' ||
-      (github.event.workflow_run.conclusion == 'failure' &&
-       github.event.workflow_run.head_repository.full_name == github.repository &&
-       github.event.workflow_run.head_branch == github.event.repository.default_branch)
+    # The former read-only liveness schedule now uses this existing writer;
+    # no new token, permission scope, workflow_run chain, or second writer.
+    if: github.ref_name == github.event.repository.default_branch
     timeout-minutes: 20
     runs-on: ubuntu-latest
     env:
       # Keep a small margin below the nominal 15-minute cadence so delayed
       # attempts are not needlessly suppressed.
       MIN_INTERVAL_MIN: "12"
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
 
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.repository.default_branch }}
           # Sparse checkout automatically fetches with blob:none. Historical
           # archives/CSVs are not needed to append today's observation.
           sparse-checkout-cone-mode: false
@@ -63,10 +60,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Is a poll due?
-        id: guard
-        env:
-          FORCE_POLL: ${{ inputs.force }}
+      - name: Refresh selected default-branch snapshot
         run: |
           # Include both dates in case the run crosses UTC midnight. Existing
           # rows for either date must be materialized before poll.py appends.
@@ -77,14 +71,29 @@ jobs:
           done
           # Refresh the whole selected snapshot before writing, not just
           # latest.json, to keep append-only logs and today's CSV consistent.
-          git fetch --quiet origin "${GITHUB_REF_NAME}"
-          git reset --hard --quiet "origin/${GITHUB_REF_NAME}"
+          git fetch --quiet origin "${DEFAULT_BRANCH}"
+          git reset --hard --quiet "origin/${DEFAULT_BRANCH}"
+
+      - name: Detect stale or invalid collection without a premature failure
+        id: health
+        run: python3 scripts/collection_health.py inspect --report "$RUNNER_TEMP/collection-before.json"
+
+      - name: Is a poll due?
+        id: guard
+        env:
+          FORCE_POLL: ${{ inputs.force || steps.health.outputs.recovery_needed == 'true' }}
+        run: |
+          # Both schedules use the same 12-minute floor. This also avoids
+          # skipping at 59m59s and turning red at final validation without
+          # ever attempting recovery as the sample crosses the 60m boundary.
           python3 scripts/should_poll.py
 
-      # The only step whose failure should abort the run. What it writes --
+      # Collection, persistence, and final validation all fail closed. What
+      # collection writes --
       # raw/, derived/, status/ -- is unrecoverable if lost, because OpenRouter
       # reports only current windows and offers no historical endpoint.
       - name: Poll OpenRouter
+        id: collect
         if: steps.guard.outputs.poll == 'true'
         run: python3 scripts/poll.py
 
@@ -99,6 +108,7 @@ jobs:
           python3 scripts/readme_events.py
 
       - name: Commit
+        id: commit
         if: steps.guard.outputs.poll == 'true'
         run: |
           set -euo pipefail
@@ -112,12 +122,12 @@ jobs:
           git commit -m "poll $(date -u +%Y-%m-%dT%H:%MZ)"
 
           for attempt in 1 2 3 4 5; do
-            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+            if git push origin "HEAD:${DEFAULT_BRANCH}"; then
               echo "pushed on attempt ${attempt}"
               exit 0
             fi
             echo "push rejected (attempt ${attempt})"
-            git fetch --quiet origin "${GITHUB_REF_NAME}"
+            git fetch --quiet origin "${DEFAULT_BRANCH}"
 
             # The usual reason for a rejection here is the other collector
             # landing its own poll while this one was working -- the guard
@@ -125,20 +135,20 @@ jobs:
             # sample redundant rather than lost: the window is already covered
             # by an observation seconds away from ours. Drop it and succeed,
             # which is what the Railway collector already does. Reported as a
-            # failure, this fires the stale-collection alarm for a
-            # non-problem, and a monitor that cries wolf gets ignored.
-            if git show "origin/${GITHUB_REF_NAME}:status/latest.json" \
-                 > /tmp/remote-latest.json 2>/dev/null \
-               && LATEST_OVERRIDE=/tmp/remote-latest.json \
-                  python3 scripts/should_poll.py | grep -q '^poll=false'; then
+            # failure, this would alert for a redundant sample. The final
+            # persisted validation still checks its actual content and age.
+            if python3 scripts/collection_health.py verify \
+                 --ref "origin/${DEFAULT_BRANCH}" --max-age 12 --candidate \
+                 --before "$RUNNER_TEMP/collection-before.json" \
+                 --report "$RUNNER_TEMP/collection-race.json"; then
               echo "the other collector covered this window; dropping our sample"
               exit 0
             fi
 
             # Otherwise the remote moved for some other reason (a code push,
             # say), and rebasing is the right thing to try.
-            echo "rebasing onto origin/${GITHUB_REF_NAME}"
-            if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+            echo "rebasing onto origin/${DEFAULT_BRANCH}"
+            if ! git pull --rebase origin "${DEFAULT_BRANCH}"; then
               git rebase --abort || true
               echo "rebase conflicted and the window is not covered; failing"
               exit 1
@@ -148,13 +158,37 @@ jobs:
           echo "push failed after 5 attempts"
           exit 1
 
+      - name: Validate fresh sample persisted on the default branch
+        id: verify
+        # Still report persisted state after a failure; this cannot turn an
+        # earlier failed step green. A skipped poll must pass validation too.
+        if: ${{ !cancelled() }}
+        env:
+          POLL_DUE: ${{ steps.guard.outputs.poll }}
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin "$DEFAULT_BRANCH"
+          # A due/recovery poll must establish a new recent sample; the old
+          # 60-minute liveness limit cannot excuse a failed/no-op collection.
+          limit=60
+          advance=()
+          if [[ "$POLL_DUE" == 'true' ]]; then
+            limit=12
+            advance=(--before "$RUNNER_TEMP/collection-before.json")
+          fi
+          python3 scripts/collection_health.py verify \
+            --ref "origin/$DEFAULT_BRANCH" --max-age "$limit" "${advance[@]}" \
+            --report "$RUNNER_TEMP/collection-after.json"
+
       - name: Summary
         if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          POLL_DUE: ${{ steps.guard.outputs.poll }}
+          POLL_RESULT: ${{ steps.collect.outcome }}
+          COMMIT_RESULT: ${{ steps.commit.outcome }}
+          VERIFY_RESULT: ${{ steps.verify.outcome }}
         run: |
-          {
-            echo "### poll"
-            echo ""
-            echo "- due: \`${{ steps.guard.outputs.poll }}\`"
-            echo "- age of previous poll: \`${{ steps.guard.outputs.age_minutes }}\` min"
-          } >> "$GITHUB_STEP_SUMMARY"
-
+          python3 scripts/collection_health.py summary \
+            --before "$RUNNER_TEMP/collection-before.json" \
+            --after "$RUNNER_TEMP/collection-after.json"
