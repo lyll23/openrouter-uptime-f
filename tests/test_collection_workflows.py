@@ -22,9 +22,9 @@ def liveness_code():
 
 
 class LivenessTest(unittest.TestCase):
-    def check(self, generated, limit='60', branch='main', repository='lyll23/openrouter-uptime-f'):
+    def check(self, generated, limit='60', branch='main', repository='lyll23/openrouter-uptime-f', attempt='1'):
         env = {'GITHUB_REPOSITORY': repository, 'DEFAULT_BRANCH': branch,
-               'MAX_AGE_MINUTES': limit}
+               'MAX_AGE_MINUTES': limit, 'GITHUB_RUN_ID': '123', 'GITHUB_RUN_ATTEMPT': attempt}
         payload = io.BytesIO(json.dumps({'generated': generated}).encode())
         output = io.StringIO()
         with mock.patch.dict(os.environ, env), contextlib.redirect_stdout(output), \
@@ -40,15 +40,24 @@ class LivenessTest(unittest.TestCase):
         now = datetime.now(timezone.utc).isoformat()
         fetch, output, error = self.check(now)
         self.assertIsNone(error)
-        fetch.assert_called_once_with(
-            'https://raw.githubusercontent.com/lyll23/openrouter-uptime-f/main/status/latest.json',
-            timeout=30)
+        fetch.assert_called_once()
+        self.assertEqual(fetch.call_args.kwargs, {'timeout': 30})
+        request = fetch.call_args.args[0]
+        self.assertEqual(request.full_url,
+            'https://raw.githubusercontent.com/lyll23/openrouter-uptime-f/main/status/latest.json?check=123-1')
+        self.assertEqual(request.get_header('Cache-control'), 'no-cache')
         self.assertIn('lyll23/openrouter-uptime-f@main', output)
+
+    def test_retry_does_not_reuse_the_stale_cached_url(self):
+        now = datetime.now(timezone.utc).isoformat()
+        first, _, _ = self.check(now, attempt='1')
+        second, _, _ = self.check(now, attempt='2')
+        self.assertNotEqual(first.call_args.args[0].full_url, second.call_args.args[0].full_url)
 
     def test_default_branch_is_not_assumed_to_be_main(self):
         fetch, _, error = self.check(datetime.now(timezone.utc).isoformat(), branch='stable')
         self.assertIsNone(error)
-        self.assertIn('/stable/status/latest.json', fetch.call_args.args[0])
+        self.assertIn('/stable/status/latest.json', fetch.call_args.args[0].full_url)
 
     def test_stale_poll_fails(self):
         old = datetime.now(timezone.utc) - timedelta(minutes=61)
