@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T02:04:10+00:00 UTC)
+## Current status (2026-10-03T02:22:36+00:00 UTC)
 
 466 models polled, 1420 inference endpoints:
-up 872, degraded 71, down 16, idle 461.
+up 879, degraded 71, down 18, idle 452.
 
-Currently down (16):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 63% | 61% |
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 80% | 100% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 21% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 79% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 78% | 40% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 65% | 21% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 41% | 60% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 79% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 69% | 49% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 65% | n/a |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 67% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 74% | 70% |
-| `z-ai/glm-5.2` | `morph/fp8` | Morph | 73% | 52% |
-| plus 1 more | | | | |
+| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 76% | 100% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 72% | 84% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 22% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 75% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 93% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 8% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 65% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 66% | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 68% | 61% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 68% |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 58% | 84% |
+| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 80% | 69% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
