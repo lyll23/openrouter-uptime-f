@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-03T02:22:36+00:00 UTC)
+## Current status (2026-10-03T08:14:35+00:00 UTC)
 
-466 models polled, 1420 inference endpoints:
-up 879, degraded 71, down 18, idle 452.
+466 models polled, 1421 inference endpoints:
+up 872, degraded 76, down 17, idle 456.
 
-Currently down (18):
+Currently down (17):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v3.2` | `alibaba/fp8` | Alibaba | 76% | 100% |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 72% | 84% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 22% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 75% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 70% | 93% |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 8% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 65% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 66% | n/a |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 68% | 61% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 58% | 68% |
-| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 78% | n/a |
-| `qwen/qwen3-next-80b-a3b-instruct` | `novita/bf16` | Novita | 58% | 84% |
-| `qwen/qwen3.5-122b-a10b` | `alibaba` | Alibaba | 80% | 69% |
-| plus 3 more | | | | |
+| `amazon/nova-2-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 60% | 94% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 30% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 39% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 72% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 54% | n/a |
+| `minimax/minimax-m2.7` | `sambanova` | SambaNova | 0% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 70% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 60% | 100% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 61% | 64% |
+| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 65% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 27% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 69% | n/a |
+| plus 2 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -132,8 +132,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-08 21:45** — provider `prime-intellect` left the platform.
-- **2026-09-09 21:31** — provider `inference-net` changed its status page.
 - **2026-09-10 02:01** — **5 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 - **2026-09-11 13:01** — **3 models added to the catalog in one poll**: `~openai/gpt-astra-latest`, `~openai/gpt-luna-latest`, `~openai/gpt-terra-latest`.
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
@@ -144,6 +142,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-09-22 18:54** — **5 models removed from the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `deepseek/deepseek-v4-flash-vision-exp:batch`, `deepseek/deepseek-v4-pro-0813:batch`, `meta/muse-glimmer-30b:batch`, `z-ai/glm-5.2:batch`.
 - **2026-09-23 14:59** — **4 models added to the catalog in one poll**: `aion-labs/aion-3.5`, `aion-labs/aion-3.5-mini`, `stealth/space-bunny-alpha`, `upstage/solar-mini4`.
 - **2026-09-29 20:04** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
+- **2026-10-03 08:14** — provider `tenstorrent` changed its terms of service url.
+- **2026-10-03 08:14** — provider `tenstorrent` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
