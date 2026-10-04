@@ -99,25 +99,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T02:43:45+00:00 UTC)
+## Current status (2026-10-04T07:00:22+00:00 UTC)
 
-466 models polled, 1436 inference endpoints:
-up 847, degraded 83, down 10, idle 496.
+466 models polled, 1437 inference endpoints:
+up 878, degraded 61, down 11, idle 487.
 
-Currently down (10):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 26% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 63% | 75% |
-| `moonshotai/kimi-k3` | `modal/mxfp4` | Modal | 78% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 47% | 37% |
-| `qwen/qwen3-235b-a22b-2507` | `venice/fp8` | Venice | 74% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 74% | n/a |
-| `thinkingmachines/inkling` | `deepinfra/fp8` | DeepInfra | 57% | 97% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 72% |
-| `z-ai/glm-5.2` | `fireworks` | Fireworks | 0% | n/a |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 73% | n/a |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 53% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 79% | 76% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 72% | 100% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 66% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 75% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 36% | 35% |
+| `z-ai/glm-4.7` | `atlas-cloud/fp8` | AtlasCloud | 39% | 18% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 63% | 63% |
+| `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
