@@ -99,28 +99,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-04T08:51:00+00:00 UTC)
+## Current status (2026-10-04T13:16:32+00:00 UTC)
 
 466 models polled, 1437 inference endpoints:
-up 876, degraded 67, down 13, idle 481.
+up 863, degraded 77, down 10, idle 487.
 
-Currently down (13):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 66% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 53% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `google-vertex/us-west2` | Google | n/a | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 37% | 22% |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 50% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `wafer` | Wafer | 75% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 79% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 77% | 15% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 76% | 90% |
-| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 54% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 28% | 31% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 54% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 57% | 43% |
+| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 49% | n/a |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 70% | 100% |
+| `moonshotai/kimi-k3` | `relace/fp4` | Relace | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 42% | 43% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 64% | 59% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 51% | 49% |
 | `z-ai/glm-5.2` | `fireworks` | Fireworks | n/a | n/a |
+| `z-ai/glm-5.3-flash` | `atlas-cloud/fp8` | AtlasCloud | 73% | 81% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
