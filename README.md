@@ -99,31 +99,27 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T01:32:35+00:00 UTC)
+## Current status (2026-10-06T03:05:16+00:00 UTC)
 
-464 models polled, 1421 inference endpoints:
-up 860, degraded 97, down 27, idle 437.
+464 models polled, 1424 inference endpoints:
+up 868, degraded 85, down 12, idle 459.
 
-Currently down (27):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `deepinfra/fp8` | DeepInfra | 52% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 29% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `morph/bf16` | Morph | 74% | 38% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 37% | 68% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/us` | Fireworks | 75% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 54% | 74% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8` | DeepInfra | 75% | n/a |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 59% | 99% |
-| `google/gemma-4-26b-a4b-it` | `makora` | Makora | 1% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 76% | 48% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 69% | 40% |
-| `meta-llama/llama-3.1-8b-instruct` | `deepinfra/fp8` | DeepInfra | n/a | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 69% | 91% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 69% | 65% |
-| plus 12 more | | | | |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 64% | 78% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 75% | 97% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 84% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 62% | n/a |
+| `meta-llama/llama-3.3-70b-instruct` | `deepinfra/turbo` | DeepInfra | 62% | 86% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 70% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 76% | 84% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 75% | n/a |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 43% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 73% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 72% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
