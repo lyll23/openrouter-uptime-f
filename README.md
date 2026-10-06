@@ -99,29 +99,25 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-06T20:09:56+00:00 UTC)
+## Current status (2026-10-06T21:41:24+00:00 UTC)
 
-466 models polled, 1421 inference endpoints:
-up 909, degraded 100, down 14, idle 398.
+466 models polled, 1417 inference endpoints:
+up 892, degraded 82, down 10, idle 433.
 
-Currently down (14):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `mancer/fp8` | Mancer 2 | 72% | 65% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 71% | 73% |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 59% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 80% | 72% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 59% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 69% | 0% |
-| `qwen/qwen3-coder` | `novita/fp8` | Novita | 74% | n/a |
-| `qwen/qwen3-coder-30b-a3b-instruct` | `novita/fp8` | Novita | 57% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `gmicloud/fp8` | GMICloud | 58% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 63% | 48% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 42% | 40% |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 37% | n/a |
-| `z-ai/glm-5.3` | `baseten/fast#fa2c2413c7#1` | BaseTen | 79% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 79% | 84% |
+| `deepseek/deepseek-v4.1-flash` | `morph/fp8` | Morph | 66% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 67% | 70% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 78% | 98% |
+| `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 70% | 100% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 60% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 70% | 85% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 73% | 21% |
+| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 72% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 78% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
