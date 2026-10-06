@@ -2844,3 +2844,1428 @@ ts,model,provider,endpoint_tag,endpoint_id,identity_ambiguous,state,status,up5m,
 2026-10-06T03:05:16+00:00,~x-ai/grok-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
 2026-10-06T03:05:16+00:00,~z-ai/glm-flash-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
 2026-10-06T03:05:16+00:00,~z-ai/glm-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,aion-labs/aion-2.0,AionLabs,aion-labs,aion-labs,False,up,0,100,100,99.86628036550033
+2026-10-06T08:03:51+00:00,aion-labs/aion-3.0,AionLabs,aion-labs,aion-labs,False,up,0,100,100,99.95923691504973
+2026-10-06T08:03:51+00:00,aion-labs/aion-3.0-mini,AionLabs,aion-labs,aion-labs,False,up,0,,100,99.98010346199761
+2026-10-06T08:03:51+00:00,aion-labs/aion-3.5,AionLabs,aion-labs,aion-labs,False,up,0,100,100,99.84463276836159
+2026-10-06T08:03:51+00:00,aion-labs/aion-3.5-mini,AionLabs,aion-labs,aion-labs,False,up,0,,100,99.95090819833088
+2026-10-06T08:03:51+00:00,aion-labs/aion-rp-llama-3.1-8b,AionLabs,aion-labs,aion-labs,False,idle,0,,,99.93961352657004
+2026-10-06T08:03:51+00:00,amazon/nova-2-lite-v1,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,100,99.5880452342488
+2026-10-06T08:03:51+00:00,amazon/nova-2-lite-v1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,99.68240061329536
+2026-10-06T08:03:51+00:00,amazon/nova-lite-v1,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,100,93.03203481361086
+2026-10-06T08:03:51+00:00,amazon/nova-lite-v1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.99286512711966
+2026-10-06T08:03:51+00:00,amazon/nova-micro-v1,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,down,-5,,55.261106780982075,52.84860162647701
+2026-10-06T08:03:51+00:00,amazon/nova-micro-v1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,99.9422234348168,96.22480073700268
+2026-10-06T08:03:51+00:00,amazon/nova-premier-v1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,
+2026-10-06T08:03:51+00:00,amazon/nova-pro-v1,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,99.89224137931035
+2026-10-06T08:03:51+00:00,amazon/nova-pro-v1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthracite-org/magnum-v4-72b,Mancer 2,mancer/fp8,mancer/fp8,False,up,0,,100,99.97620464009518
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Azure,azure,azure,False,idle,0,,,99.6382545783405
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Google,google-vertex/global,google-vertex/global,False,idle,0,,,98.20627802690582
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Anthropic,anthropic,anthropic,False,up,0,99.52267303102626,99.33248569612206,99.82442373712604
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5.1,Azure,azure,azure,False,idle,0,,,99.32483120780195
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5.1,Anthropic,anthropic,anthropic,False,up,0,99.49324324324324,99.9009900990099,99.67041770752698
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5.1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5.1,Google,google-vertex/global,google-vertex/global,False,idle,0,,,99.91572560256195
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5.1:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-fable-5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Azure,azure/global,azure/global,False,up,0,100,100,99.90807799442896
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Amazon Bedrock,amazon-bedrock/global,amazon-bedrock/global,False,up,0,99.98409795658742,99.95991050991245,99.96536192164656
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Google,google-vertex/global,google-vertex/global,False,up,0,100,99.66442953020133,99.6039305180966
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Anthropic,anthropic,anthropic,False,up,0,100,99.9881404174573,99.95889647132945
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Amazon Bedrock,amazon-bedrock/us,amazon-bedrock/us,False,up,0,100,100,99.92403964407147
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Google,google-vertex/us-east5,google-vertex/us-east5,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,99.63138493944182,99.9023199023199
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5,Google,google-vertex/europe,google-vertex/europe,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,anthropic/claude-haiku-4.5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.1,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.1:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Azure,azure/global,azure/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Google,google-vertex/global,google-vertex/global,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.95445494216837
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Anthropic,anthropic,anthropic,False,up,0,,100,99.9977674086312
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,100,99.9914294964988
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Azure,azure/global,azure/global,False,idle,0,,,96.04810996563575
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Google,google-vertex/global,google-vertex/global,False,up,0,,100,99.93212669683258
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.67414648596609
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Anthropic,anthropic,anthropic,False,up,0,,100,99.90721606005651
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,99.92458521870287
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.6:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,100,99.9884927093094
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Azure,azure/global,azure/global,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Google,google-vertex/global,google-vertex/global,False,idle,0,,,99.95007488766849
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Amazon Bedrock,amazon-bedrock/global,amazon-bedrock/global,False,up,0,100,100,99.98667483943181
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Anthropic,anthropic,anthropic,False,up,0,100,100,99.97649332671664
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Google,google-vertex/us,google-vertex/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.7:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,100,99.99268745949735
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Azure,azure/global,azure/global,False,idle,0,,,97.77227722772277
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,94.50848878641794
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.96230149380331
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Anthropic,anthropic,anthropic,False,up,0,100,100,99.98373240582225
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Amazon Bedrock,amazon-bedrock/us,amazon-bedrock/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Google,google-vertex/us,google-vertex/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8,Anthropic,anthropic/fast,anthropic/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-4.8:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,100,99.37331831296399
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Google,google-vertex/global,google-vertex/global,False,up,0,,100,99.96554100620261
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,99.77893118031527,99.94898500026501
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Azure,azure/global,azure/global,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Anthropic,anthropic,anthropic,False,up,0,100,100,99.85860052738181
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Google,google-vertex/us,google-vertex/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5,Anthropic,anthropic/fast,anthropic/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,99.88214496169712,99.951992318771,96.81422618712946
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Azure,azure/global,azure/global,False,up,0,100,100,99.99059487420644
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Google,google-vertex/global,google-vertex/global,False,up,0,100,99.94858611825192,99.95482509861634
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,99.96652159357214,99.97565240487837,99.95669002662264
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Anthropic,anthropic,anthropic,False,up,0,100,99.9786142001711,99.9440803751408
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,,100,99.91070289577752
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,up,0,100,100,99.87375612654091
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Azure,azure/us,azure/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Google,google-vertex/us,google-vertex/us,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,99.99120698751392
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5,Anthropic,anthropic/fast,anthropic/fast,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5.5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-opus-5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.9995514166263
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,99.98694346520433,99.99134692914315
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Azure,azure/global,azure/global,False,idle,0,,,99.85925404644617
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,99.94304428306991,99.94258800400489
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Anthropic,anthropic,anthropic,False,up,0,100,100,99.93869706408643
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Google,google-vertex/global,google-vertex/global,False,idle,0,,,99.6119733924612
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5,Google,google-vertex/us-east5,google-vertex/us-east5,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,99.98457920505803,99.99274333116698
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Azure,azure/global,azure/global,False,idle,0,,,93.98907103825137
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Anthropic,anthropic,anthropic,False,up,0,100,99.96787664632187,99.9381204623895
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Amazon Bedrock,amazon-bedrock/global,amazon-bedrock/global,False,up,0,99.87484355444305,99.93579454253612,99.90116561107308
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.98773106494356
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Amazon Bedrock,amazon-bedrock/us,amazon-bedrock/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,100,99.94564680304377
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Google,google-vertex/europe,google-vertex/europe,False,idle,0,,,99.94288977727012
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6,Google,google-vertex/us-east5,google-vertex/us-east5,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-4.6:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,99.98401534526855,99.99766513343762,99.99570187137915
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Azure,azure/global,azure/global,False,up,0,97.5609756097561,99.4535519125683,99.82546089233118
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.9863350642252
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Amazon Bedrock,amazon-bedrock/global,amazon-bedrock/global,False,up,0,99.94145199063233,99.99328994162249,99.98978386872872
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Anthropic,anthropic,anthropic,False,up,0,99.84101748807632,99.97828447339849,99.9807389248818
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Google,google-vertex/us,google-vertex/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Google,google-vertex/europe,google-vertex/europe,False,up,0,100,99.84076433121018,99.93648458915558
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.99295337419106
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.96843977735698
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Azure,azure/global,azure/global,False,up,0,100,100,99.99221316564281
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Claude Platform on AWS,claude-on-aws,claude-on-aws,False,up,0,100,99.99245894840035,99.976301674568
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Anthropic,anthropic,anthropic,False,up,0,100,100,99.96893622235964
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Google,google-vertex/us,google-vertex/us,False,up,0,100,100,99.9921321793863
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Azure,azure/us,azure/us,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5,Google,google-vertex/europe,google-vertex/europe,False,up,0,100,100,99.99756301633592
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5.5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,anthropic/claude-sonnet-5:batch,Anthropic,anthropic,anthropic,False,idle,0,,,
+2026-10-06T08:03:51+00:00,apodex/apodex-1.1-mini:free,Novita,novita/bf16,novita/bf16,False,up,0,100,100,99.98911017864577
+2026-10-06T08:03:51+00:00,arcee-ai/trinity-large-thinking,Arcee AI,arcee-ai,arcee-ai,False,idle,0,,,99.6321969161126
+2026-10-06T08:03:51+00:00,baidu/ernie-4.5-vl-424b-a47b,Novita,novita/fp16,novita/fp16,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-1.6,Seed,seed/fp8,seed/fp8,False,idle,0,,,99.98516320474778
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-1.6-flash,Seed,seed/fp8,seed/fp8,False,up,0,100,100,99.99931245724343
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-2-1-turbo,Seed,seed/fp8,seed/fp8,False,up,0,,100,99.93856415657363
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-2.0-code,Seed,seed/fp8,seed/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-2.0-lite,Seed,seed/fp8,seed/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,bytedance-seed/seed-2.0-mini,Seed,seed/fp8,seed/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,bytedance/ui-tars-1.5-7b,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.98978862452772
+2026-10-06T08:03:51+00:00,cognitivecomputations/dolphin-mistral-24b-venice-edition,Venice,venice/fp16,venice/fp16,False,up,0,100,100,99.98848153755019
+2026-10-06T08:03:51+00:00,cohere/command-a,Cohere,cohere,cohere,False,idle,0,,,99.9476165531692
+2026-10-06T08:03:51+00:00,cohere/command-a-plus,Cohere,cohere,cohere,False,up,0,100,100,98.21008238524912
+2026-10-06T08:03:51+00:00,cohere/command-r-08-2024,Cohere,cohere,cohere,False,idle,0,,,99.75930237146352
+2026-10-06T08:03:51+00:00,cohere/command-r-plus-08-2024,Cohere,cohere,cohere,False,up,0,,100,92.55485893416929
+2026-10-06T08:03:51+00:00,cohere/command-r7b-12-2024,Cohere,cohere,cohere,False,idle,0,,,99.97244040237013
+2026-10-06T08:03:51+00:00,cohere/north-mini-code:free,Cohere,cohere,cohere,False,degraded,0,98.24046920821115,97.43841076913023,97.01467547116604
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat,StreamLake,streamlake,streamlake,False,up,0,99.35525467440361,99.68825153647457,99.40119760479041
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,down,-5,77.23761926397093,67.72892561983471,95.29699502596996
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3-0324,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,99.00124843945068,99.50870010235414,99.53374059078027
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3-0324,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,99.56592512208356,99.80678568668367,99.64752652354107
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3.1,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,99.98597278720717,99.89530244506183
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3.1,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.30159635119726,97.44757305158012
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3.1,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,100,100,99.99743115495274
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3.1,Mara,mara,mara,False,up,0,99.5049504950495,99.24572091673919,99.28989763243908
+2026-10-06T08:03:51+00:00,deepseek/deepseek-chat-v3.1,SambaNova,sambanova/fp8,sambanova/fp8,False,degraded,0,96.15384615384616,96.85534591194968,97.9465802068859
+2026-10-06T08:03:51+00:00,deepseek/deepseek-r1,Novita,novita/fp8,novita/fp8,False,up,0,100,99.9381188118812,99.98429463269072
+2026-10-06T08:03:51+00:00,deepseek/deepseek-r1-0528,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,100,99.93639653470775
+2026-10-06T08:03:51+00:00,deepseek/deepseek-r1-0528,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,98.91696750902527,99.7323119110318
+2026-10-06T08:03:51+00:00,deepseek/deepseek-r1-0528,StreamLake,streamlake,streamlake,False,up,0,,100,99.51801827047021
+2026-10-06T08:03:51+00:00,deepseek/deepseek-r1-0528,Novita,novita/fp8,novita/fp8,False,up,0,,100,99.88061645322335
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.1-terminus,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.50738916256158,98.35164835164835
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.1-terminus,StreamLake,streamlake,streamlake,False,up,0,100,100,99.92763735979739
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,GMICloud,gmicloud/fp8,gmicloud/fp8,False,degraded,-2,92.90923824959482,91.97445849505446,90.54788495578403
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,98.28326180257511,98.24305302121891,94.51420297576448
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,99.96939556235654,99.79635211436715
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,degraded,-2,95.17291066282421,94.94818652849742,94.73842571592729
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Venice,venice,venice,False,up,0,99.53703703703704,99.89648033126294,99.8454661180023
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Baidu,baidu/fp8,baidu/fp8,False,up,0,99.84674329501915,99.94674556213018,98.93425589601598
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,DigitalOcean,digitalocean,digitalocean,False,up,0,99.93870671161508,99.29530940321514,98.18893696846452
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Alibaba,alibaba/fp8,alibaba/fp8,False,degraded,-2,87.79714738510302,88.9783281733746,90.96476786302273
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Friendli,friendli,friendli,False,up,0,100,99.98525291254977,99.95640404028502
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Google,google-vertex,google-vertex,False,up,0,100,100,99.1021501142002
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Phala,phala,phala,False,up,0,100,99.83922829581994,99.54579753889018
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,Mara,mara,mara,False,idle,0,,,94.12858401017712
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2,SambaNova,sambanova,sambanova,False,idle,0,,,96.93621295831241
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v3.2-exp,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,99.58294103801342
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Relace,relace/fp4,relace/fp4,False,up,0,99.96216182127768,99.9194264478574,99.91484952084035
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,OpenInference,open-inference/fp4,open-inference/fp4,False,up,0,99.88104678826329,99.55937233038082,99.15293400770898
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,99.98735990562064,99.84778594733393,98.8443121338343
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.25742574257426,99.39712174251264,99.72142498385593
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,99.99506221607743,99.99754429478286,99.98543578001265
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Venice,venice,venice,False,degraded,0,94.91839762611276,96.50982281462448,96.48160642480336
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.93277105488326,99.74976236313006
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.84942026803192,99.48779700356884
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Alibaba,alibaba/fp8,alibaba/fp8,False,up,0,99.2118823886026,99.23773751657092,99.17787987974086
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Baidu,baidu/fp8,baidu/fp8,False,up,0,99.9570114349583,99.97817671170488,99.4639680831464
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Novita,novita/fp8,novita/fp8,False,up,0,98.76353975066421,99.16978213226763,99.90421335085112
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,AtlasCloud,atlas-cloud/fp4,atlas-cloud/fp4,False,up,0,99.21156373193168,99.55196474476679,98.91404279051933
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.69054618598174,99.56806159817208,99.66266435652315
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Mancer 2,mancer/fp8,mancer/fp8,False,up,0,97.72256728778468,98.41166936790924,94.6168166304685
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Azure,azure/us,azure/us,False,degraded,0,97.03315881326353,97.84992168588921,95.30814136729059
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash,Cloudflare,cloudflare,cloudflare,False,up,0,100,99.95055868683872,98.14602446483181
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Relace,relace/fp4,relace/fp4,False,up,0,99.91132131244458,99.877958326977,99.92314014993093
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,OpenInference,open-inference/fp4,open-inference/fp4,False,up,0,99.77311401020987,99.87416437278804,95.79517358212064
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Sail Research,sail-research/fp4,sail-research/fp4,False,up,0,99.9394947814249,98.11708013564161,95.68366575361374
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Sail Research,sail-research/us,sail-research/us,False,degraded,0,99.96495327102804,97.88602627537962,93.71582476444827
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Reka,reka,reka,False,up,0,99.9685336689742,99.95352079944226,99.80551541278086
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,99.86627440492111,99.88716183813365,99.70847394884565
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Inceptron,inceptron/fp4,inceptron/fp4,False,up,0,99.95105237395985,99.98540678584457,99.89714711431299
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.17829865683434,99.3531413018825,99.84074382064385
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.9740562978337,99.94510071581036
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,BaseTen,baseten/fp8,baseten/fp8#9961def773#1,True,up,0,100,99.8256320836966,97.09860825281663
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,BaseTen,baseten/fp8,baseten/fp8#9961def773#2,True,up,0,100,99.83176312247645,97.54724279717475
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,100,99.94759459176187,99.615332221181
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Nebius,nebius/fp8,nebius/fp8,False,down,-5,100,35.494106980961014,51.64168214380472
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Cohere,cohere,cohere,False,up,0,98.56190079199666,99.35956084172004,98.25525455242851
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Together,together,together,False,up,0,97.87685774946921,99.22111994752808,99.64583740305778
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.40222032450897,99.41382811778824,99.4890805856174
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Venice,venice,venice,False,up,0,99.08675799086758,98.60847564832385,99.28996541483862
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Mancer 2,mancer/fp8,mancer/fp8,False,degraded,0,98.78048780487805,96.08826479438315,98.42673124041782
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.8766954377312,99.4900416682595
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Wafer,wafer/fast,wafer/fast,False,up,0,100,99.91439107911143,99.95339455782967
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,100,100,99.99853187137838
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,NextBit,nextbit/fp8,nextbit/fp8,False,up,0,100,99.91803278688525,99.84017379160525
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Alibaba,alibaba,alibaba,False,up,0,99.77037887485649,99.31439764936337,99.02341953662595
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Novita,novita/fp8,novita/fp8,False,up,0,100,99.97251992305578,99.99389526010553
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Phala,phala,phala,False,idle,0,,,99.80074268635087
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Baidu,baidu/fp8,baidu/fp8,False,up,0,99.96139741362671,99.92410567771579,99.91876333627452
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,AtlasCloud,atlas-cloud/fp4,atlas-cloud/fp4,False,up,0,100,98.85120350109409,99.88457260383218
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-0731,Cloudflare,cloudflare,cloudflare,False,up,0,100,100,99.95528029970637
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-vision-exp,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.48892674616695,99.6261216350947,99.40330552391956
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-vision-exp,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,100,100,99.97854077253218
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-vision-exp,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,100,99.88196279017481
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-flash-vision-exp,Novita,novita,novita,False,up,0,100,100,99.98963327718026
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Relace,relace/fp4,relace/fp4,False,up,0,100,99.9932184999322,99.89626173449903
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,98.3013040494166,99.07991755381313,98.59345523620316
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Parasail,parasail/fp8,parasail/fp8,False,degraded,0,97.6510067114094,96.81233933161954,97.88672219636393
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Reka,reka,reka,False,degraded,-2,100,94.70827679782904,99.36413043478261
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,GMICloud,gmicloud/fp8,gmicloud/fp8,False,degraded,0,95.59748427672956,97.86073825503355,96.00729148325755
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.72202918693537,99.56530462114625
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Cloudflare,cloudflare,cloudflare,False,up,0,100,99.32975871313673,98.22844917553746
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.94331065759637,99.76173356455047
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Alibaba,alibaba/fp8,alibaba/fp8,False,up,0,98.75,98.90590809628009,87.56618743252737
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.70731707317073,99.12067185767629
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Novita,novita/fp8,novita/fp8,False,up,0,100,99.953007518797,99.93095814748655
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Venice,venice,venice,False,up,0,100,100,97.04166193665569
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,AtlasCloud,atlas-cloud/fp4,atlas-cloud/fp4,False,up,0,100,99.40828402366864,98.90841430638827
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,100,99.94414757117411
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,NextBit,nextbit/fp8,nextbit/fp8,False,up,0,100,99.32523616734143,99.10442305349092
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro,Azure,azure/us,azure/us,False,up,0,99.41176470588235,98.59154929577466,98.95943627003541
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Relace,relace/fp4,relace/fp4,False,up,0,100,99.99234654829327,99.93057659990633
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Ionstream,ionstream,ionstream,False,degraded,0,100,97.6775956284153,99.09587069301587
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Sail Research,sail-research/us,sail-research/us,False,up,0,99.85528219971056,99.84111852557992,99.67353791623916
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Sail Research,sail-research/fp4,sail-research/fp4,False,up,0,100,99.6812749003984,99.67670478357181
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Wafer,wafer,wafer,False,up,0,99.19908466819221,99.87504805843906,99.67969480041567
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,StreamLake,streamlake,streamlake,False,up,0,100,100,99.47900503470257
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Novita,novita/fp8,novita/fp8,False,up,0,100,100,99.94577965322551
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,NextBit,nextbit/fp8,nextbit/fp8,False,up,0,100,100,99.98016187906683
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,100,100,99.89026932783868
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Alibaba,alibaba,alibaba,False,up,0,100,99.50865699578848,97.98239552297984
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,degraded,0,91.46341463414635,97.78830963665087,99.07708492731446
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,99.89690721649484,99.93964996982498,99.97127421533251
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,,99.3103448275862,99.36729136633029
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Nebius,nebius/fp8,nebius/fp8,False,up,0,100,98.38187702265373,99.55694553036226
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,99.3006993006993,99.92877492877493
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.02912621359224,99.82698961937716,94.5865451997197
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Together,together,together,False,up,0,98.77300613496932,98.02631578947368,97.6806133056133
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,DigitalOcean,digitalocean,digitalocean,False,up,0,,100,99.94835438283486
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Cloudflare,cloudflare,cloudflare,False,up,0,,99.27007299270073,98.8518481216638
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,DeepSeek,deepseek,deepseek,False,up,0,100,100,99.97064844823626
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Phala,phala,phala,False,idle,0,,,98.27347268737729
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4-pro-0813,Venice,venice,venice,False,idle,0,,,93.2776560788609
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Relace,relace,relace,False,up,0,99.96368478392446,99.9885891642704,99.94375278762348
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,OpenInference,open-inference/fp4,open-inference/fp4,False,up,0,98.96373056994818,98.67023252358665,90.44144789698825
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Wafer,wafer,wafer,False,up,0,100,99.94784422809457,99.762444728276
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,InferenceNet,inference-net,inference-net,False,up,0,99.99419448476053,99.97247003966035,99.5308841867274
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Sail Research,sail-research/fp4,sail-research/fp4,False,up,0,99.93188010899182,99.93998949816218,99.64066112680628
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Decart,decart/fp4,decart/fp4,False,up,0,99.93265993265993,99.98209008686307,99.06209951095481
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Morph,morph/fp8,morph/fp8,False,up,0,100,99.97039870665118,92.26736897558648
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,DekaLLM,dekallm,dekallm,False,up,0,100,99.92537313432835,99.36254064880153
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Ionstream,ionstream,ionstream,False,up,0,100,99.96689837802052,98.96339742182354
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.96599410564497,99.96440460433963,99.91258910628136
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,99.9375,99.9622943865768,99.90601259742755
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,99.52027717318882,99.72970000752441,99.42554364529443
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,DigitalOcean,digitalocean,digitalocean,False,up,0,98.4567901234568,98.42359050445104,98.31575590114113
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,97.0059880239521,98.76160990712074,99.6369105408181
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,98.89920138139433,98.81575146827561,99.4025377113433
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Reka,reka,reka,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,NextBit,nextbit/fp8,nextbit/fp8,False,up,0,100,100,99.9247094254388
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Phala,phala,phala,False,up,0,99.00833002776676,99.31302657161373,99.67642515684595
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Novita,novita/fp8,novita/fp8,False,up,0,99.56964567493904,99.68133745901261,99.81370799147729
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Makora,makora/fp8,makora/fp8,False,up,0,100,99.95272985109904,99.82564116813471
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,99.63636363636364,99.72986769898327
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,BaseTen,baseten/fp8,baseten/fp8#44b236012a,True,up,0,100,100,99.58317606708567
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Alibaba,alibaba,alibaba,False,up,0,98.046875,98.04123711340206,99.48450508548382
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Together,together,together,False,up,0,99.99192049769734,99.94302711021665,99.9459466527154
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,99.86161563743296,99.78532234802645
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Modal,modal,modal,False,up,0,100,100,99.84664804920176
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,BaseTen,baseten/fp8,baseten/fp8#31cdf0bdf9,True,up,0,100,100,99.81767636652465
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.94264410668197,99.62152090369163,99.59499490322979
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Fireworks,fireworks,fireworks,False,degraded,-2,90.20392605298265,91.6364895089999,75.25893480706759
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Venice,venice/fp8,venice/fp8,False,up,0,100,99.95494142385101,99.73929120445386
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,DeepSeek,deepseek,deepseek,False,up,0,99.99492669068033,99.9971007139492,99.99069142120199
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash,Fireworks,fireworks/us,fireworks/us,False,up,0,99.94778067885117,99.62006735169673,86.4699504769131
+2026-10-06T08:03:51+00:00,deepseek/deepseek-v4.1-flash:batch,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,idle,0,,,
+2026-10-06T08:03:51+00:00,dots-studio/dots-3-note-preview:free,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,99.43386515697375,99.63935638986499,99.66049191429454
+2026-10-06T08:03:51+00:00,fireworks/ember-1,Fireworks,fireworks,fireworks,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google,google-vertex/eu,google-vertex/eu,False,degraded,0,93.38235294117648,97.49893116716547,99.38618685200375
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google,google-vertex/global,google-vertex/global,False,up,0,98.92938850758534,99.25997519289938,99.56818294402667
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,99.63235294117648,99.94694960212202,99.84751090883498
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.98554537307392
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.9028182701652,99.7787294789436,99.89067698356689
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google,google-vertex,google-vertex,False,degraded,-2,92.07161125319693,88.49892008639308,94.14289320878567
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-image,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.99904847994672
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite,Google,google-vertex/eu,google-vertex/eu,False,up,0,99.98611843749133,99.97992889092787,99.93644312691139
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite,Google,google-vertex,google-vertex,False,degraded,-2,91.52442613301942,92.78567119469119,98.66814587072871
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.99416521532052
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.35863174772848,99.11430364739522,99.29313221472054
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite:batch,Google AI Studio,google-ai-studio,google-ai-studio,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash-lite:batch,Google,google-vertex/eu,google-vertex/eu,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-2.5-flash:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google,google-vertex/global,google-vertex/global,False,degraded,0,97.93613707165109,97.28139430954865,98.24646939384259
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,98.4126984126984,98.96373056994818,99.6910569105691
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.96033320111067
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google,google-vertex/eu,google-vertex/eu,False,degraded,0,98.11320754716981,97.82608695652173,94.85922649291649
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,99.51267056530214,98.44184440836739
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google,google-vertex/us,google-vertex/us,False,idle,0,,,98.24293353705119
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google,google-vertex/global,google-vertex/global,False,degraded,0,97.93613707165109,97.28139430954865,98.24646939384259
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,98.4126984126984,98.96373056994818,99.6910569105691
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.96033320111067
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google,google-vertex/eu,google-vertex/eu,False,degraded,0,98.11320754716981,97.82608695652173,94.85922649291649
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,99.51267056530214,98.44184440836739
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google,google-vertex/us,google-vertex/us,False,idle,0,,,98.24293353705119
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro-preview,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemini-2.5-pro:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,100,99.96565934065934,99.31936361202317
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,99.98079139454475,99.9875466029468
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.97888067581837,99.97165265047718,99.9316145952058
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google,google-vertex/global,google-vertex/global,False,up,0,99.55631887791613,99.42157332056806,99.66815781352932
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,100,100,99.61834917308987
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,100,100,99.93233642330334
+2026-10-06T08:03:51+00:00,google/gemini-3-flash-preview:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3-pro-image,Google AI Studio,google-ai-studio/global,google-ai-studio/global,False,up,0,,100,99.91708126036484
+2026-10-06T08:03:51+00:00,google/gemini-3-pro-image,Google,google-vertex/global,google-vertex/global,False,up,0,100,99.90925589836661,99.91563385091297
+2026-10-06T08:03:51+00:00,google/gemini-3-pro-image-preview,Google AI Studio,google-ai-studio/global/flex,google-ai-studio/global/flex,False,idle,0,,,99.90951863916034
+2026-10-06T08:03:51+00:00,google/gemini-3-pro-image-preview,Google AI Studio,google-ai-studio/global,google-ai-studio/global,False,up,0,100,99.71830985915493,99.86140341871567
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-image,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,,100,99.90626171728533
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-image,Google,google-vertex/global,google-vertex/global,False,up,0,100,99.90806006742262,99.95570581935824
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-image-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,100,99.94067702346965
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,100,99.96827813729222,99.98666512151408
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.98845742612752
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.96727213222059,99.95082471058294,99.89827215044343
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google,google-vertex/global,google-vertex/global,False,up,0,99.917106004841,99.90791204660778,99.64905296558699
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google,google-vertex/eu,google-vertex/eu,False,up,0,100,100,99.99215781952529
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google,google-vertex/us,google-vertex/us,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,100,100,99.99526597339478
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,100,100,99.9642868738028
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite-image,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.86847748391709
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite-image,Google AI Studio,google-ai-studio,google-ai-studio,False,idle,0,,,99.97502497502498
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite-preview,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.99424865921867
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.82509838216004,99.78048129987896,99.64518314652773
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite-preview,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,,100,99.91441397797371
+2026-10-06T08:03:51+00:00,google/gemini-3.1-flash-lite:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google,google-vertex/global/flex,google-vertex/global/flex,False,degraded,0,,97.54098360655738,92.56947459834997
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,,100,99.96693205809784
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google,google-vertex/global,google-vertex/global,False,up,0,98.69025735294117,99.03141361256544,98.0464216195099
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,99.19828968466061,99.79750606930038
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google,google-vertex/global/priority,google-vertex/global/priority,False,idle,0,,,99.8678996036988
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,idle,0,,,98.75862068965517
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview-customtools,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,100,99.9425727411945
+2026-10-06T08:03:51+00:00,google/gemini-3.1-pro-preview:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google,google-vertex/global/flex,google-vertex/global/flex,False,idle,0,,,98.81021474172954
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,idle,0,,,99.95365413197386
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google,google-vertex/global,google-vertex/global,False,up,0,99.60822722820764,99.41747572815534,98.8346787203415
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,100,99.89718257915266
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google,google-vertex/us,google-vertex/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google,google-vertex/global/priority,google-vertex/global/priority,False,idle,0,,,99.89528795811519
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,,100,99.93020937188435
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,100,100,99.99390968056274
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.9764456113463
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,100,99.9503220037394
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google,google-vertex/global,google-vertex/global,False,up,0,99.98766193707588,99.97830168209134,99.9479517862052
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google,google-vertex/eu,google-vertex/eu,False,up,0,100,100,99.99461293971879
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google,google-vertex/us,google-vertex/us,False,up,0,,100,99.98722942340846
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,,100,99.98125234345707
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,100,100,99.97246190563614
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash-lite:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.5-flash:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,,100,99.51144253021343
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,100,100,99.95588105532516
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google,google-vertex/global,google-vertex/global,False,up,0,99.95635093845482,99.94347443788469,99.90846103093222
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,,100,99.85929481873862
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,,100,99.72208598986431
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash,Google,google-vertex/us,google-vertex/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemini-3.6-flash:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,100,98.07692307692307,99.59934879746909
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,100,100,99.95318467968643
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.79381443298969,99.82532751091703,99.74482257116578
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google,google-vertex/global,google-vertex/global,False,up,0,99.71258014592085,99.62894794964294,98.77304583518423
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,,100,99.48134274600203
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,,100,99.98052201012855
+2026-10-06T08:03:51+00:00,google/gemini-3.7-flash:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google AI Studio,google-ai-studio/flex,google-ai-studio/flex,False,up,0,99.95891536565324,99.96087418254989,99.94402323938417
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google,google-vertex/global/flex,google-vertex/global/flex,False,up,0,,100,99.70918808457125
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,99.86345792797405,99.64546220685247,99.86704019941327
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google,google-vertex/global,google-vertex/global,False,up,0,98.98269055572426,98.57564558844733,97.81951431888545
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google AI Studio,google-ai-studio/priority,google-ai-studio/priority,False,up,0,100,100,99.71195832949985
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash,Google,google-vertex/global/priority,google-vertex/global/priority,False,up,0,100,99.91549295774648,99.73291787224572
+2026-10-06T08:03:51+00:00,google/gemini-3.8-flash:batch,Google,google-vertex/global,google-vertex/global,False,idle,0,,,
+2026-10-06T08:03:51+00:00,google/gemma-2-27b-it,NextBit,nextbit/int4,nextbit/int4,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,google/gemma-3-12b-it,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,99.99545440770933,99.8795088871493
+2026-10-06T08:03:51+00:00,google/gemma-3-27b-it,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,idle,0,51.28205128205128,,99.75019275250578
+2026-10-06T08:03:51+00:00,google/gemma-3-27b-it,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.95637949836423,99.97509001562536,99.91534481824273
+2026-10-06T08:03:51+00:00,google/gemma-3-27b-it,Nebius,nebius/fp8,nebius/fp8,False,up,0,99.79455572675911,99.96056082506753,99.12433012703093
+2026-10-06T08:03:51+00:00,google/gemma-3-27b-it,Novita,novita/bf16,novita/bf16,False,down,-5,65.15151515151516,71.2634186622626,93.89071131260927
+2026-10-06T08:03:51+00:00,google/gemma-3-4b-it,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.99554103916083
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Darkbloom,darkbloom,darkbloom,False,up,0,100,99.97229469212476,99.98799742136246
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Io Net,io-net/bf16,io-net/bf16,False,up,0,99.67293540474243,99.94985234300997,99.70040070762988
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,DekaLLM,dekallm/bf16,dekallm/bf16,False,up,0,99.92716678805536,99.76527982326951,99.80638835853243
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.5575221238938,99.7968855788761,99.66225095784331
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Makora,makora,makora,False,up,0,100,99.9343573585401,96.9784680550653
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,NextBit,nextbit/bf16,nextbit/bf16,False,up,0,99.98725898241739,99.99021664027198,99.93661289416804
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,CoreWeave,coreweave/bf16,coreweave/bf16,False,up,0,99.81185324553151,99.88976667279074,99.96927221234951
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Cloudflare,cloudflare,cloudflare,False,up,0,99.89376770538244,99.90731300398554,99.82075539744298
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Venice,venice/bf16,venice/bf16,False,up,0,98.94419306184012,98.91758450436764,98.95278456825048
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Parasail,parasail/bf16,parasail/bf16,False,up,0,98.9541432019308,99.08331399396612,99.13375832976763
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Novita,novita/bf16,novita/bf16,False,up,0,99.20454545454545,99.68820861678005,99.7573090280136
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,0,95.11201629327903,96.32478632478633,94.72285531953688
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it,Google,google-vertex/global,google-vertex/global,False,up,0,99.2638036809816,99.48632974316487,95.79229551173808
+2026-10-06T08:03:51+00:00,google/gemma-4-26b-a4b-it:free,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,98.57142857142858,99.6779388083736,99.42473633748801
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,up,0,98.12784825717453,98.77264206927083,97.21085366113101
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,99.67602591792657,99.44509391317902,99.27439725704272
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Venice,venice/fp4,venice/fp4,False,up,0,96.98308700289502,98.47018130324767,98.85418152427138
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Chutes,chutes/fp4,chutes/fp4,False,degraded,0,96.61417322834646,97.31295574867646,94.87507605050256
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Crusoe,crusoe/bf16,crusoe/bf16,False,degraded,0,99.61389961389962,97.00249791840133,99.58352890339212
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Friendli,friendli,friendli,False,up,0,99.96413199426112,99.94423532692039,99.56070730561096
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Novita,novita/bf16,novita/bf16,False,down,-5,100,77.3511407902059,84.71427322107023
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.04891304347827,99.5695434337732,99.31492187882459
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,degraded,0,95.97780859916783,96.06036848294787,98.95954799126486
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,Io Net,io-net,io-net,False,up,0,,100,99.37148623324204
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,SambaNova,sambanova,sambanova,False,up,0,100,99.48642699926631,98.50162781271655
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,ModelRun,modelrun/fp4,modelrun/fp4,False,up,0,99.45382323733864,99.49448345035105,99.15466412093743
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,98.3201581027668,81.44969215528769
+2026-10-06T08:03:51+00:00,google/gemma-4-31b-it:free,Google AI Studio,google-ai-studio,google-ai-studio,False,up,0,97.67441860465115,98.70466321243524,99.44888178913737
+2026-10-06T08:03:51+00:00,google/lyria-3-clip-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,idle,0,,,99.93201903467029
+2026-10-06T08:03:51+00:00,google/lyria-3-pro-preview,Google AI Studio,google-ai-studio,google-ai-studio,False,idle,0,,,99.89664082687338
+2026-10-06T08:03:51+00:00,gryphe/mythomax-l2-13b,Parasail,parasail/fp16,parasail/fp16,False,up,0,98.88888888888889,99.84177215189874,99.96081600666128
+2026-10-06T08:03:51+00:00,gryphe/mythomax-l2-13b,Mancer 2,mancer/fp8,mancer/fp8,False,up,0,,100,99.86595174262735
+2026-10-06T08:03:51+00:00,gryphe/mythomax-l2-13b,DeepInfra,deepinfra/fp16,deepinfra/fp16,False,up,0,100,100,99.9489684333309
+2026-10-06T08:03:51+00:00,ibm-granite/granite-4.0-h-micro,Cloudflare,cloudflare,cloudflare,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,ibm-granite/granite-4.2-8b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,,100,99.99870322197468
+2026-10-06T08:03:51+00:00,ibm-granite/granite-4.2-8b,CoreWeave,coreweave/bf16,coreweave/bf16,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,inception/mercury-2,Inception,inception,inception,False,up,0,100,99.84366857738407,99.97514654965548
+2026-10-06T08:03:51+00:00,inception/mercury-2.5,Inception,inception,inception,False,degraded,0,97.26348709929633,97.47563805104409,99.61806216988484
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash,Novita,novita,novita,False,up,0,100,100,99.99872085746135
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.55624174319958
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash-fin,Novita,novita,novita,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash-fin,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,,100,99.96141230947327
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash-sante:free,Novita,novita,novita,False,up,0,99.9348109517601,99.97782868967556,99.99374202313804
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash-vl,Novita,novita/bf16,novita/bf16,False,up,0,99.81356327196458,99.47064192272589,99.88370244750885
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.0-flash-vl,DeepInfra,deepinfra/fp16,deepinfra/fp16,False,up,0,100,100,99.90704294260236
+2026-10-06T08:03:51+00:00,inclusionai/ling-3.1-flash,Novita,novita,novita,False,up,0,100,100,99.99904653118512
+2026-10-06T08:03:51+00:00,inference-net/schematron-v2-small,InferenceNet,inference-net,inference-net,False,idle,0,,,99.94199535962876
+2026-10-06T08:03:51+00:00,inference-net/schematron-v2-turbo,InferenceNet,inference-net,inference-net,False,idle,0,,,99.81158451346259
+2026-10-06T08:03:51+00:00,kwaipilot/kat-coder-pro-v2.5,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,idle,0,,,
+2026-10-06T08:03:51+00:00,liquid/lfm-2.5-2.6b:free,Liquid,liquid/fp8,liquid/fp8,False,up,0,100,100,99.9822569930142
+2026-10-06T08:03:51+00:00,mancer/weaver,Mancer 2,mancer/fp8,mancer/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,meituan/longcat-2.0,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,100,100,99.99699275253361
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-70b-instruct,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,up,0,100,100,99.70297386169983
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-70b-instruct,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.96340570870944
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-8b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.94419642857143,99.95858641634456,99.92672943950846
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-8b-instruct,Novita,novita/fp8,novita/fp8,False,up,0,99.75093399750934,99.91174199242452,98.85621345414319
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-8b-instruct,Groq,groq,groq,False,up,0,99.55377063810799,99.79545620571261,99.74280864167446
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-8b-instruct,Cloudflare,cloudflare/fp8,cloudflare/fp8,False,up,0,100,99.88623435722411,99.12912479105186
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.1-8b-instruct,CoreWeave,coreweave/bf16,coreweave/bf16,False,up,0,100,100,99.99167200179052
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.2-1b-instruct,Cloudflare,cloudflare,cloudflare,False,up,0,100,100,99.99800421111455
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.2-3b-instruct,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.95176120813561
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.2-3b-instruct,Cloudflare,cloudflare,cloudflare,False,idle,0,,,88.80318854485736
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,up,0,99.32584269662922,98.64715626725567,98.01190869996692
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Novita,novita/bf16,novita/bf16,False,up,0,99.03474903474904,99.3892010750061,97.63866100576803
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,AkashML,akashml/fp8,akashml/fp8,False,up,0,100,99.95869816619857,99.64641782448402
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.45652173913044,99.51273532668881,99.62058597331588
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Cloudflare,cloudflare/fp8,cloudflare/fp8,False,up,0,99.68553459119497,99.7934595524957,98.79102393308308
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,SambaNova,sambanova-turbo,sambanova-turbo,False,up,0,100,99.81785063752277,98.5418830678
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Groq,groq,groq,False,up,0,99.81981981981983,99.78103031001498,99.84982629429017
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,CoreWeave,coreweave/fp16,coreweave/fp16,False,up,0,100,100,97.5095218228066
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Google,google-vertex/us-central1,google-vertex/us-central1,False,idle,0,,,
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Google,google-vertex,google-vertex,False,idle,0,,,
+2026-10-06T08:03:51+00:00,meta-llama/llama-3.3-70b-instruct,Together,together,together,False,up,0,,100,93.09263837791158
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-maverick,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.97748508386806,99.8801165635874
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-maverick,Novita,novita/fp8,novita/fp8,False,degraded,0,96,96.61590524534687,98.0645641883427
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-maverick,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.87895598656165
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-maverick,Google,google-vertex/us-east5,google-vertex/us-east5,False,idle,0,,,
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-scout,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.93671887359595,99.90523844869877
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-scout,Novita,novita/bf16,novita/bf16,False,up,0,99.70674486803519,99.81146304675717,99.9420023768351
+2026-10-06T08:03:51+00:00,meta-llama/llama-4-scout,Google,google-vertex/us-east5,google-vertex/us-east5,False,idle,0,,,
+2026-10-06T08:03:51+00:00,meta-llama/llama-guard-4-12b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,meta/muse-glimmer-30b,Phala,phala,phala,False,up,0,100,99.62429555416405,99.91495119358268
+2026-10-06T08:03:51+00:00,meta/muse-glimmer-30b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,95.17682838317714
+2026-10-06T08:03:51+00:00,meta/muse-glimmer-30b,Together,together,together,False,up,0,94.88636363636364,98.42420422313268,98.1664586945239
+2026-10-06T08:03:51+00:00,meta/muse-spark-1.1,Meta,meta,meta,False,idle,0,,,99.98947700726086
+2026-10-06T08:03:51+00:00,meta/muse-spark-1.2,Meta,meta,meta,False,up,0,100,100,99.99800482831547
+2026-10-06T08:03:51+00:00,meta/muse-spark-1.2-contributor,Meta,meta,meta,False,up,0,100,100,99.99516113423013
+2026-10-06T08:03:51+00:00,meta/muse-spark-1.3,Meta,meta,meta,False,up,0,100,99.77553310886644,99.5456825666863
+2026-10-06T08:03:51+00:00,meta/muse-spark-1.3-contributor,Meta,meta,meta,False,up,0,99.97882701672665,99.8378585536983,99.76168596387744
+2026-10-06T08:03:51+00:00,microsoft/phi-4,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.9997731888849
+2026-10-06T08:03:51+00:00,microsoft/wizardlm-2-8x22b,Novita,novita/bf16,novita/bf16,False,up,0,100,100,99.98883097542814
+2026-10-06T08:03:51+00:00,minimax/minimax-01,Minimax,minimax,minimax,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m1,Minimax,minimax,minimax,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m1,Novita,novita/bf16,novita/bf16,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m2,Minimax,minimax/fp8,minimax/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m2,Google,google-vertex,google-vertex,False,idle,0,,,93.58898430559668
+2026-10-06T08:03:51+00:00,minimax/minimax-m2,Novita,novita/fp8,novita/fp8,False,idle,0,,,99.87871437234688
+2026-10-06T08:03:51+00:00,minimax/minimax-m2-her,Minimax,minimax,minimax,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.1,Novita,novita/fp8,novita/fp8,False,up,0,97.95918367346938,99.49748743718592,99.41944847605225
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.1,Minimax,minimax/fp8,minimax/fp8,False,idle,0,,,99.48796722990272
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.1,Minimax,minimax/highspeed,minimax/highspeed,False,idle,0,,,98.9795918367347
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,Venice,venice,venice,False,up,0,100,100,95.18253443194804
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,StreamLake,streamlake,streamlake,False,up,0,,100,99.86921999065858
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,100,99.45652173913044,99.84058664116053
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,GMICloud,gmicloud/fp8,gmicloud/fp8,False,idle,0,,,98.42490842490842
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,DigitalOcean,digitalocean,digitalocean,False,up,0,,100,99.91752955191056
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,Friendli,friendli,friendli,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,Novita,novita/fp8,novita/fp8,False,idle,0,,,99.74447617616113
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,Minimax,minimax/fp8,minimax/fp8,False,idle,0,,,99.95811342883472
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.5,Minimax,minimax/highspeed,minimax/highspeed,False,idle,0,79.06976744186046,,96.2934362934363
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,100,100,99.84905864531487
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,Novita,novita/fp8,novita/fp8,False,up,0,98.40425531914893,99.5987963891675,99.28937881308929
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,99.36708860759494,99.74587039390089,99.03787312164275
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,Minimax,minimax/fp8,minimax/fp8,False,up,0,99.3975903614458,99.94249568717653,99.573781709761
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,Groq,groq,groq,False,up,0,100,99.61685823754789,99.76417794262427
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,SambaNova,sambanova,sambanova,False,idle,0,,,0
+2026-10-06T08:03:51+00:00,minimax/minimax-m2.7,Minimax,minimax/highspeed,minimax/highspeed,False,idle,0,,,98.79623550010943
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,99.90215264187867,99.8760671991187,98.07683111847224
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,99.69072164948454,99.93676222596964,99.48057954515134
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.90262901655306,99.86111581585989
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,100,99.42084942084942,98.85722551714163
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Venice,venice/fp8,venice/fp8,False,up,0,100,99.87893462469734,96.46719839645884
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Together,together,together,False,up,0,100,99.64311206281228,99.35707692797352
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.85561119474056
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,100,99.8995983935743,99.59307428389053
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Novita,novita/fp8,novita/fp8,False,up,0,99.3103448275862,99.60732984293193,99.55910211061006
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Minimax,minimax/fp8,minimax/fp8,False,up,0,99.02120717781403,99.55323901712583,99.6991057474693
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,Mara,mara,mara,False,degraded,-2,100,94.23631123919309,94.92671125658175
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,SambaNova,sambanova,sambanova,False,idle,0,,,94.7699342669334
+2026-10-06T08:03:51+00:00,minimax/minimax-m3,ModelRun,modelrun/fp4,modelrun/fp4,False,up,0,100,100,97.81724719963172
+2026-10-06T08:03:51+00:00,mistralai/codestral-2508,Mistral,mistral,mistral,False,up,0,100,99.06542056074767,99.42695035460993
+2026-10-06T08:03:51+00:00,mistralai/codestral-2508,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/codestral-2508:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/devstral-2512,Mistral,mistral/eu,mistral/eu,False,idle,0,,,99.89653621232569
+2026-10-06T08:03:51+00:00,mistralai/ministral-14b-2512,Mistral,mistral/zdr,mistral/zdr,False,up,0,100,99.42196531791907,99.34091817661232
+2026-10-06T08:03:51+00:00,mistralai/ministral-14b-2512,Mistral,mistral,mistral,False,up,0,100,99.00826446280992,99.31161589111875
+2026-10-06T08:03:51+00:00,mistralai/ministral-14b-2512,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/ministral-3b-2512,Mistral,mistral/zdr,mistral/zdr,False,up,0,99.22779922779922,99.79703673635072,99.88698421935973
+2026-10-06T08:03:51+00:00,mistralai/ministral-3b-2512,Mistral,mistral,mistral,False,up,0,99.71387696709584,99.80678995307755,99.9003279419811
+2026-10-06T08:03:51+00:00,mistralai/ministral-3b-2512,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/ministral-8b-2512,Mistral,mistral/zdr,mistral/zdr,False,up,0,97.79179810725552,98.83009837809094,98.99923152158726
+2026-10-06T08:03:51+00:00,mistralai/ministral-8b-2512,Mistral,mistral,mistral,False,degraded,0,96.06299212598425,96.96356275303644,98.71593331015615
+2026-10-06T08:03:51+00:00,mistralai/ministral-8b-2512,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/ministral-8b-2512:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-large,Mistral,mistral,mistral,False,up,0,100,100,99.96071498723236
+2026-10-06T08:03:51+00:00,mistralai/mistral-large,Mistral,mistral/eu,mistral/eu,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2407,Mistral,mistral/zdr,mistral/zdr,False,idle,0,,,99.63262307127113
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2407,Mistral,mistral,mistral,False,idle,0,,,99.67728055077453
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2407,Mistral,mistral/eu,mistral/eu,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2512,Mistral,mistral/zdr,mistral/zdr,False,up,0,100,100,99.86492679514701
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2512,Mistral,mistral/eu,mistral/eu,False,idle,0,,,99.60088691796008
+2026-10-06T08:03:51+00:00,mistralai/mistral-large-2512:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3,Mistral,mistral/zdr,mistral/zdr,False,idle,0,,,99.3960310612597
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3,Mistral,mistral,mistral,False,idle,0,,,99.84375
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3,Mistral,mistral/eu,mistral/eu,False,up,0,,100,99.96018315747561
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3-5,Mistral,mistral/zdr,mistral/zdr,False,up,0,100,99.97776295307983,99.88586421777632
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3-5,Mistral,mistral,mistral,False,up,0,100,100,99.92507118237674
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3-5,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3-5:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3.1,Mistral,mistral/zdr,mistral/zdr,False,up,0,97.5,99.21259842519686,99.78570228023979
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3.1,Mistral,mistral,mistral,False,up,0,100,99.67897271268058,99.73204931904263
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3.1,Mistral,mistral/eu,mistral/eu,False,up,0,,99.24242424242425,99.9602827865597
+2026-10-06T08:03:51+00:00,mistralai/mistral-medium-3.1:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,DekaLLM,dekallm/fp8,dekallm/fp8,False,up,0,100,99.80127418317845,99.76588433987537
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.98367648979236,99.94184550587222
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,Io Net,io-net/fp16,io-net/fp16,False,up,0,99.94959677419355,99.9568345323741,99.82596474055303
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,99.96343692870201,99.91343734272773
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,Novita,novita/fp8,novita/fp8,False,degraded,-2,100,92.97124600638978,76.25083672450248
+2026-10-06T08:03:51+00:00,mistralai/mistral-nemo,Mistral,mistral/eu,mistral/eu,False,idle,0,,,98.34183673469387
+2026-10-06T08:03:51+00:00,mistralai/mistral-saba,Mistral,mistral/zdr,mistral/zdr,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mistral-saba,Mistral,mistral,mistral,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mistral-saba,Mistral,mistral/eu,mistral/eu,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-24b-instruct-2501,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.99253017474932
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-2603,Mistral,mistral/zdr,mistral/zdr,False,up,0,100,100,99.99035488930966
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-2603,Mistral,mistral,mistral,False,up,0,100,100,99.98683970763904
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-2603,Mistral,mistral/eu,mistral/eu,False,up,0,,100,99.99522581877208
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-2603,Mistral,mistral/us,mistral/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-2603:batch,Mistral,mistral,mistral,False,idle,0,,,
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-3.1-24b-instruct,Cloudflare,cloudflare,cloudflare,False,up,0,97.14285714285714,98.57142857142858,98.75824520992566
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-3.2-24b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.91386735572783,99.94661446747931,99.73147697035566
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-3.2-24b-instruct,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.97720511532665
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-3.2-24b-instruct,Venice,venice/fp8,venice/fp8,False,up,0,99.67904630903254,99.88594023268192,99.32223501619067
+2026-10-06T08:03:51+00:00,mistralai/mistral-small-3.2-24b-instruct,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mixtral-8x22b-instruct,Mistral,mistral/zdr,mistral/zdr,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mixtral-8x22b-instruct,Mistral,mistral,mistral,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/mixtral-8x22b-instruct,Mistral,mistral/eu,mistral/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,mistralai/voxtral-small-24b-2507,Mistral,mistral/zdr,mistral/zdr,False,up,0,100,100,99.24361534865933
+2026-10-06T08:03:51+00:00,mistralai/voxtral-small-24b-2507,Mistral,mistral,mistral,False,up,0,100,99.53917050691244,98.99366137358689
+2026-10-06T08:03:51+00:00,mistralai/voxtral-small-24b-2507,Mistral,mistral/eu,mistral/eu,False,idle,0,,,
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2,Novita,novita/fp8,novita/fp8,False,up,0,100,100,99.9953715132066
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2-0905,Novita,novita/fp8,novita/fp8,False,up,0,100,100,99.99944754738662
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2-thinking,Google,google-vertex,google-vertex,False,up,0,,100,99.92747617074181
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2-thinking,Novita,novita/bf16,novita/bf16,False,idle,0,,,99.73327862125564
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.5,SiliconFlow,siliconflow/int4,siliconflow/int4,False,up,0,100,99.97990353697749,99.91824207891527
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.5,AtlasCloud,atlas-cloud/int4,atlas-cloud/int4,False,degraded,0,97.44680851063829,97.52270850536746,95.99067200102694
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.5,Venice,venice,venice,False,up,0,99.38271604938271,99.77349943374858,99.57170073484122
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.5,Novita,novita,novita,False,degraded,0,97.43589743589743,96.7966573816156,98.2223841603808
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.5,Amazon Bedrock,amazon-bedrock/us-east-2,amazon-bedrock/us-east-2,False,up,0,100,99.07749077490774,98.22758531205398
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Inceptron,inceptron/int4,inceptron/int4,False,degraded,-2,100,88.56416772554002,99.40851735015774
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Chutes,chutes/int4,chutes/int4,False,up,0,100,99.67974379503602,99.18986563625187
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,DigitalOcean,digitalocean,digitalocean,False,up,0,100,100,99.54658972431686
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Decart,decart/fp4,decart/fp4,False,up,0,100,100,99.64450950152913
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,100,99.65665236051503,99.27293878144539
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,100,100,99.95666368127583
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Crusoe,crusoe/bf16,crusoe/bf16,False,degraded,0,100,97.0703125,98.92700675725848
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,100,98.52096384289464
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Venice,venice/int4,venice/int4,False,up,0,,100,98.17287996722655
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Parasail,parasail/int4,parasail/int4,False,up,0,100,99.55908289241623,99.73563528459671
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,100,99.89940703091911
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Novita,novita,novita,False,up,0,,98.7878787878788,99.88191363737911
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,GMICloud,gmicloud/fp8,gmicloud/fp8,False,idle,0,,,
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Baidu,baidu/fp4,baidu/fp4,False,up,0,100,100,99.88127040664885
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,AtlasCloud,atlas-cloud/int4,atlas-cloud/int4,False,up,0,,100,99.41583098043034
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Cloudflare,cloudflare,cloudflare,False,idle,0,,,99.33989706869546
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Moonshot AI,moonshotai/int4,moonshotai/int4,False,up,0,100,100,99.9555799430378
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.6,Phala,phala,phala,False,up,0,100,99.61089494163424,99.60348929421095
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Inceptron,inceptron/int4,inceptron/int4,False,up,0,100,100,99.93226435586907
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,CoreWeave,coreweave/int4,coreweave/int4,False,up,0,100,100,99.98976013107033
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,StreamLake,streamlake,streamlake,False,up,0,100,100,99.89060922248402
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Venice,venice/int4,venice/int4,False,up,0,100,100,99.12456684296917
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,99.96580027359782
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Novita,novita/int4,novita/int4,False,up,0,,99.45054945054946,99.80761441879304
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Nebius,nebius/fp4,nebius/fp4,False,idle,0,,,99.52277657266812
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,GMICloud,gmicloud/fp8,gmicloud/fp8,False,idle,0,,,99.37917860553964
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Alibaba,alibaba/fp8,alibaba/fp8,False,idle,0,,,96.63147310206134
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Cloudflare,cloudflare,cloudflare,False,idle,0,,,99.56479690522244
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Moonshot AI,moonshotai/int4,moonshotai/int4,False,up,0,,100,99.99463720705744
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k2.7-code,Moonshot AI,moonshotai/highspeed,moonshotai/highspeed,False,idle,0,,,99.92534527808884
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Relace,relace/fp4,relace/fp4,False,up,0,100,99.46851183313277,99.66872382391509
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,InferenceNet,inference-net/fp4,inference-net/fp4,False,up,0,100,99.9869859448204,99.90014015557028
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Sail Research,sail-research/fp4,sail-research/fp4,False,up,0,100,100,99.8684248162238
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Wafer,wafer,wafer,False,up,0,100,99.82817869415808,99.48288192470615
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,AkashML,akashml/fp4,akashml/fp4,False,idle,0,,,98.70373849333083
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Morph,morph/fp8,morph/fp8,False,up,0,100,99.81606376456162,99.45041387200251
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Makora,makora,makora,False,up,0,,98.31932773109243,96.02849045346062
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Phala,phala,phala,False,up,0,98.07692307692307,98.56902356902357,96.74177083230889
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Decart,decart/mxfp4,decart/mxfp4,False,degraded,-2,100,94.04580152671755,68.83022523613465
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,DigitalOcean,digitalocean,digitalocean,False,idle,0,,,99.93542658810235
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Together,together,together,False,up,0,99.09297052154194,99.43812333192864,99.27293188558566
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Wafer,wafer/us,wafer/us,False,up,0,100,100,98.86119709876404
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,DeepInfra,deepinfra/mxfp4,deepinfra/mxfp4,False,up,0,100,100,99.37270452107778
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Amazon Bedrock,amazon-bedrock/us-east-2,amazon-bedrock/us-east-2,False,idle,0,,,94.12539820445988
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Chutes,chutes/mxfp4,chutes/mxfp4,False,idle,0,,,97.55263157894737
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Parasail,parasail/fp4,parasail/fp4,False,up,0,100,98.93069306930693,98.24633457850098
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Modal,modal/mxfp4,modal/mxfp4,False,up,0,100,100,98.61938229876424
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Fireworks,fireworks,fireworks,False,up,0,100,99.37655860349128,99.83768232752348
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,BaseTen,baseten/fp8,baseten/fp8,False,up,0,,98.26086956521739,97.8009728415079
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Moonshot AI,moonshotai/mxfp4,moonshotai/mxfp4,False,up,0,100,100,99.99408619029771
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Alibaba,alibaba,alibaba,False,idle,0,,,99.07209136331193
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,InferenceNet,inference-net/fast,inference-net/fast,False,up,0,100,99.9559277214632,99.76927570093459
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Fireworks,fireworks/us,fireworks/us,False,down,-5,52.38095238095239,75.31847133757962,99.00289926214545
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3,Fireworks,fireworks/fast,fireworks/fast,False,up,0,,98.9247311827957,96.14829774956722
+2026-10-06T08:03:51+00:00,moonshotai/kimi-k3:batch,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,idle,0,,,
+2026-10-06T08:03:51+00:00,morph/morph-v3-fast,Morph,morph,morph,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,morph/morph-v3-large,Morph,morph/fp8,morph/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,nex-agi/nex-n2.5-mini,Nex AGI,nex-agi/bf16,nex-agi/bf16,False,up,0,100,100,99.97948802100427
+2026-10-06T08:03:51+00:00,nex-agi/nex-n2.5-pro,Nex AGI,nex-agi/fp8,nex-agi/fp8,False,up,0,,100,99.68517708788806
+2026-10-06T08:03:51+00:00,nousresearch/hermes-3-llama-3.1-405b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,nousresearch/hermes-3-llama-3.1-70b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.99143053016454
+2026-10-06T08:03:51+00:00,nousresearch/hermes-4-405b,Nebius,nebius/fp8,nebius/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-nano-30b-a3b,Crusoe,crusoe/fp8,crusoe/fp8,False,up,0,100,100,99.9993079345306
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-nano-30b-a3b,Novita,novita/fp4,novita/fp4,False,up,0,100,100,99.95683297960358
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-nano-30b-a3b,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,degraded,-2,,87.05357142857143,86.93472276838379
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-nano-30b-a3b,Nebius,nebius/fp8,nebius/fp8,False,up,0,100,100,99.96070324112833
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,Nvidia,nvidia,nvidia,False,down,-5,78.02944507361268,74.63440111420613,75.51041722939513
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-super-120b-a12b,DekaLLM,dekallm/fp8,dekallm/fp8,False,up,0,100,99.39516129032258,99.33126475441547
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-super-120b-a12b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.98112902356176
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-super-120b-a12b:free,Nvidia,nvidia,nvidia,False,up,0,99.97077305275464,99.9438832772166,99.94038924094598
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-ultra-550b-a55b,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,99.92429977289932,99.95846313603323
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-ultra-550b-a55b,BaseTen,baseten/fp4,baseten/fp4#6a852924a5#1,True,up,0,100,99.8069498069498,99.96991195287262
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-ultra-550b-a55b,BaseTen,baseten/fp4,baseten/fp4#6a852924a5#2,True,up,0,100,100,99.9603297042359
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-ultra-550b-a55b,Venice,venice/fp8,venice/fp8,False,up,0,100,98.5781990521327,96.98025158934126
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3-ultra-550b-a55b:free,Nvidia,nvidia,nvidia,False,degraded,0,97.32361587457129,96.42396391078883,95.97056847744712
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-content-safety,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-content-safety:free,Nvidia,nvidia,nvidia,False,degraded,0,98.76923076923076,96.48421893727527,97.02395294156744
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning,Darkbloom,darkbloom/int4,darkbloom/int4,False,up,0,100,100,99.48337577032362
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning,Io Net,io-net,io-net,False,up,0,99.69135802469135,99.91279069767441,99.50539741077945
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.98882806390348
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning,Phala,phala,phala,False,up,0,100,100,99.80601615646259
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning,CoreWeave,coreweave/bf16,coreweave/bf16,False,up,0,100,100,99.99881361964646
+2026-10-06T08:03:51+00:00,nvidia/nemotron-3.5-lightning:free,Nvidia,nvidia/nvfp4,nvidia/nvfp4,False,degraded,0,98.68263473053892,97.96180425849832,98.41165876035815
+2026-10-06T08:03:51+00:00,nvidia/switchyard,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo,OpenAI,openai,openai,False,up,0,100,100,99.99713421885971
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo-0613,Azure,azure,azure,False,idle,0,,,99.99471067386015
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo-16k,Azure,azure,azure,False,up,0,100,100,99.82817869415808
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo-16k,OpenAI,openai,openai,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo-instruct,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-3.5-turbo:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4,Azure,azure,azure,False,idle,0,,,99.91778569471089
+2026-10-06T08:03:51+00:00,openai/gpt-4,OpenAI,openai,openai,False,idle,0,,,99.8546511627907
+2026-10-06T08:03:51+00:00,openai/gpt-4-turbo,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-4-turbo:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4.1,Azure,azure,azure,False,up,0,100,99.75698663426489,99.89230039063926
+2026-10-06T08:03:51+00:00,openai/gpt-4.1,OpenAI,openai,openai,False,up,0,99.92286926340147,99.96882793017457,99.98329004279796
+2026-10-06T08:03:51+00:00,openai/gpt-4.1,Azure,azure/swedencentral,azure/swedencentral,False,idle,0,100,,100
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-mini,Azure,azure,azure,False,up,0,100,99.97960432388334,99.83944921637051
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-mini,OpenAI,openai,openai,False,up,0,99.92064191870206,99.93701696605477,99.93562886020149
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-mini,Azure,azure/swedencentral,azure/swedencentral,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-nano,Azure,azure,azure,False,up,0,100,98.83720930232558,99.18492577556017
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-nano,OpenAI,openai,openai,False,up,0,99.98682997497696,99.97326417667031,99.96687114387942
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-nano,Azure,azure/swedencentral,azure/swedencentral,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-4.1-nano:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4.1:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4o,Azure,azure,azure,False,up,0,99.87699876998771,99.93563612958593,99.8724365052705
+2026-10-06T08:03:51+00:00,openai/gpt-4o,OpenAI,openai,openai,False,up,0,99.77000919963201,99.88227739726028,99.93639989364532
+2026-10-06T08:03:51+00:00,openai/gpt-4o-2024-05-13,Azure,azure,azure,False,idle,0,,,99.8014997794442
+2026-10-06T08:03:51+00:00,openai/gpt-4o-2024-05-13,OpenAI,openai,openai,False,idle,0,,,99.91011235955057
+2026-10-06T08:03:51+00:00,openai/gpt-4o-2024-08-06,Azure,azure,azure,False,up,0,100,100,99.82559996069858
+2026-10-06T08:03:51+00:00,openai/gpt-4o-2024-08-06,OpenAI,openai,openai,False,up,0,100,99.92307692307692,99.8432189190483
+2026-10-06T08:03:51+00:00,openai/gpt-4o-2024-11-20,OpenAI,openai,openai,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-4o-mini,Azure,azure,azure,False,up,0,99.97543902738548,99.98192564209157,99.94548170496913
+2026-10-06T08:03:51+00:00,openai/gpt-4o-mini,OpenAI,openai,openai,False,up,0,99.90358864488485,99.89864387070415,99.95113367886637
+2026-10-06T08:03:51+00:00,openai/gpt-4o-mini,Azure,azure/swedencentral,azure/swedencentral,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-4o-mini-2024-07-18,OpenAI,openai,openai,False,up,0,100,100,99.99948455866624
+2026-10-06T08:03:51+00:00,openai/gpt-4o-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-4o:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5,Azure,azure,azure,False,idle,0,,,99.94469026548673
+2026-10-06T08:03:51+00:00,openai/gpt-5,OpenAI,openai/default,openai/default,False,up,0,100,100,99.99098868234823
+2026-10-06T08:03:51+00:00,openai/gpt-5,Azure,azure/swedencentral,azure/swedencentral,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5-image,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5-image-mini,OpenAI,openai,openai,False,idle,0,,,99.8933219543418
+2026-10-06T08:03:51+00:00,openai/gpt-5-mini,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.99798794780736
+2026-10-06T08:03:51+00:00,openai/gpt-5-mini,Azure,azure,azure,False,up,0,100,100,99.85068376916041
+2026-10-06T08:03:51+00:00,openai/gpt-5-mini,OpenAI,openai,openai,False,up,0,100,99.99773975544154,99.9859840999954
+2026-10-06T08:03:51+00:00,openai/gpt-5-mini,Azure,azure/swedencentral,azure/swedencentral,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5-nano,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.9996176871517
+2026-10-06T08:03:51+00:00,openai/gpt-5-nano,Azure,azure,azure,False,up,0,100,99.89754098360656,99.69539560376602
+2026-10-06T08:03:51+00:00,openai/gpt-5-nano,OpenAI,openai,openai,False,up,0,100,99.98074542703893,99.9670828087314
+2026-10-06T08:03:51+00:00,openai/gpt-5-nano,Azure,azure/swedencentral,azure/swedencentral,False,up,0,100,100,99.99579230833965
+2026-10-06T08:03:51+00:00,openai/gpt-5-nano:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5-pro,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.1,OpenAI,openai/flex,openai/flex,False,idle,0,,,99.98389304985102
+2026-10-06T08:03:51+00:00,openai/gpt-5.1,Azure,azure,azure,False,up,0,,100,99.5183725708127
+2026-10-06T08:03:51+00:00,openai/gpt-5.1,OpenAI,openai,openai,False,up,0,100,99.96785599485696,99.98528352058784
+2026-10-06T08:03:51+00:00,openai/gpt-5.1,Azure,azure/swedencentral,azure/swedencentral,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.1,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.1-codex,Azure,azure,azure,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.1-codex-max,Azure,azure,azure,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.1-codex-mini,Azure,azure,azure,False,up,0,,100,99.98688180506362
+2026-10-06T08:03:51+00:00,openai/gpt-5.1:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.2,OpenAI,openai/flex,openai/flex,False,idle,0,,,99.89795918367346
+2026-10-06T08:03:51+00:00,openai/gpt-5.2,Azure,azure,azure,False,up,0,100,100,99.94180407371483
+2026-10-06T08:03:51+00:00,openai/gpt-5.2,OpenAI,openai,openai,False,up,0,100,100,99.98937993360276
+2026-10-06T08:03:51+00:00,openai/gpt-5.2,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.2-chat,Azure,azure,azure,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.2-codex,Azure,azure,azure,False,up,0,,100,99.9748838377496
+2026-10-06T08:03:51+00:00,openai/gpt-5.2-pro,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.2-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.2:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.3-codex,Azure,azure,azure,False,idle,0,,,99.86573576799141
+2026-10-06T08:03:51+00:00,openai/gpt-5.3-codex,OpenAI,openai,openai,False,up,0,100,100,99.9959855479727
+2026-10-06T08:03:51+00:00,openai/gpt-5.3-codex,OpenAI,openai/fast,openai/fast,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,OpenAI,openai/flex,openai/flex,False,idle,0,,,92.47152055473006
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,Azure,azure,azure,False,up,0,100,100,99.96293747021761
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,OpenAI,openai,openai,False,up,0,100,99.99678353168221,99.99329586116544
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,Azure,azure/eu,azure/eu,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-image-2,OpenAI,openai,openai,False,up,0,100,100,99.98617129160137
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini,OpenAI,openai/flex,openai/flex,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini,Azure,azure,azure,False,up,0,100,100,99.66880043547263
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini,OpenAI,openai,openai,False,up,0,100,100,99.98788169149041
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini,OpenAI,openai/fast,openai/fast,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-nano,OpenAI,openai/flex,openai/flex,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-nano,Azure,azure,azure,False,up,0,100,99.94696835778682,99.9318936054287
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-nano,OpenAI,openai,openai,False,up,0,100,100,99.9950092640536
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-nano,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-nano:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-pro,Azure,azure,azure,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-pro,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.4-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.4:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,OpenAI,openai/flex,openai/flex,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,Azure,azure,azure,False,up,0,100,100,99.96838444514701
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,OpenAI,openai,openai,False,up,0,100,99.98369210697979,99.99082840869833
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,Azure,azure/us,azure/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,Azure,azure/eu,azure/eu,False,idle,0,,,99.93587688361654
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.5,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.5-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.5-pro,OpenAI,openai,openai,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.5-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.5:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.97125821177832
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,Azure,azure,azure,False,up,0,99.76937269372694,99.63536108146567,99.8049333076066
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,OpenAI,openai,openai,False,up,0,99.99733027204528,99.99112540666201,99.98530471941478
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,Azure,azure/us,azure/us,False,up,0,,100,99.94145199063233
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,up,0,100,100,99.93622943905524
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,Azure,azure/eu,azure/eu,False,up,0,100,100,99.99606466541785
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna,OpenAI,openai/fast,openai/fast,False,up,0,100,100,99.99850545881169
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro,Azure,azure,azure,False,up,0,,100,99.86569758255649
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro,OpenAI,openai,openai,False,up,0,100,100,99.96800626504184
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro,Azure,azure/eu,azure/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-luna:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.9634197921787
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,OpenAI,openai,openai,False,up,0,100,99.99729760770722,99.90530681883696
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,Azure,azure,azure,False,up,0,99.99392097264437,99.99491727871103,99.95839854746217
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,Azure,azure/us,azure/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,86.62131519274377
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol,Azure,azure/eu,azure/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro,OpenAI,openai,openai,False,up,0,100,100,99.7741887978008
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro,Azure,azure,azure,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro,Azure,azure/eu,azure/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-sol:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.56657837707681
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,Azure,azure,azure,False,up,0,100,100,99.86925569132849
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,OpenAI,openai,openai,False,up,0,100,99.99447757897062,99.99072075491256
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,Azure,azure/us,azure/us,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,Azure,azure/eu,azure/eu,False,idle,0,,,99.97270742358079
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra,OpenAI,openai/fast,openai/fast,False,idle,0,,,99.95815899581591
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro,Azure,azure,azure,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro,OpenAI,openai,openai,False,up,0,100,100,99.9888230691852
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro,Azure,azure/eu,azure/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5.6-terra:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-5:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.99787057345458
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,Azure,azure,azure,False,up,0,99.98160412067698,99.99547869334238,99.97319000625566
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,OpenAI,openai,openai,False,up,0,100,100,99.978586506895
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,Amazon Bedrock,amazon-bedrock/us-west-2,amazon-bedrock/us-west-2,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,Azure,azure/us,azure/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,OpenAI,openai/fast,openai/fast,False,up,0,,100,99.97605077236258
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra,OpenAI,openai/ultrafast,openai/ultrafast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,Azure,azure,azure,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,OpenAI,openai,openai,False,up,0,,100,99.93733288770053
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro,OpenAI,openai/ultrafast,openai/ultrafast,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-astra:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,OpenAI,openai/flex,openai/flex,False,degraded,0,100,96.95630190681678,97.43772485307505
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,OpenAI,openai,openai,False,up,0,99.99899915929382,99.99618957999232,99.9897756272033
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,Azure,azure,azure,False,up,0,99.96560973932182,99.9902890622471,99.9116550792452
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,Azure,azure/us,azure/us,False,up,0,100,100,99.99060642252311
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,Azure,azure/eu,azure/eu,False,up,0,99.92750996737948,99.95143745143746,99.98374926194565
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,98.83360401594567
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna,OpenAI,openai/fast,openai/fast,False,up,0,100,100,99.99210838496826
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,OpenAI,openai/flex,openai/flex,False,degraded,0,100,96.68989547038328,99.131203828946
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,OpenAI,openai,openai,False,up,0,100,100,99.97157616909924
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,Azure,azure,azure,False,up,0,100,100,99.9891215007494
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,Azure,azure/us,azure/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,Azure,azure/eu,azure/eu,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro,OpenAI,openai/fast,openai/fast,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-luna:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,OpenAI,openai/flex,openai/flex,False,up,0,100,100,99.99485353150668
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,OpenAI,openai,openai,False,up,0,100,100,99.99648721222711
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,Azure,azure,azure,False,up,0,100,100,99.99542158233385
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,Azure,azure/us,azure/us,False,idle,0,,,99.98759920634922
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,Azure,azure/eu,azure/eu,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol,OpenAI,openai/fast,openai/fast,False,up,0,,100,99.99567474048443
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,OpenAI,openai,openai,False,up,0,,100,99.91416309012877
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,Azure,azure,azure,False,idle,0,100,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,Azure,azure/eu,azure/eu,False,idle,0,100,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol-pro:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6-sol:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,OpenAI,openai/flex,openai/flex,False,up,0,100,99.97509960159363,96.60312881118794
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,Azure,azure,azure,False,up,0,100,100,99.98241254496148
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,OpenAI,openai,openai,False,up,0,100,99.9916846063585,99.92420465073417
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,Amazon Bedrock,amazon-bedrock/us-east-1,amazon-bedrock/us-east-1,False,idle,0,,,85.50170068027211
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,Azure,azure/eu,azure/eu,False,up,0,100,99.89429175475686,99.9583541562552
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,Azure,azure/us,azure/us,False,up,0,100,100,99.98168288494563
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol,OpenAI,openai/fast,openai/fast,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,OpenAI,openai/flex,openai/flex,False,idle,0,,,95.2247191011236
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,Azure,azure,azure,False,idle,0,,,99.94884910485933
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,OpenAI,openai,openai,False,up,0,100,100,99.92426537412905
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,Azure,azure/eu,azure/eu,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,Azure,azure/us,azure/us,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-6.1-sol-pro,OpenAI,openai/fast,openai/fast,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-audio,OpenAI,openai,openai,False,up,0,100,100,99.99460188933872
+2026-10-06T08:03:51+00:00,openai/gpt-audio-mini,OpenAI,openai,openai,False,up,0,100,100,99.99427090047122
+2026-10-06T08:03:51+00:00,openai/gpt-chat-latest,OpenAI,openai,openai,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,99.27272727272727,98.34365741987611,98.75372151843415
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,DekaLLM,dekallm/bf16,dekallm/bf16,False,up,0,99.94249568717653,99.67356628830032,99.61616227388208
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,99.99644261041249,99.0118596704985
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,AkashML,akashml/bf16,akashml/bf16,False,up,0,99.93872549019608,99.93500162495937,99.97999159647051
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Mancer 2,mancer/fp8,mancer/fp8,False,degraded,0,98.6648865153538,95.9455460195324,98.98669649075944
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Crusoe,crusoe/bf16,crusoe/bf16,False,up,0,100,99.95908904950225,99.97839415201715
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Novita,novita/fp4,novita/fp4,False,up,0,100,100,98.32290036515388
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,DigitalOcean,digitalocean,digitalocean,False,up,0,100,100,99.97620189447343
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Google,google-vertex/global,google-vertex/global,False,down,-5,87.98751950078002,76.14132592298532,68.4478755514279
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,BaseTen,baseten/fp4,baseten/fp4#4aa07364d2#1,True,up,0,100,100,99.95267037678323
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,BaseTen,baseten/fp4,baseten/fp4#4aa07364d2#2,True,up,0,100,100,99.96885941926614
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Parasail,parasail/fp4,parasail/fp4,False,up,0,100,99.55959653359852,99.83277648125451
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,SambaNova,sambanova,sambanova,False,up,0,100,99.70149253731343,99.59978998880601
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,up,0,100,100,99.94807892004154
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Nebius,nebius/fp4,nebius/fp4,False,up,0,100,99.77168949771689,97.60956175298804
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.5008465432088
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,up,0,100,100,99.97816848110845
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,77.81433607520563
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Phala,phala,phala,False,up,0,100,99.84301412872841,99.1824737059661
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Together,together,together,False,degraded,0,97.58064516129032,97.78420038535646,88.35002154018878
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Groq,groq,groq,False,degraded,0,98.731146756045,97.8034154608265,99.41917844676439
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Mara,mara,mara,False,up,0,100,100,95.78748902319334
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b,Cerebras,cerebras/fp16,cerebras/fp16,False,up,0,100,99.99140080832402,99.98087882513128
+2026-10-06T08:03:51+00:00,openai/gpt-oss-120b:batch,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Darkbloom,darkbloom/fp8,darkbloom/fp8,False,up,0,99.94834710743802,99.82402912621359,99.56720708403314
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,AkashML,akashml/fp4,akashml/fp4,False,up,0,100,99.55780164245104,99.10401747005363
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,DekaLLM,dekallm/bf16,dekallm/bf16,False,up,0,99.74358974358975,99.58606416005519,99.35514128268261
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,100,99.99774108292485,99.95108723163287
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,100,99.91705448540878
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Parasail,parasail/fp4,parasail/fp4,False,up,0,100,99.8906625847365,99.88543220263362
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Novita,novita/fp4,novita/fp4,False,up,0,100,100,99.91098586722138
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,idle,0,,,84.3553801604182
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Amazon Bedrock,amazon-bedrock/eu-west-1,amazon-bedrock/eu-west-1,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,99.95086799868982,99.97507374018528,99.95777934014616
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Google,google-vertex/us-central1,google-vertex/us-central1,False,up,0,100,100,97.03976374095483
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b,Groq,groq,groq,False,degraded,0,96.99165568730787,97.25740605045536,97.75793620883366
+2026-10-06T08:03:51+00:00,openai/gpt-oss-20b:batch,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/gpt-oss-safeguard-20b,Groq,groq,groq,False,up,0,99.46524064171123,99.03872562482834,98.33009884009569
+2026-10-06T08:03:51+00:00,openai/o1,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/o1-pro,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/o3,OpenAI,openai,openai,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,openai/o3-mini,OpenAI,openai,openai,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,openai/o3-mini-high,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/o3-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/o3-pro,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/o3:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openai/o4-mini,OpenAI,openai,openai,False,up,0,100,100,99.99884571877092
+2026-10-06T08:03:51+00:00,openai/o4-mini-high,OpenAI,openai,openai,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,openai/o4-mini:batch,OpenAI,openai,openai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,openrouter/auto,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openrouter/auto-beta,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openrouter/bodybuilder,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openrouter/free,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openrouter/fusion,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,openrouter/pareto-code,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,perceptron/perceptron-mk1,Perceptron,perceptron,perceptron,False,idle,0,,,99.8130228613285
+2026-10-06T08:03:51+00:00,perceptron/perceptron-mk1.5,Perceptron,perceptron,perceptron,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,perplexity/sonar,Perplexity,perplexity,perplexity,False,up,0,100,100,99.99734922169071
+2026-10-06T08:03:51+00:00,perplexity/sonar-deep-research,Perplexity,perplexity,perplexity,False,idle,0,,,99.55089820359282
+2026-10-06T08:03:51+00:00,perplexity/sonar-pro,Perplexity,perplexity,perplexity,False,up,0,100,100,99.99904717893503
+2026-10-06T08:03:51+00:00,perplexity/sonar-pro-search,Perplexity,perplexity,perplexity,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,perplexity/sonar-reasoning-pro,Perplexity,perplexity,perplexity,False,up,0,,100,99.8391812865497
+2026-10-06T08:03:51+00:00,poolside/laguna-s-2.1,Poolside,poolside/fp4,poolside/fp4,False,up,0,100,100,99.96588084290565
+2026-10-06T08:03:51+00:00,poolside/laguna-s-2.1:free,Poolside,poolside/fp4,poolside/fp4,False,up,0,100,99.95649904297895,99.93544857960491
+2026-10-06T08:03:51+00:00,poolside/laguna-xs-2.1,Poolside,poolside/fp8,poolside/fp8,False,up,0,100,100,99.96940693151522
+2026-10-06T08:03:51+00:00,poolside/laguna-xs-2.1:free,Poolside,poolside/fp8,poolside/fp8,False,up,0,100,99.8593035525853,99.8844736860643
+2026-10-06T08:03:51+00:00,prism-ml/ternary-bonsai-2-27b,Darkbloom,darkbloom/int4,darkbloom/int4,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen-2.5-72b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.74078253179226,98.87140974967062
+2026-10-06T08:03:51+00:00,qwen/qwen-2.5-72b-instruct,Novita,novita/bf16,novita/bf16,False,up,0,99.87484355444305,99.62209825445385,98.64747577028787
+2026-10-06T08:03:51+00:00,qwen/qwen-2.5-7b-instruct,Phala,phala,phala,False,up,0,100,100,99.99803714416021
+2026-10-06T08:03:51+00:00,qwen/qwen-2.5-coder-32b-instruct,Cloudflare,cloudflare,cloudflare,False,up,0,100,100,99.44004439287696
+2026-10-06T08:03:51+00:00,qwen/qwen-plus,Alibaba,alibaba,alibaba,False,degraded,0,90.47619047619048,97.2972972972973,98.89646809155677
+2026-10-06T08:03:51+00:00,qwen/qwen-plus-2025-07-28,Alibaba,alibaba,alibaba,False,idle,0,,,99.86141750098987
+2026-10-06T08:03:51+00:00,qwen/qwen2.5-vl-72b-instruct,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.99609658607417
+2026-10-06T08:03:51+00:00,qwen/qwen3-14b,NextBit,nextbit/int4,nextbit/int4,False,up,0,100,100,99.98137412400176
+2026-10-06T08:03:51+00:00,qwen/qwen3-14b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,98.64864864864865,98.40319361277446,99.3755449556342
+2026-10-06T08:03:51+00:00,qwen/qwen3-14b,Alibaba,alibaba,alibaba,False,up,0,100,100,99.9497708874529
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b,Alibaba,alibaba,alibaba,False,up,0,95.94594594594594,98.51398601398601,98.38756486307652
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,99.87864077669903,99.69616407140144,99.4564908218443
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.44598337950139,99.54672635702295,98.19470382057203
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Novita,novita/fp8,novita/fp8,False,up,0,99.60159362549801,99.58558332286826,97.44493405448742
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.80554205153136,99.90789473684211,99.82111207061062
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Alibaba,alibaba,alibaba,False,up,0,98.5432733504713,99.19512725690667,98.68430688114825
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Venice,venice/fp8,venice/fp8,False,up,0,99.00249376558602,99.36686598663384,97.5204401113914
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Nebius,nebius/fp8,nebius/fp8,False,down,-5,17.94871794871795,19.421487603305785,89.52072097359505
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,StreamLake,streamlake,streamlake,False,up,0,100,99.72533760585947,99.31911402789171
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Google,google-vertex/us-south1,google-vertex/us-south1#f5b417b1e2,True,up,0,100,99.9942525432496,99.88816898018133
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-2507,Google,google-vertex/us-south1,google-vertex/us-south1#313dbfefac,True,up,0,100,100,99.80928984710864
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-thinking-2507,Alibaba,alibaba,alibaba,False,up,0,100,100,99.33784579164214
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-thinking-2507,Novita,novita/fp8,novita/fp8,False,up,0,,100,99.53327311050887
+2026-10-06T08:03:51+00:00,qwen/qwen3-235b-a22b-thinking-2507,Venice,venice/fp8,venice/fp8,False,idle,0,,,99.89775051124744
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.98612762584224
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b,Alibaba,alibaba,alibaba,False,up,0,100,100,99.76363994484933
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-instruct-2507,StreamLake,streamlake,streamlake,False,up,0,99.76782752902156,99.8130229514327,99.45922600740751
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-instruct-2507,DekaLLM,dekallm,dekallm,False,up,0,100,99.08045977011494,99.15074803974034
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-instruct-2507,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,0,93.91955098222638,97.16303114361367,98.5664483487542
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-instruct-2507,Nebius,nebius/fp8,nebius/fp8,False,degraded,0,99.13461538461539,96.8399791503779,89.88615737559861
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-instruct-2507,Alibaba,alibaba,alibaba,False,up,0,99.90215264187867,99.6804295027483,99.71570142715726
+2026-10-06T08:03:51+00:00,qwen/qwen3-30b-a3b-thinking-2507,Alibaba,alibaba,alibaba,False,idle,0,,,99.88045427375971
+2026-10-06T08:03:51+00:00,qwen/qwen3-32b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.69245909705991,99.9412135457405
+2026-10-06T08:03:51+00:00,qwen/qwen3-32b,Tenstorrent,tenstorrent/fp8,tenstorrent/fp8,False,up,0,100,100,91.99991012397275
+2026-10-06T08:03:51+00:00,qwen/qwen3-32b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,-2,99.15611814345992,91.72594533882442,94.66817888053933
+2026-10-06T08:03:51+00:00,qwen/qwen3-8b,Alibaba,alibaba,alibaba,False,up,0,100,99.94515539305301,99.93953008317649
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder,Google,google-vertex/us-south1,google-vertex/us-south1,False,up,0,100,100,99.87671995546012
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,degraded,0,100,95.01385041551247,98.3522815760785
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder,Venice,venice/fp8,venice/fp8,False,degraded,-2,,92.69662921348315,95.63188351689378
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder,Novita,novita/fp8,novita/fp8,False,idle,0,,,77.72600186393291
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder,Alibaba,alibaba/opensource,alibaba/opensource,False,idle,0,100,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-30b-a3b-instruct,Novita,novita/fp8,novita/fp8,False,up,0,99,99.3006993006993,98.41049945315348
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-30b-a3b-instruct,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,98.3739837398374,99.66044142614601,98.8052918461517
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-30b-a3b-instruct,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-30b-a3b-instruct,Alibaba,alibaba,alibaba,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-flash,Alibaba,alibaba,alibaba,False,up,0,100,100,99.9621915171513
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-next,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.9727293890718
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-next,StreamLake,streamlake,streamlake,False,up,0,100,100,99.56348100677998
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-next,Novita,novita/fp8,novita/fp8,False,idle,0,,,99.19042590637099
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-next,Alibaba,alibaba,alibaba,False,idle,0,,,98.19233550253072
+2026-10-06T08:03:51+00:00,qwen/qwen3-coder-plus,Alibaba,alibaba,alibaba,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3-max,Alibaba,alibaba,alibaba,False,up,0,100,100,99.7651203758074
+2026-10-06T08:03:51+00:00,qwen/qwen3-max-thinking,Alibaba,alibaba,alibaba,False,idle,0,,,99.8475867908552
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.84977466199298,98.7757277026577
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-instruct,Alibaba,alibaba,alibaba,False,up,0,100,100,99.79545285498227
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-instruct,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.9718713583455
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-instruct,Google,google-vertex/global,google-vertex/global,False,up,0,100,100,99.85605223247565
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-instruct,Novita,novita/bf16,novita/bf16,False,degraded,0,97.79559118236473,95.22748965956093,87.21411535174272
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-thinking,Google,google-vertex/global,google-vertex/global,False,idle,0,,,98.13725490196077
+2026-10-06T08:03:51+00:00,qwen/qwen3-next-80b-a3b-thinking,Alibaba,alibaba,alibaba,False,idle,0,,,99.89053092501369
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,idle,0,,,97.42664206193093
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-instruct,Venice,venice/fp8,venice/fp8,False,degraded,-2,83.33333333333334,83.7037037037037,95.19827758862407
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-instruct,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.31318681318682,99.1459508921763,99.46991320556883
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-instruct,Alibaba,alibaba,alibaba,False,up,0,99.48567229977957,99.55784061696659,99.45053044945072
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-instruct,Novita,novita/bf16,novita/bf16,False,degraded,-2,97.5,94.04466501240695,94.88734479072446
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-thinking,Alibaba,alibaba,alibaba,False,degraded,-2,,88.83495145631069,89.64154671182614
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-235b-a22b-thinking,Novita,novita/bf16,novita/bf16,False,idle,0,,,98.32429768358797
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-instruct,Alibaba,alibaba,alibaba,False,up,0,99.80544747081711,99.70162613755035,99.38144329896907
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-instruct,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,99.82517482517483,99.89376233115799,99.6652329885787
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-instruct,Novita,novita/bf16,novita/bf16,False,degraded,0,97.96747967479675,97.46272560816112,97.56574051103945
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-instruct,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,down,-5,80.625,79.68217934165722,86.686779856854
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-thinking,Alibaba,alibaba,alibaba,False,up,0,100,100,99.96597482136781
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-30b-a3b-thinking,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-32b-instruct,Alibaba,alibaba,alibaba,False,up,0,98.65671641791045,98.6411773866999,98.99178617267711
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-8b-instruct,Alibaba,alibaba,alibaba,False,up,0,98.95165987186954,99.33525151304693,99.49280610624923
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-8b-instruct,Parasail,parasail/bf16,parasail/bf16,False,degraded,-2,93.15866084425036,91.42104001917086,98.6063423576717
+2026-10-06T08:03:51+00:00,qwen/qwen3-vl-8b-thinking,Alibaba,alibaba,alibaba,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-122b-a10b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,98.48484848484848,99.66777408637874,98.49360208841529
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-122b-a10b,Alibaba,alibaba,alibaba,False,up,0,98.63481228668942,99.27579963789982,98.91113125066639
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-122b-a10b,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,idle,0,,,99.00629347466048
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-122b-a10b,Novita,novita/bf16,novita/bf16,False,degraded,0,,95.47325102880659,99.6776273372018
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,Alibaba,alibaba,alibaba,False,up,0,100,99.77220956719817,99.1540904124556
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,98.9010989010989,98.9406779661017,95.80002763139717
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.91582111987974
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,100,99.24242424242425,98.80909677882201
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,Phala,phala,phala,False,up,0,100,99.30264993026499,97.3371694417238
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-27b,Novita,novita/bf16,novita/bf16,False,up,0,100,100,99.95507849442028
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,Darkbloom,darkbloom/fp4,darkbloom/fp4,False,up,0,99.75961538461539,99.83071342200725,99.84273345804294
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.68157837230356
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,99.89130434782608,99.94899191924615
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,Alibaba,alibaba,alibaba,False,up,0,,100,91.97985880398672
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,,100,98.50710900473933
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,-2,,94.18604651162791,89.91452991452992
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-35b-a3b,Venice,venice,venice,False,up,0,100,100,99.96033025066323
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,Alibaba,alibaba,alibaba,False,up,0,100,100,99.84279475982532
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.72908708193654
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,Parasail,parasail/fp8,parasail/fp8,False,up,0,98.9247311827957,99.8371335504886,99.84580619433736
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,DigitalOcean,digitalocean,digitalocean,False,degraded,-2,,94.66019417475728,94.63390663390663
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,Phala,phala,phala,False,up,0,97.2972972972973,99.44598337950139,99.63045290358433
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,degraded,-2,100,91.42857142857143,95.61158448572891
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,StreamLake,streamlake,streamlake,False,up,0,,100,99.04584312111011
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,GMICloud,gmicloud/fp8,gmicloud/fp8,False,degraded,-2,,83.68794326241135,82.30929059067972
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,Novita,novita,novita,False,up,0,97.5609756097561,98.125,99.35611263736264
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-397b-a17b,Venice,venice,venice,False,idle,0,,,92.4088867692063
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,Darkbloom,darkbloom/fp4,darkbloom/fp4,False,up,0,99.8992950654582,99.83471074380165,99.94894241661925
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,0,73.47670250896059,95.31857899100707,98.98719229089411
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,99.94627988181574,99.96984621570007,99.86336538016184
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,Venice,venice/fp8,venice/fp8,False,up,0,99.96052112120016,99.9555570749718,99.84387197501951
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,99.96492458786392,99.98332110214157
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-9b,Together,together,together,False,up,0,100,100,99.34343575116215
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-flash-02-23,Alibaba,alibaba,alibaba,False,up,0,99.68469799980294,99.71812495173373,99.82542323696437
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-plus-02-15,Alibaba,alibaba,alibaba,False,up,0,100,99.41634241245137,99.78696529231001
+2026-10-06T08:03:51+00:00,qwen/qwen3.5-plus-20260420,Alibaba,alibaba,alibaba,False,up,0,100,100,99.86216730038024
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,Chutes,chutes/fp8,chutes/fp8,False,up,0,97.89473684210527,99.15397631133672,90.9975195127336
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,-2,87.5,94.64566929133859,92.5207756232687
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,idle,0,85.71428571428571,,99.47687800795146
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,Phala,phala,phala,False,up,0,100,100,95.24223602484471
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,Venice,venice/fp8,venice/fp8,False,down,-5,77.96610169491525,76.91428571428571,97.73391124093094
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-27b,Alibaba,alibaba,alibaba,False,up,0,100,100,95.25569296199187
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,Darkbloom,darkbloom/fp4,darkbloom/fp4,False,up,0,99.90314769975787,99.79338842975206,99.88431882260313
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,AkashML,akashml/fp8,akashml/fp8,False,up,0,100,100,99.93563937031662
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.83974985342975
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,DekaLLM,dekallm,dekallm,False,up,0,99.43820224719101,99.78463747307968,99.85552344965548
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,Venice,venice/fp8,venice/fp8,False,up,0,100,100,99.9531151384005
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,99.97334044254865,99.98011567304147
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,96.42857142857143,98.2532751091703,99.02871532259772
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,Phala,phala,phala,False,up,0,100,99.89243456435999,99.41007653061224
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,degraded,0,94.73684210526315,96.51898734177216,98.76153846153845
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-35b-a3b,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,97.2972972972973,99.84662576687117,99.86105482545013
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-flash,Alibaba,alibaba,alibaba,False,up,0,100,99.98538652637731,99.95296313853459
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-max-preview,Alibaba,alibaba,alibaba,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3.6-plus,Alibaba,alibaba,alibaba,False,up,0,99.90723562152134,99.96356570318193,99.96457534215267
+2026-10-06T08:03:51+00:00,qwen/qwen3.7-flash,Alibaba,alibaba,alibaba,False,up,0,99.93712785236141,99.95796857788858,99.92567150235439
+2026-10-06T08:03:51+00:00,qwen/qwen3.7-max,Alibaba,alibaba,alibaba,False,up,0,100,100,99.97378145201597
+2026-10-06T08:03:51+00:00,qwen/qwen3.7-plus,Alibaba,alibaba,alibaba,False,up,0,100,99.99000149977503,99.87944641918311
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,Novita,novita,novita,False,up,0,,98.87640449438202,99.98860165048102
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,Alibaba,alibaba,alibaba,False,up,0,100,99.65065502183405,99.91717283268913
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,99.65635738831615,99.85383818621246
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,Venice,venice,venice,False,idle,0,,,99.70409198512006
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,Modal,modal,modal,False,idle,0,100,,99.00202292650033
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-2.4t-a95b,Together,together,together,False,up,0,100,100,99.94693083318592
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Wafer,wafer,wafer,False,up,0,99.86568166554734,99.96805792163543,99.92146240076323
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,DekaLLM,dekallm,dekallm,False,up,0,99.74554707379136,99.63675989829277,99.84476031815326
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Darkbloom,darkbloom/fp4,darkbloom/fp4,False,up,0,100,99.89247311827957,99.86256748917943
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Reka,reka,reka,False,up,0,100,99.84387197501951,99.91620065380083
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Ionstream,ionstream/fp8,ionstream/fp8,False,up,0,99.609375,99.12767644726408,97.89823171358755
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Phala,phala,phala,False,up,0,100,99.06611878968995,98.45363751648254
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,DeepInfra,deepinfra/bf16,deepinfra/bf16,False,up,0,100,99.74354590528296,99.1447474942388
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Mancer 2,mancer/fp8,mancer/fp8,False,degraded,-2,81.25,82.05128205128204,92.68486615425391
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,AkashML,akashml/fp8,akashml/fp8,False,up,0,100,100,99.72676065801409
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Parasail,parasail/fp8,parasail/fp8,False,up,0,99.87531172069825,99.8370340191485,99.90831708327322
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Chutes,chutes/fp8,chutes/fp8,False,up,0,100,99.81751824817519,99.33714449635276
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,CoreWeave,coreweave/fp8,coreweave/fp8,False,up,0,100,100,99.94849907681855
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Novita,novita,novita,False,up,0,100,99.85315712187959,99.91942978033494
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Alibaba,alibaba,alibaba,False,up,0,97.28260869565217,99.61717254580257,99.60109936252243
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,ModelRun,modelrun/fp4,modelrun/fp4,False,up,0,99.4729907773386,99.89580077107429,99.54584497516957
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Cloudflare,cloudflare,cloudflare,False,idle,0,,,94.74599334744481
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Venice,venice/fp8,venice/fp8,False,up,0,100,99.27536231884058,99.24169789941601
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-27b,Cerebras,cerebras/fp16,cerebras/fp16,False,up,0,100,99.96568291008923,99.99843440550464
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-flash,Alibaba,alibaba,alibaba,False,up,0,98.76133984647592,98.83033000434216,98.6909307593574
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-max-0902,Alibaba,alibaba,alibaba,False,up,0,99.88073941562313,99.84102952308857,99.7718918918919
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-max-prime,Alibaba,alibaba,alibaba,False,up,0,100,99.91708126036484,99.71986296481336
+2026-10-06T08:03:51+00:00,qwen/qwen3.8-omni-flash,Alibaba,alibaba,alibaba,False,up,0,96.11650485436894,98.58757062146893,98.98168099831511
+2026-10-06T08:03:51+00:00,rekaai/reka-edge,Reka,reka,reka,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,rekaai/reka-flash-3,Reka,reka,reka,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,relace/relace-apply-3,Relace,relace/fp8,relace/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,relace/relace-search,Relace,relace/bf16,relace/bf16,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,sakana/fugu-max,Sakana AI,sakana,sakana,False,idle,0,,,99.79281767955801
+2026-10-06T08:03:51+00:00,sakana/fugu-ultra,Sakana AI,sakana,sakana,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,sakana/fugu-ultra-v2,Sakana AI,sakana,sakana,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,sakana/sakana-namazu,Sakana AI,sakana,sakana,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,sao10k/l3-lunaris-8b,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,99.69493593654668,99.82513777024162
+2026-10-06T08:03:51+00:00,sao10k/l3-lunaris-8b,DeepInfra,deepinfra/turbo,deepinfra/turbo,False,up,0,100,100,99.94838656399034
+2026-10-06T08:03:51+00:00,sao10k/l3-lunaris-8b,Novita,novita/bf16,novita/bf16,False,up,0,100,100,99.96537471055422
+2026-10-06T08:03:51+00:00,sao10k/l3.1-euryale-70b,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,,100,99.96160933660934
+2026-10-06T08:03:51+00:00,sao10k/l3.1-euryale-70b,Novita,novita/fp8,novita/fp8,False,idle,0,,,99.93548387096774
+2026-10-06T08:03:51+00:00,sao10k/l3.3-euryale-70b,NextBit,nextbit/bf16,nextbit/bf16,False,degraded,-2,90.47619047619048,92.38095238095238,95.3714899905952
+2026-10-06T08:03:51+00:00,stepfun/step-3.5-flash,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,stepfun/step-3.7-flash,Novita,novita/fp8,novita/fp8,False,up,0,100,99.7080291970803,99.81045120047573
+2026-10-06T08:03:51+00:00,stepfun/step-3.7-flash,StepFun,stepfun/fp8,stepfun/fp8,False,up,0,100,99.02912621359224,99.62370649106302
+2026-10-06T08:03:51+00:00,tencent/hunyuan-a13b-instruct,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,tencent/hy-mt2-1.8b,Tencent,tencent/fp8,tencent/fp8,False,up,0,,100,100
+2026-10-06T08:03:51+00:00,tencent/hy-mt2-30b-a3b,Tencent,tencent/fp8,tencent/fp8,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,tencent/hy-mt2-7b,Tencent,tencent/fp8,tencent/fp8,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,tencent/hy3,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,100,99.79256114622027
+2026-10-06T08:03:51+00:00,tencent/hy3,Tencent,tencent/fp8,tencent/fp8,False,up,0,99.27007299270073,99.82384028185555,99.7369936648109
+2026-10-06T08:03:51+00:00,tencent/hy3,Novita,novita,novita,False,up,0,100,100,99.23538047467581
+2026-10-06T08:03:51+00:00,tencent/hy3,GMICloud,gmicloud/bf16,gmicloud/bf16,False,up,0,100,100,99.80627421572304
+2026-10-06T08:03:51+00:00,tencent/hy3,Phala,phala,phala,False,up,0,97.05882352941177,99.56140350877193,99.88314606741572
+2026-10-06T08:03:51+00:00,tencent/hy3,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,idle,0,,,99.93733550570248
+2026-10-06T08:03:51+00:00,tencent/hy3-preview,GMICloud,gmicloud/bf16,gmicloud/bf16,False,up,0,100,100,99.99877710246659
+2026-10-06T08:03:51+00:00,tencent/hy4-preview,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,98.62068965517241,93.9904127206828
+2026-10-06T08:03:51+00:00,tencent/hy4-preview,Novita,novita/fp8,novita/fp8,False,up,0,100,99.9864636209814,99.72792801281447
+2026-10-06T08:03:51+00:00,tencent/hy4-preview,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,98.350425236401
+2026-10-06T08:03:51+00:00,tencent/hy4-preview,Tencent,tencent/fp8,tencent/fp8,False,up,0,99.9168744804655,99.84398127775333,99.72601665989724
+2026-10-06T08:03:51+00:00,thedrummer/cydonia-24b-v4.1,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.9566968345386
+2026-10-06T08:03:51+00:00,thedrummer/skyfall-36b-v2,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.98620499379226
+2026-10-06T08:03:51+00:00,thedrummer/unslopnemo-12b,Parasail,parasail/bf16,parasail/bf16,False,up,0,100,100,99.98027418877601
+2026-10-06T08:03:51+00:00,thinkingmachines/inkling,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,100,99.74617366267616
+2026-10-06T08:03:51+00:00,thinkingmachines/inkling,Together,together,together,False,up,0,100,100,99.72546219987191
+2026-10-06T08:03:51+00:00,thinkingmachines/inkling-small,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,,100,99.9863219805772
+2026-10-06T08:03:51+00:00,thinkingmachines/inkling-small:free,Thinking Machines,thinkingmachines/nvfp4,thinkingmachines/nvfp4,False,up,0,100,99.95755517826825,99.96553764524582
+2026-10-06T08:03:51+00:00,thinkingmachines/inkling:free,Thinking Machines,thinkingmachines/nvfp4,thinkingmachines/nvfp4,False,up,0,99.58197863446354,99.05978611928515,99.34603492133644
+2026-10-06T08:03:51+00:00,typesafe/jev-router,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,unbiased/pareto,Unbiased,unbiased,unbiased,False,idle,0,,,99.73315543695797
+2026-10-06T08:03:51+00:00,unbiased/pareto-26.10-preview,Unbiased,unbiased,unbiased,False,idle,0,,,99.85456056513608
+2026-10-06T08:03:51+00:00,undi95/remm-slerp-l2-13b,Mancer 2,mancer/fp8,mancer/fp8,False,idle,0,,,99.88083416087389
+2026-10-06T08:03:51+00:00,undi95/remm-slerp-l2-13b,NextBit,nextbit/bf16,nextbit/bf16,False,idle,0,,,99.5702005730659
+2026-10-06T08:03:51+00:00,upstage/solar-mini4,Upstage,upstage/zdr,upstage/zdr,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,upstage/solar-mini4,Upstage,upstage,upstage,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,upstage/solar-pro-3,Upstage,upstage,upstage,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,upstage/solar-pro4,Upstage,upstage/zdr,upstage/zdr,False,up,0,99.89082969432314,99.86535008976661,99.95612250960963
+2026-10-06T08:03:51+00:00,upstage/solar-pro4,Upstage,upstage,upstage,False,up,0,100,99.94152046783626,99.94487320837926
+2026-10-06T08:03:51+00:00,writer/palmyra-x5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20,xAI,xai/zdr,xai/zdr,False,up,0,100,100,99.81958079066065
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20,xAI,xai,xai,False,up,0,99.91869918699187,99.93427970557308,99.81471793079632
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20,xAI,xai/priority,xai/priority,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20-multi-agent,xAI,xai/zdr,xai/zdr,False,idle,0,,,83.66606170598911
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20-multi-agent,xAI,xai,xai,False,idle,0,,,86.36363636363636
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20-multi-agent,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-4.20-multi-agent,xAI,xai/priority,xai/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-4.3,xAI,xai/zdr,xai/zdr,False,up,0,100,99.95065789473684,99.87687984307398
+2026-10-06T08:03:51+00:00,x-ai/grok-4.3,xAI,xai,xai,False,up,0,100,99.96418851167455,99.85123404360974
+2026-10-06T08:03:51+00:00,x-ai/grok-4.3,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,99.82367758186398
+2026-10-06T08:03:51+00:00,x-ai/grok-4.3,xAI,xai/priority,xai/priority,False,idle,0,,,99.89159891598915
+2026-10-06T08:03:51+00:00,x-ai/grok-4.3:batch,xAI,xai,xai,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-4.5,xAI,xai/zdr,xai/zdr,False,up,0,100,99.83079526226734,99.58487473941702
+2026-10-06T08:03:51+00:00,x-ai/grok-4.5,xAI,xai,xai,False,up,0,100,99.70260223048328,97.76260968740544
+2026-10-06T08:03:51+00:00,x-ai/grok-4.5,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,99.52380952380952
+2026-10-06T08:03:51+00:00,x-ai/grok-4.5,xAI,xai/priority,xai/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,xAI,xai/zdr,xai/zdr,False,up,0,100,99.70443349753695,99.68482419384223
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,xAI,xai,xai,False,up,0,99.75124378109453,99.73456025482216,99.53272685357592
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,xAI,xai/zdr/us,xai/zdr/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,Amazon Bedrock,amazon-bedrock/us-west-2,amazon-bedrock/us-west-2,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,99.68553459119497
+2026-10-06T08:03:51+00:00,x-ai/grok-4.6,xAI,xai/priority,xai/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-4.7,xAI,xai/zdr,xai/zdr,False,up,0,100,99.9597747385358,99.33326562434655
+2026-10-06T08:03:51+00:00,x-ai/grok-4.7,xAI,xai,xai,False,up,0,99.79274611398964,99.87149832947829,99.33409461041275
+2026-10-06T08:03:51+00:00,x-ai/grok-4.7,xAI,xai/zdr/us,xai/zdr/us,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-4.7,xAI,xai/zdr/priority,xai/zdr/priority,False,up,0,,100,99.57567185289957
+2026-10-06T08:03:51+00:00,x-ai/grok-4.7,xAI,xai/priority,xai/priority,False,up,0,100,100,99.52830188679245
+2026-10-06T08:03:51+00:00,x-ai/grok-build-0.1,xAI,xai,xai,False,up,0,,100,99.96233994476526
+2026-10-06T08:03:51+00:00,x-ai/grok-build-0.1,xAI,xai/zdr,xai/zdr,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,x-ai/grok-build-0.1,xAI,xai/zdr/priority,xai/zdr/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,x-ai/grok-build-0.1,xAI,xai/priority,xai/priority,False,idle,0,,,
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5,GMICloud,gmicloud/fp8,gmicloud/fp8,False,degraded,0,96.49122807017544,95.81428068941258,97.64099831246115
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5,Xiaomi,xiaomi/fp8,xiaomi/fp8,False,degraded,0,95.9197786998617,96.66666666666667,97.44708524509996
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5,StreamLake,streamlake,streamlake,False,degraded,-2,93.58974358974359,92.95652173913044,95.06150992613566
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5,Novita,novita/fp8,novita/fp8,False,degraded,0,94.2643391521197,95.06172839506173,97.0461412325585
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5,Venice,venice/fp8,venice/fp8,False,up,0,98.79032258064517,98.55342977134858,98.14790269420071
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,GMICloud,gmicloud/bf16,gmicloud/bf16,False,degraded,0,,96.15384615384616,97.56400822147225
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,idle,0,,,83.73692077727952
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,Xiaomi,xiaomi/fp8,xiaomi/fp8,False,up,0,99.36868686868688,99.14466892788674,97.00502126713747
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.94734070563455,99.06053705598275
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,Novita,novita,novita,False,degraded,0,,97.35099337748345,98.72454589435722
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.5-pro,StreamLake,streamlake,streamlake,False,idle,0,,,77.92500704820976
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,Darkbloom,darkbloom/fp4,darkbloom/fp4,False,up,0,98.68995633187772,98.87157442235358,99.0313287359091
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,Novita,novita/fp8,novita/fp8,False,degraded,-2,91.09947643979058,84.32894736842104,95.49825529786746
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,GMICloud,gmicloud/bf16,gmicloud/bf16,False,degraded,-2,88.86255924170617,90.07717750826902,95.57104300057941
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,degraded,0,96.30390143737166,97.42189206904087,98.72503363344717
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,Xiaomi,xiaomi/fp8,xiaomi/fp8,False,degraded,0,98.97316744116324,97.08963803589971,97.73767826251735
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,Io Net,io-net/fp8,io-net/fp8,False,up,0,96.83544303797468,98.29973455771575,98.93210209696316
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-flash,Venice,venice/fp8,venice/fp8,False,degraded,-2,89.25925925925927,91.87578419071518,93.31860641252209
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-pro,DeepInfra,deepinfra/fp8,deepinfra/fp8,False,up,0,100,99.94783515910277,99.8785157693608
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-pro,Novita,novita/fp8,novita/fp8,False,up,0,98.83641341546885,98.67956950348196,99.69570085256716
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-pro,GMICloud,gmicloud/bf16,gmicloud/bf16,False,degraded,0,96.82539682539682,96.12167300380227,98.87037272611627
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-pro,Xiaomi,xiaomi/fp8,xiaomi/fp8,False,up,0,99.13669064748201,99.1698706745893,99.74222325551297
+2026-10-06T08:03:51+00:00,xiaomi/mimo-v2.6-pro-ultraspeed,Xiaomi,xiaomi/fp8,xiaomi/fp8,False,up,0,98.91891891891892,99.72008397480757,99.95029992274344
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,,100,99.98132516620602
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5-air,Novita,novita/bf16,novita/bf16,False,up,0,100,99.81684981684981,99.92720390187087
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5-air,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,,100,97.50445632798575
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5-air,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,100,100,99.5980168832909
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5v,Novita,novita/fp8,novita/fp8,False,idle,0,,,98.13725490196077
+2026-10-06T08:03:51+00:00,z-ai/glm-4.5v,Z.AI,z-ai/fp8,z-ai/fp8,False,idle,0,,,97.9539641943734
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6,Venice,venice/fp4,venice/fp4,False,up,0,100,100,98.02999491611591
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,100,100,99.85173292266356
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6,Novita,novita/bf16,novita/bf16,False,up,0,100,100,99.35928143712574
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6,Z.AI,z-ai/fp4,z-ai/fp4,False,idle,0,,,99.66748337416871
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6v,Novita,novita/bf16,novita/bf16,False,up,0,91.8918918918919,98.35390946502058,99.2311331913887
+2026-10-06T08:03:51+00:00,z-ai/glm-4.6v,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,100,100,98.44522579936272
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,degraded,-2,42.68292682926829,94.92635024549918,79.80696175816753
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,Venice,venice/fp4,venice/fp4,False,down,-5,18.88888888888889,61.648745519713266,64.59211237169097
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,Novita,novita/fp8,novita/fp8,False,up,0,99.43502824858757,99.68354430379746,99.32237217259076
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,Google,google-vertex,google-vertex,False,up,0,100,100,99.98901593787414
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,Z.AI,z-ai/fp4,z-ai/fp4,False,up,0,99.81325863678805,99.88189441360576,99.89206180383154
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7,Mancer 2,mancer/fp4,mancer/fp4,False,idle,0,18.6046511627907,,61.72542150208014
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7-flash,Venice,venice/fp8,venice/fp8,False,up,0,95.55555555555556,98.08795411089865,99.19021726447458
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7-flash,Cloudflare,cloudflare,cloudflare,False,up,0,100,99.66575091575092,99.31120398544005
+2026-10-06T08:03:51+00:00,z-ai/glm-4.7-flash,Novita,novita/bf16,novita/bf16,False,down,-5,66.66666666666666,68.60706860706861,70.28185617833029
+2026-10-06T08:03:51+00:00,z-ai/glm-5,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,100,99.95348837209302,99.8724856740765
+2026-10-06T08:03:51+00:00,z-ai/glm-5,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,100,99.49044585987261,99.53408914427706
+2026-10-06T08:03:51+00:00,z-ai/glm-5,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,99.72375690607734,99.86584684181106
+2026-10-06T08:03:51+00:00,z-ai/glm-5,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,99.64953271028037
+2026-10-06T08:03:51+00:00,z-ai/glm-5,Amazon Bedrock,amazon-bedrock,amazon-bedrock,False,up,0,100,100,99.98564661977896
+2026-10-06T08:03:51+00:00,z-ai/glm-5,Venice,venice/fp8,venice/fp8,False,degraded,0,,97.91666666666666,98.37962962962963
+2026-10-06T08:03:51+00:00,z-ai/glm-5,Novita,novita/fp8,novita/fp8,False,up,0,100,100,99.98828147887735
+2026-10-06T08:03:51+00:00,z-ai/glm-5,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,100,99.89583333333333,99.9492597357882
+2026-10-06T08:03:51+00:00,z-ai/glm-5-turbo,Z.AI,z-ai,z-ai,False,up,0,,100,99.8201034405217
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,100,100,99.7894253853024
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Chutes,chutes/fp8,chutes/fp8,False,degraded,0,98.75,97.95335554497858,91.44348834960843
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,100,100,99.2274658077767
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Phala,phala,phala,False,degraded,0,98.11320754716981,97.09013484740952,91.0678066189119
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,97.26775956284153,99.51219512195122,99.63931936630657
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Alibaba,alibaba/fp8,alibaba/fp8,False,up,0,98.74213836477988,99.65635738831615,99.45635449789721
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Novita,novita/fp8,novita/fp8,False,up,0,99.20634920634922,99.38757655293088,99.81711580872465
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Nebius,nebius/fp8,nebius/fp8,False,up,0,100,99.91095280498664,99.35469159730931
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Baidu,baidu/fp8,baidu/fp8,False,up,0,98.90710382513662,99.69879518072288,99.71722008257868
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,GMICloud,gmicloud/fp8,gmicloud/fp8,False,up,0,99.04761904761905,99.90448901623687,99.68851972708394
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Friendli,friendli,friendli,False,up,0,100,100,99.98725519350864
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,99.49238578680203,99.87468671679198,99.69165445079108
+2026-10-06T08:03:51+00:00,z-ai/glm-5.1,Venice,venice/fp8,venice/fp8,False,up,0,96.32352941176471,98.10126582278481,94.58329646996373
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Relace,relace,relace,False,up,0,100,99.98904109589041,99.95565333827031
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Wafer,wafer,wafer,False,up,0,99.85331866519985,99.57656214236667,99.28644627471819
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,InferenceNet,inference-net,inference-net,False,up,0,99.59839357429718,99.80322707595435,99.60558577430758
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Morph,morph/fp8,morph/fp8,False,up,0,100,99.95557529986672,99.41341942118117
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Decart,decart/mxfp4,decart/mxfp4,False,up,0,100,100,99.98427637637862
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,99.73451327433628,98.85455196277294,99.37575359203804
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,100,99.96219281663517,99.79876582422071
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Novita,novita/fp8,novita/fp8,False,up,0,99.44237918215613,99.85552612569228,99.94873628480224
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,DigitalOcean,digitalocean,digitalocean,False,up,0,99.906191369606,99.58807588075881,99.74726015032297
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,99.66777408637874,99.8475028593214,98.91817760277902
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,CoreWeave,coreweave/fp4,coreweave/fp4,False,up,0,,99.61089494163424,99.97228893404765
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,,100,99.93097736057427
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Alibaba,alibaba/fp8,alibaba/fp8,False,degraded,0,94.73684210526315,96.99248120300751,99.17197675232828
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Cloudflare,cloudflare,cloudflare,False,idle,0,,,99.87995198079231
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Phala,phala/fp8,phala/fp8,False,up,0,100,100,99.88715000532311
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Inceptron,inceptron/fp4,inceptron/fp4,False,up,0,100,99.03614457831326,99.75338193159975
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Nebius,nebius/fp4,nebius/fp4,False,idle,0,,,97.46415094339622
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Mistral,mistral/zdr,mistral/zdr,False,up,0,99.98303934871099,99.99497449556499,99.96504259672635
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,BaseTen,baseten/fp8,baseten/fp8#51e6263223#1,True,up,0,100,100,99.65488215488215
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Together,together,together,False,up,0,99.77761304670126,99.63653356872112,99.5831538022185
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,99.93843312297984,99.8566784633369
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,BaseTen,baseten/fp8,baseten/fp8#51e6263223#2,True,idle,0,,,99.66367713004485
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Venice,venice/fp8,venice/fp8,False,idle,0,,,99.57532993597282
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,GMICloud,gmicloud/fp8,gmicloud/fp8,False,idle,0,,,99.20752847944527
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Parasail,parasail/fp4,parasail/fp4,False,degraded,0,97.05882352941177,96.82539682539682,97.27724013438299
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Friendli,friendli,friendli,False,up,0,100,99.86833443054641,99.89860977496086
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,100,99.96921656148992,99.88908388908388
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Mistral,mistral/eu,mistral/eu,False,up,0,100,100,100
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,BaseTen,baseten/fast,baseten/fast#877fb4ce69#1,True,up,0,100,100,99.64580398470517
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,BaseTen,baseten/fast,baseten/fast#877fb4ce69#2,True,up,0,,100,99.5746377774824
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Baidu,baidu/fast,baidu/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Decart,decart/fast,decart/fast,False,up,0,100,100,99.94215374358421
+2026-10-06T08:03:51+00:00,z-ai/glm-5.2,Alibaba,alibaba/fast,alibaba/fast,False,degraded,-2,,91.30434782608695,99.10885899004019
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Relace,relace,relace,False,up,0,100,99.97933457325894,99.96722266734649
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Wafer,wafer/us,wafer/us,False,up,0,99.45474372955289,98.96797907683607,99.86082497466427
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,InferenceNet,inference-net,inference-net,False,up,0,99.67159277504105,99.72904318374259,99.82083000070094
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Wafer,wafer,wafer,False,degraded,0,98.22695035460993,96.80082559339526,99.7512870893128
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Reka,reka,reka,False,up,0,100,99.56680346557228,99.81250553960905
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Morph,morph/fp8,morph/fp8,False,up,0,100,99.9054820415879,98.6783651710351
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Makora,makora/fp4,makora/fp4,False,up,0,96.80616740088107,98.58382823206944,96.74622329489586
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,AkashML,akashml/fp8,akashml/fp8,False,up,0,100,100,99.93667585487596
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Sail Research,sail-research/us,sail-research/us,False,up,0,100,99.87163029525033,99.41029094639579
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Sail Research,sail-research/fp8,sail-research/fp8,False,up,0,100,99.89090909090909,98.90973381789608
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Novita,novita/fp8,novita/fp8,False,up,0,100,99.32157394843962,96.56003906965387
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,degraded,-2,84.48275862068965,92.56198347107438,97.56305921496336
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Inceptron,inceptron/fp4,inceptron/fp4,False,up,0,100,98.05725971370143,98.3455483759053
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,99.94292237442922,99.95402902738556,99.90956659923367
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Phala,phala,phala,False,up,0,,98.28326180257511,99.37664963216713
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,DigitalOcean,digitalocean,digitalocean,False,up,0,100,100,99.82064567556796
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,GMICloud,gmicloud/fp8,gmicloud/fp8,False,idle,0,,,99.15057915057915
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Alibaba,alibaba,alibaba,False,idle,0,,,99.96716552034009
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Decart,decart/fp4,decart/fp4,False,up,0,100,100,99.98005657795423
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Friendli,friendli,friendli,False,up,0,,100,99.95695962813119
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Mistral,mistral/zdr,mistral/zdr,False,up,0,99.76112272320096,99.88180600425498,99.75381864207448
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Baidu,baidu/fp8,baidu/fp8,False,up,0,100,100,99.96130197359935
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,BaseTen,baseten/fp4,baseten/fp4#c812b36d4d#1,True,up,0,100,100,97.94885733999624
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Mistral,mistral/nvfp4,mistral/nvfp4#bcc5f84d20,True,up,0,99.95570321151716,99.94562262098967,99.62479563532156
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Nebius,nebius/fp4,nebius/fp4,False,up,0,,98.55072463768117,98.19531363702518
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Crusoe,crusoe/fp4,crusoe/fp4,False,up,0,99.48717948717949,99.48604992657856,98.76706053765874
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,PrimeIntellect,primeintellect,primeintellect,False,up,0,100,100,99.36676798378926
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Venice,venice,venice,False,up,0,,98.83720930232558,98.4183594355714
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Together,together,together,False,up,0,99.27007299270073,99.35205183585313,96.28183310941931
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Parasail,parasail/fp8,parasail/fp8,False,up,0,100,100,99.66937594710015
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Modal,modal,modal,False,up,0,99.44237918215613,99.42797711908476,99.08354033943367
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,BaseTen,baseten/fp4,baseten/fp4#c812b36d4d#2,True,idle,0,,,95.74707787635545
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Fireworks,fireworks,fireworks,False,up,0,100,99.92836676217765,99.56282342144843
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Cloudflare,cloudflare,cloudflare,False,idle,0,,,98.24561403508771
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,up,0,100,100,99.95247969587005
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,99.94547437295529,99.88638085138616,99.78713434427821
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Mistral,mistral/nvfp4,mistral/nvfp4#c681a04ac2,True,up,0,100,100,99.88945390227725
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Fireworks,fireworks/fast,fireworks/fast,False,up,0,98.85057471264368,99.81447124304268,99.72411029423097
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,BaseTen,baseten/fast,baseten/fast#fa2c2413c7#1,True,up,0,97.91666666666666,98.32474226804123,99.69484497658925
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,BaseTen,baseten/fast,baseten/fast#fa2c2413c7#2,True,up,0,98.4,99.25558312655087,99.57354100032448
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3,Alibaba,alibaba/fast,alibaba/fast,False,idle,0,,,100
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,OpenInference,open-inference/fp4,open-inference/fp4,False,up,0,99.89538345985676,99.78626154456724,99.34639875470563
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Relace,relace,relace,False,up,0,99.96993084093415,99.93768427855127,99.80619331453977
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Sail Research,sail-research/us,sail-research/us,False,up,0,98.4,99.58690488484973,98.72524156798946
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Sail Research,sail-research/fp4,sail-research/fp4,False,up,0,99.77142857142857,99.79468338015994,98.66255415249695
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Wafer,wafer,wafer,False,up,0,99.92937853107344,99.98052649282135,99.86439936959457
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,up,0,99.7005988023952,99.8616555222504,99.41845804091355
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Novita,novita/fp8,novita/fp8,False,up,0,97.58189321640444,98.56912526509753,91.02772147023747
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Decart,decart/fp4,decart/fp4,False,up,0,98.29787234042553,98.05609428614054,99.239470245386
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,StreamLake,streamlake/fp8,streamlake/fp8,False,up,0,99.55994686150781,98.88145479499056,99.1315300705023
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,GMICloud,gmicloud/fp8,gmicloud/fp8,False,degraded,-2,89.65160400137978,87.91039011201237,90.73255024828917
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,InferenceNet,inference-net/fp4,inference-net/fp4,False,up,0,100,99.89846684942634,99.90884939287422
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,DekaLLM,dekallm,dekallm,False,up,0,99.76470588235294,99.86762759229299,82.81174457637987
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Near AI,near-ai/fp8,near-ai/fp8,False,up,0,100,99.7317036816217,99.57091489526032
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Phala,phala/fp8,phala/fp8,False,degraded,0,97.63026970411103,96.56428671036117,98.12319906189921
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Modal,modal/nvfp4,modal/nvfp4,False,up,0,100,99.95038554565564,99.05460739946173
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,BaseTen,baseten/fp8,baseten/fp8#0ffe9a76d8#1,True,up,0,100,100,99.72733795742646
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Crusoe,crusoe/fp4,crusoe/fp4,False,up,0,99.83866630814735,99.43234733247594,99.7087770986716
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,CoreWeave,coreweave/nvfp4,coreweave/nvfp4,False,up,0,100,99.97902611248996,99.94757223895924
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,AtlasCloud,atlas-cloud/fp8,atlas-cloud/fp8,False,down,-5,,78.5551330798479,80.20221226154887
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Fireworks,fireworks,fireworks,False,up,0,99.79296066252587,99.50548601452634,97.90999201517387
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Friendli,friendli,friendli,False,degraded,-2,99.9971804776271,90.6564906336066,96.15199365675528
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,SiliconFlow,siliconflow/fp8,siliconflow/fp8,False,up,0,99.1097545466107,98.81966531185275,99.04152834362377
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,DigitalOcean,digitalocean,digitalocean,False,up,0,100,99.57991038088126,99.26374727849635
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Together,together,together,False,up,0,99.90296645411699,99.81392822882377,99.80052021917339
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Parasail,parasail/fp4,parasail/fp4,False,up,0,99.9078861975841,99.74963276652974,99.73962439537534
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,BaseTen,baseten/fp8,baseten/fp8#0ffe9a76d8#2,True,up,0,100,99.99215255434356,99.95117703502994
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Venice,venice,venice,False,up,0,98.99713467048711,99.07050555429608,98.52842703351652
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,98.84079304475827,98.3723012302569,98.86454608789155
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,NextBit,nextbit/fp8,nextbit/fp8,False,up,0,99.96532078275948,99.95390170819782,99.96000223425825
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Morph,morph/fp8,morph/fp8,False,up,0,100,99.98070541020297,95.44177636233265
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Inceptron,inceptron/fp8,inceptron/fp8,False,degraded,-2,93.32096474953617,94.81751824817518,98.04725618885566
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Fireworks,fireworks/us,fireworks/us,False,up,0,99.8489425981873,99.86873990306947,99.88990394155648
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Cloudflare,cloudflare,cloudflare,False,degraded,0,98.1838108658212,96.64845401829638,99.57775280671383
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash,Reka,reka,reka,False,up,0,99.95121157911856,99.88308195954636,98.89012590258088
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flash:batch,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,idle,0,,,
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-flashx,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,99.95824634655533,99.93878550440745,99.98683623382418
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3-prime,Alibaba,alibaba,alibaba,False,degraded,0,88.37209302325581,97.82608695652173,99.39838767897966
+2026-10-06T08:03:51+00:00,z-ai/glm-5.3:batch,DeepInfra,deepinfra/fp4,deepinfra/fp4,False,idle,0,,,
+2026-10-06T08:03:51+00:00,z-ai/glm-5v-turbo,Z.AI,z-ai/fp8,z-ai/fp8,False,up,0,,100,99.85526823620225
+2026-10-06T08:03:51+00:00,~anthropic/claude-fable-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~anthropic/claude-haiku-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~anthropic/claude-opus-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~anthropic/claude-sonnet-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~deepseek/deepseek-flash-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~deepseek/deepseek-pro-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~deepseek/deepseek-v4-flash-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~google/gemini-flash-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~google/gemini-pro-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~moonshotai/kimi-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~openai/gpt-astra-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~openai/gpt-luna-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~openai/gpt-mini-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~openai/gpt-sol-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~openai/gpt-terra-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~x-ai/grok-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~z-ai/glm-flash-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
+2026-10-06T08:03:51+00:00,~z-ai/glm-latest,,catalog-no-endpoint,catalog-no-endpoint,False,idle,,,,
