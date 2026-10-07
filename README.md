@@ -99,23 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T12:04:03+00:00 UTC)
+## Current status (2026-10-07T16:36:53+00:00 UTC)
 
-465 models polled, 1416 inference endpoints:
-up 911, degraded 79, down 8, idle 418.
+465 models polled, 1415 inference endpoints:
+up 878, degraded 123, down 32, idle 382.
 
-Currently down (8):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 24% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 77% | 99% |
-| `meta-llama/llama-3.1-70b-instruct` | `deepinfra/turbo` | DeepInfra | 66% | 95% |
-| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 17% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 53% | 51% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 73% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 59% | 62% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 74% | 70% |
+| `deepseek/deepseek-chat-v3.1` | `coreweave/fp8` | CoreWeave | 74% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 53% | 100% |
+| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 66% | 94% |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 74% | 92% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 37% | 91% |
+| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 35% | 22% |
+| `google/gemini-2.5-flash` | `google-vertex/eu` | Google | 71% | 78% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 75% | 67% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 71% | 100% |
+| `minimax/minimax-m3` | `sambanova` | SambaNova | 62% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 76% | 73% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 17% | n/a |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 75% | 89% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 76% | 96% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
