@@ -99,30 +99,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T18:52:10+00:00 UTC)
+## Current status (2026-10-07T22:03:27+00:00 UTC)
 
-466 models polled, 1417 inference endpoints:
-up 907, degraded 90, down 15, idle 405.
+467 models polled, 1430 inference endpoints:
+up 893, degraded 99, down 11, idle 427.
 
-Currently down (15):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 54% | 100% |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 79% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 51% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 76% | 90% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 63% | 100% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 73% | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 53% | 40% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 55% | 54% |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 72% | 100% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 72% | n/a |
-| `openai/gpt-oss-120b` | `mara` | Mara | 69% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 22% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 65% | 71% |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 75% | 91% |
-| `z-ai/glm-5.3` | `nebius/fp4` | Nebius | 42% | n/a |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 74% | 88% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 79% | n/a |
+| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 71% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 58% | 97% |
+| `qwen/qwen3.5-35b-a3b` | `alibaba` | Alibaba | 49% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `atlas-cloud/fp8` | AtlasCloud | 78% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 58% | 62% |
+| `z-ai/glm-5.3` | `morph/fp8` | Morph | 67% | 100% |
+| `z-ai/glm-5.3-flash` | `sail-research/fp4` | Sail Research | 69% | 100% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 60% | 88% |
+| `z-ai/glm-5.3-flash` | `fireworks/us` | Fireworks | 79% | 58% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
