@@ -99,31 +99,26 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T02:01:57+00:00 UTC)
+## Current status (2026-10-08T02:52:14+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 870, degraded 95, down 16, idle 449.
+up 859, degraded 115, down 11, idle 445.
 
-Currently down (16):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 78% | 81% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 70% | 41% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
-| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 100% |
-| `moonshotai/kimi-k3` | `together` | Together | 64% | 77% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 65% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 29% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 76% |
-| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 34% | n/a |
-| `z-ai/glm-5.3` | `novita/fp8` | Novita | 80% | 87% |
-| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 10% | 100% |
-| plus 1 more | | | | |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 71% | 0% |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 80% | 100% |
+| `moonshotai/kimi-k3` | `together` | Together | 67% | 61% |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 80% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 65% | 59% |
+| `qwen/qwen3.6-35b-a3b` | `phala` | Phala | 74% | 92% |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | n/a | n/a |
+| `xiaomi/mimo-v2.6-flash` | `novita/fp8` | Novita | 80% | 80% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 66% | 53% |
+| `z-ai/glm-5.3-flash` | `novita/fp8` | Novita | 75% | 47% |
+| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 10% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
