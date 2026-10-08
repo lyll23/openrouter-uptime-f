@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-08T16:35:33+00:00 UTC)
+## Current status (2026-10-08T17:34:00+00:00 UTC)
 
-467 models polled, 1415 inference endpoints:
-up 945, degraded 89, down 43, idle 338.
+467 models polled, 1417 inference endpoints:
+up 938, degraded 87, down 28, idle 364.
 
-Currently down (43):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 47% | 20% |
+| `amazon/nova-micro-v1` | `amazon-bedrock` | Amazon Bedrock | 83% | 100% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/global` | Google | 33% | 60% |
-| `anthropic/claude-haiku-4.5` | `google-vertex/europe` | Google | 0% | n/a |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 20% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 43% | 100% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 42% | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 50% | 100% |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v3.2` | `siliconflow/fp8` | SiliconFlow | 27% | 40% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 33% | 80% |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 36% | 67% |
-| `deepseek/deepseek-v4-flash-0731` | `sail-research/fp4` | Sail Research | 71% | 100% |
-| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 56% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baidu/fp8` | Baidu | 73% | 0% |
-| plus 28 more | | | | |
+| `anthropic/claude-opus-5.5` | `amazon-bedrock` | Amazon Bedrock | 3% | 20% |
+| `deepseek/deepseek-v4-pro` | `baidu/fp8` | Baidu | 67% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 62% | 100% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 60% | 20% |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 33% | 67% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 40% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 50% | n/a |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 20% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
