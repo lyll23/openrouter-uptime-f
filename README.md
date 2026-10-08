@@ -99,27 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-07T23:32:50+00:00 UTC)
+## Current status (2026-10-08T02:01:57+00:00 UTC)
 
 467 models polled, 1430 inference endpoints:
-up 915, degraded 80, down 12, idle 423.
+up 870, degraded 95, down 16, idle 449.
 
-Currently down (12):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 49% | 87% |
-| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 59% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 74% | n/a |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 71% | n/a |
-| `minimax/minimax-m3` | `sambanova` | SambaNova | 57% | 65% |
-| `nvidia/nemotron-3-nano-30b-a3b` | `deepinfra/fp4` | DeepInfra | 78% | 50% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 66% | 66% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 67% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 78% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 74% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 73% | 68% |
-| `z-ai/glm-5.3-flash` | `morph/fp8` | Morph | 69% | 100% |
+| `deepseek/deepseek-v3.2` | `gmicloud/fp8` | GMICloud | 78% | 81% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global` | Google | 70% | 41% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 58% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 42% | n/a |
+| `mistralai/mistral-nemo` | `novita/fp8` | Novita | 55% | 100% |
+| `moonshotai/kimi-k3` | `together` | Together | 64% | 77% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 79% | 79% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 64% | 65% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 63% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 29% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 76% | 76% |
+| `z-ai/glm-5.2` | `nebius/fp4` | Nebius | 34% | n/a |
+| `z-ai/glm-5.3` | `novita/fp8` | Novita | 80% | 87% |
+| `z-ai/glm-5.3-flash` | `dekallm` | DekaLLM | 10% | 100% |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
