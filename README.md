@@ -99,31 +99,24 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-11T21:48:05+00:00 UTC)
+## Current status (2026-10-11T23:45:24+00:00 UTC)
 
-458 models polled, 1401 inference endpoints:
-up 904, degraded 37, down 17, idle 443.
+458 models polled, 1400 inference endpoints:
+up 894, degraded 53, down 9, idle 444.
 
-Currently down (17):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 0% | 0% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 70% | 0% |
-| `moonshotai/kimi-k3` | `deepinfra/mxfp4` | DeepInfra | 0% | n/a |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 20% | 20% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 23% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 29% | 100% |
-| plus 2 more | | | | |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 38% | 20% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 41% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
