@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T15:39:56+00:00 UTC)
+## Current status (2026-10-12T16:10:46+00:00 UTC)
 
 458 models polled, 1398 inference endpoints:
-up 913, degraded 80, down 27, idle 378.
+up 929, degraded 82, down 21, idle 366.
 
-Currently down (27):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 23% | 20% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 100% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 89% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 75% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 73% | 0% |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 38% | 75% |
-| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 40% | 50% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 56% | n/a |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 87% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 20% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 83% | 20% |
 | `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 27% | 80% |
-| plus 12 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b` | `venice/fp8` | Venice | 83% | 100% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 3% | 0% |
+| `openai/gpt-6.1-sol-pro` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `mara` | Mara | 33% | n/a |
+| `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 50% | 67% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 30% | 0% |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 33% | n/a |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
