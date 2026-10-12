@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-12T06:37:23+00:00 UTC)
+## Current status (2026-10-12T15:39:56+00:00 UTC)
 
-458 models polled, 1397 inference endpoints:
-up 917, degraded 64, down 18, idle 398.
+458 models polled, 1398 inference endpoints:
+up 913, degraded 80, down 27, idle 378.
 
-Currently down (18):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-opus-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `mancer/fp8` | Mancer 2 | 93% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 60% |
-| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 57% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 33% | 33% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 40% | n/a |
-| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 52% | 100% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 33% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `ionstream` | Ionstream | 23% | 20% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 100% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 60% | 0% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 89% | 100% |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 75% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 73% | 0% |
+| `moonshotai/kimi-k3` | `sail-research/fp4` | Sail Research | 38% | 75% |
+| `moonshotai/kimi-k3` | `akashml/fp4` | AkashML | 40% | 50% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 10% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | 0% |
-| `qwen/qwen3.6-27b` | `siliconflow/fp8` | SiliconFlow | 62% | 25% |
-| `x-ai/grok-4.6` | `amazon-bedrock/us-west-2` | Amazon Bedrock | 19% | 100% |
-| plus 3 more | | | | |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 27% | 80% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
