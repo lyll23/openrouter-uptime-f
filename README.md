@@ -99,31 +99,29 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T22:53:45+00:00 UTC)
+## Current status (2026-10-13T23:19:29+00:00 UTC)
 
 461 models polled, 1408 inference endpoints:
-up 919, degraded 48, down 20, idle 421.
+up 914, degraded 59, down 14, idle 421.
 
-Currently down (20):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 24% | 20% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 47% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 46% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 55% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 25% | n/a |
-| `minimax/minimax-m2.7` | `groq` | Groq | 60% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 17% | 20% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | n/a | n/a |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 0% |
+| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 38% | 20% |
 | `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 0% | 0% |
 | `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 39% | 60% |
-| plus 5 more | | | | |
+| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 45% | 60% |
+| `xiaomi/mimo-v2.6-pro-ultraspeed` | `xiaomi/fp8` | Xiaomi | 53% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
