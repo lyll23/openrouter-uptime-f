@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T10:59:52+00:00 UTC)
+## Current status (2026-10-13T11:53:38+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 926, degraded 77, down 25, idle 374.
+up 939, degraded 71, down 19, idle 373.
 
-Currently down (25):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 80% | 100% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 54% | 60% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 54% | 60% |
-| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 86% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 39% | 33% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | n/a |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 20% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 100% |
 | `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inception/mercury-2.5` | `inception` | Inception | 7% | 0% |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6-luna` | `azure` | Azure | 30% | 100% |
-| `openai/gpt-6-luna-pro` | `azure` | Azure | 37% | 100% |
 | `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 50% | n/a |
-| plus 10 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 93% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 14% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
