@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-13T11:53:38+00:00",
- "count": 459,
+ "generated": "2026-10-13T18:07:49+00:00",
+ "count": 463,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -645,6 +645,12 @@
    "context_length": 1048576
   },
   {
+   "id": "google/gemini-4-argon",
+   "name": "Google: Gemini 4 Argon",
+   "created": 1791907477,
+   "context_length": 1048576
+  },
+  {
    "id": "google/gemini-nano-banana-2.1",
    "name": "Google: Nano Banana 2.1",
    "created": 1791300825,
@@ -787,6 +793,12 @@
    "name": "LiquidAI: LFM2.5-2.6B (free)",
    "created": 1786470519,
    "context_length": 65536
+  },
+  {
+   "id": "liquid/lfm-2.5-24b-a2b",
+   "name": "LiquidAI: LFM2.5-24B-A2B",
+   "created": 1791912025,
+   "context_length": 128000
   },
   {
    "id": "mancer/weaver",
@@ -2311,6 +2323,18 @@
    "name": "Sao10K: Llama 3.3 Euryale 70B",
    "created": 1734535928,
    "context_length": 131072
+  },
+  {
+   "id": "scaledown/extract",
+   "name": "ScaleDown: Extract",
+   "created": 1791893351,
+   "context_length": 1000000
+  },
+  {
+   "id": "scaledown/summarize",
+   "name": "ScaleDown: Summarize",
+   "created": 1791893360,
+   "context_length": 1000000
   },
   {
    "id": "stepfun/step-3.5-flash",

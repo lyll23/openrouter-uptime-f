@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T11:53:38+00:00 UTC)
+## Current status (2026-10-13T18:07:49+00:00 UTC)
 
-459 models polled, 1402 inference endpoints:
-up 939, degraded 71, down 19, idle 373.
+463 models polled, 1410 inference endpoints:
+up 941, degraded 73, down 28, idle 368.
 
-Currently down (19):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 39% | 33% |
-| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 33% | n/a |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 13% | 20% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 100% |
-| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 78% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | n/a |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock` | Amazon Bedrock | 53% | 0% |
+| `anthropic/claude-haiku-5.5` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 75% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 67% | 100% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 67% | 100% |
+| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 56% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 80% | 100% |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 93% | 100% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 14% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| plus 4 more | | | | |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 37% | 100% |
+| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-6-luna` | `azure/us` | Azure | 17% | 0% |
+| `openai/gpt-6-luna-pro` | `openai/flex` | OpenAI | 0% | n/a |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -132,7 +132,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-11 13:01** — **3 models added to the catalog in one poll**: `~openai/gpt-astra-latest`, `~openai/gpt-luna-latest`, `~openai/gpt-terra-latest`.
 - **2026-09-18 00:45** — provider `typesafe` changed its terms of service url.
 - **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
 - **2026-09-22 05:39** — **6 models added to the catalog in one poll**: `nex-agi/nex-n2.5-mini`, `nex-agi/nex-n2.5-pro`, `x-ai/grok-4.7`, `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
@@ -144,6 +143,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-03 08:14** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 08:14** — provider `tenstorrent` changed its status page.
 - **2026-10-09 16:18** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
+- **2026-10-13 18:07** — **4 models added to the catalog in one poll**: `google/gemini-4-argon`, `liquid/lfm-2.5-24b-a2b`, `scaledown/extract`, `scaledown/summarize`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
