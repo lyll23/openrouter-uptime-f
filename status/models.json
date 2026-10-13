@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-13T18:07:49+00:00",
- "count": 463,
+ "generated": "2026-10-13T19:20:43+00:00",
+ "count": 461,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -259,12 +259,6 @@
    "name": "Anthropic: Claude Sonnet 5 (batch)",
    "created": 1782843083,
    "context_length": 1000000
-  },
-  {
-   "id": "apodex/apodex-1.1-mini:free",
-   "name": "Apodex: Apodex 1.1 Mini (free)",
-   "created": 1790875335,
-   "context_length": 262144
   },
   {
    "id": "arcee-ai/trinity-large-thinking",
@@ -651,6 +645,12 @@
    "context_length": 1048576
   },
   {
+   "id": "google/gemini-4-argon:batch",
+   "name": "Google: Gemini 4 Argon (batch)",
+   "created": 1791907477,
+   "context_length": 1048576
+  },
+  {
    "id": "google/gemini-nano-banana-2.1",
    "name": "Google: Nano Banana 2.1",
    "created": 1791300825,
@@ -753,22 +753,10 @@
    "context_length": 262144
   },
   {
-   "id": "inclusionai/ling-3.0-flash-fin",
-   "name": "inclusionAI: Ling 3.0 Flash Fin",
-   "created": 1787846290,
-   "context_length": 262144
-  },
-  {
-   "id": "inclusionai/ling-3.0-flash-sante",
-   "name": "inclusionAI: Ling 3.0 Flash Sante",
-   "created": 1788545946,
-   "context_length": 262144
-  },
-  {
    "id": "inclusionai/ling-3.0-flash-vl",
    "name": "inclusionAI: Ling 3.0 Flash VL",
    "created": 1789056114,
-   "context_length": 262144
+   "context_length": 131072
   },
   {
    "id": "inclusionai/ling-3.1-flash",
