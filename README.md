@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T03:29:56+00:00 UTC)
+## Current status (2026-10-13T10:59:52+00:00 UTC)
 
 459 models polled, 1402 inference endpoints:
-up 916, degraded 65, down 20, idle 401.
+up 926, degraded 77, down 25, idle 374.
 
-Currently down (20):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 52% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 30% | 100% |
-| `google/gemma-4-31b-it` | `chutes/fp4` | Chutes | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `ionstream` | Ionstream | 80% | 100% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 54% | 60% |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 54% | 60% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 86% | 100% |
+| `google/gemma-4-31b-it` | `io-net` | Io Net | 0% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 35% | 0% |
+| `inception/mercury-2.5` | `inception` | Inception | 7% | 0% |
+| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | 0% | n/a |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 20% | 100% |
-| `qwen/qwen3.8-27b` | `deepinfra/bf16` | DeepInfra | 43% | 80% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 10% | 20% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 38% | 80% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 33% | n/a |
-| plus 5 more | | | | |
+| `openai/gpt-6-luna` | `azure` | Azure | 30% | 100% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 37% | 100% |
+| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `perplexity/sonar-deep-research` | `perplexity` | Perplexity | 50% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
