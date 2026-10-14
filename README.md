@@ -99,29 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-13T23:19:29+00:00 UTC)
+## Current status (2026-10-14T01:47:52+00:00 UTC)
 
-461 models polled, 1408 inference endpoints:
-up 914, degraded 59, down 14, idle 421.
+462 models polled, 1409 inference endpoints:
+up 883, degraded 59, down 34, idle 433.
 
-Currently down (14):
+Currently down (34):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `alibaba` | Alibaba | 46% | 0% |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 55% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 13% | 0% |
-| `qwen/qwen3-32b` | `tenstorrent/fp8` | Tenstorrent | 38% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `deepinfra/fp8` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `dekallm` | DekaLLM | 0% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 0% | 0% |
-| `qwen/qwen3.8-27b` | `cloudflare` | Cloudflare | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 45% | 60% |
-| `xiaomi/mimo-v2.6-pro-ultraspeed` | `xiaomi/fp8` | Xiaomi | 53% | 100% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 43% | 40% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 47% | 40% |
+| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 55% | 0% |
+| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 100% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `atlas-cloud/fp8` | AtlasCloud | 100% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `atlas-cloud/fp8` | AtlasCloud | 50% | 40% |
+| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 53% | 40% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meituan/longcat-2.0` | `atlas-cloud/fp8` | AtlasCloud | 53% | 40% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 50% | 50% |
+| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 33% | 50% |
+| plus 19 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
