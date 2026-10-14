@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T01:47:52+00:00 UTC)
+## Current status (2026-10-14T06:45:12+00:00 UTC)
 
-462 models polled, 1409 inference endpoints:
-up 883, degraded 59, down 34, idle 433.
+462 models polled, 1408 inference endpoints:
+up 923, degraded 60, down 29, idle 396.
 
-Currently down (34):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 57% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 43% | 40% |
-| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 47% | 40% |
-| `deepseek/deepseek-v4-flash-0731` | `atlas-cloud/fp4` | AtlasCloud | 55% | 0% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 100% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `atlas-cloud/fp8` | AtlasCloud | 100% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `atlas-cloud/fp8` | AtlasCloud | 50% | 40% |
-| `dots-studio/dots-3-note-preview:free` | `atlas-cloud/fp8` | AtlasCloud | 53% | 40% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 79% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 30% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meituan/longcat-2.0` | `atlas-cloud/fp8` | AtlasCloud | 53% | 40% |
-| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 50% | 50% |
-| `moonshotai/kimi-k2.5` | `atlas-cloud/int4` | AtlasCloud | 33% | 50% |
-| plus 19 more | | | | |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 47% | 20% |
+| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 63% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 63% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `open-inference/fp4` | OpenInference | 67% | 0% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 60% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `google/gemma-4-31b-it` | `parasail/fp8` | Parasail | 76% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 7% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 47% | 100% |
+| `moonshotai/kimi-k2.5` | `novita` | Novita | 93% | 100% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
