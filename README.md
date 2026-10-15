@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T00:36:17+00:00 UTC)
+## Current status (2026-10-15T04:24:40+00:00 UTC)
 
-462 models polled, 1414 inference endpoints:
-up 918, degraded 71, down 16, idle 409.
+462 models polled, 1407 inference endpoints:
+up 917, degraded 67, down 31, idle 392.
 
-Currently down (16):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 57% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
-| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 20% |
-| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 14% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 75% | 100% |
-| `x-ai/grok-4.3` | `xai/zdr` | xAI | 52% | 100% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 48% | 75% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 33% | n/a |
-| plus 1 more | | | | |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 29% | 75% |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 7% | 40% |
+| `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 40% | 20% |
+| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | n/a | n/a |
+| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | n/a | n/a |
+| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 71% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 54% | 80% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 3% | 0% |
+| `openai/gpt-oss-20b` | `darkbloom/fp8` | Darkbloom | 11% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
