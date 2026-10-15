@@ -99,30 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-14T23:52:20+00:00 UTC)
+## Current status (2026-10-15T00:36:17+00:00 UTC)
 
-462 models polled, 1413 inference endpoints:
-up 938, degraded 53, down 15, idle 407.
+462 models polled, 1414 inference endpoints:
+up 918, degraded 71, down 16, idle 409.
 
-Currently down (15):
+Currently down (16):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `together` | Together | 75% | 50% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 30% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 17% | 0% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 73% | 100% |
-| `x-ai/grok-4.7` | `xai` | xAI | 97% | 100% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 57% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 7% | 0% |
+| `openai/gpt-5.6-sol` | `openai/flex` | OpenAI | 0% | 0% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 7% | 0% |
+| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 50% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 70% | 20% |
+| `qwen/qwen3.5-397b-a17b` | `digitalocean` | DigitalOcean | 14% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 75% | 100% |
+| `x-ai/grok-4.3` | `xai/zdr` | xAI | 52% | 100% |
 | `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 43% | 100% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
-| `z-ai/glm-5.3-flash` | `sail-research/us` | Sail Research | 0% | 0% |
-| `z-ai/glm-5.3-flash` | `fireworks` | Fireworks | 83% | 100% |
+| `xiaomi/mimo-v2.6-flash` | `gmicloud/bf16` | GMICloud | 48% | 75% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
+| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 33% | n/a |
+| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
