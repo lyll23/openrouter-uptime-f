@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T21:41:43+00:00 UTC)
+## Current status (2026-10-15T23:07:29+00:00 UTC)
 
-463 models polled, 1423 inference endpoints:
-up 957, degraded 54, down 25, idle 387.
+465 models polled, 1424 inference endpoints:
+up 939, degraded 62, down 29, idle 394.
 
-Currently down (25):
+Currently down (29):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 60% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 75% | n/a |
-| `deepseek/deepseek-v3.2` | `mara` | Mara | 7% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 86% | 50% |
-| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 3% | 0% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 17% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 61% | 20% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 27% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 27% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 47% | 0% |
 | `google/gemma-4-31b-it` | `sambanova` | SambaNova | 0% | 0% |
-| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 74% | 0% |
-| `meta/muse-spark-open` | `fireworks` | Fireworks | 8% | 0% |
-| `moonshotai/kimi-k2.6` | `phala` | Phala | 48% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 17% | n/a |
-| plus 10 more | | | | |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 70% | 0% |
+| `meta/muse-spark-open` | `together` | Together | 87% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 29% | 0% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 70% | 20% |
+| plus 14 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -132,7 +132,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-18 00:45** — provider `typesafe` changed its privacy policy url.
 - **2026-09-22 05:39** — **6 models added to the catalog in one poll**: `nex-agi/nex-n2.5-mini`, `nex-agi/nex-n2.5-pro`, `x-ai/grok-4.7`, `xiaomi/mimo-v2.6-flash`, `xiaomi/mimo-v2.6-pro`, `xiaomi/mimo-v2.6-pro-ultraspeed`.
 - **2026-09-22 05:39** — **7 models removed from the catalog in one poll**: `anthropic/claude-opus-4`, `minimax/minimax-m3:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-oss-120b:batch`, `qwen/qwen3.5-9b:batch`, `qwen/qwen3.8-2.4t-a95b:batch`, `thinkingmachines/inkling:batch`.
 - **2026-09-22 18:54** — **13 models added to the catalog in one poll**: `anthropic/claude-opus-5.5`, `anthropic/claude-opus-5.5:batch`, `deepseek/deepseek-v4.1-flash:batch`, `moonshotai/kimi-k3:batch`, `openai/gpt-6-luna`, `openai/gpt-6-luna-pro`, `openai/gpt-6-luna-pro:batch`, `openai/gpt-6-luna:batch`, +5 more.
@@ -144,6 +143,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-09 16:18** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
 - **2026-10-13 18:07** — **4 models added to the catalog in one poll**: `google/gemini-4-argon`, `liquid/lfm-2.5-24b-a2b`, `scaledown/extract`, `scaledown/summarize`.
 - **2026-10-13 19:20** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-10-15 23:07** — provider `makora` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
