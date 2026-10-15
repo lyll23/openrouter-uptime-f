@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-15T14:14:34+00:00 UTC)
+## Current status (2026-10-15T17:08:06+00:00 UTC)
 
-461 models polled, 1413 inference endpoints:
-up 979, degraded 61, down 18, idle 355.
+462 models polled, 1416 inference endpoints:
+up 882, degraded 55, down 25, idle 454.
 
-Currently down (18):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 7% | 20% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 37% | 40% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 25% | 20% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 25% | 0% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 38% | 0% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 20% | 50% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 50% | 40% |
+| `moonshotai/kimi-k3` | `parasail/fast` | Parasail | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 57% | 0% |
-| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3.5-27b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 0% | 0% |
-| `xiaomi/mimo-v2.5-pro` | `streamlake` | StreamLake | 0% | n/a |
-| `z-ai/glm-4.7` | `deepinfra/fp4` | DeepInfra | 0% | 0% |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 12% | n/a |
-| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 50% | n/a |
-| plus 3 more | | | | |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 57% | 40% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 50% | 100% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 33% | 0% |
+| `qwen/qwen3.5-122b-a10b` | `siliconflow/fp8` | SiliconFlow | 9% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `venice` | Venice | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 

@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-15T14:14:34+00:00",
- "count": 461,
+ "generated": "2026-10-15T17:08:06+00:00",
+ "count": 462,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -1251,6 +1251,18 @@
    "context_length": 1000000
   },
   {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "created": 1792076662,
+   "context_length": 1048576
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl:free",
+   "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+   "created": 1792076662,
+   "context_length": 1000000
+  },
+  {
    "id": "nvidia/switchyard",
    "name": "NVIDIA: Switchyard",
    "created": 1790025947,
@@ -2425,12 +2437,6 @@
    "name": "TypeSafe: Jev Router",
    "created": 1790363560,
    "context_length": 1000000
-  },
-  {
-   "id": "unbiased/pareto-26.10-preview",
-   "name": "Pareto 26.10 Preview",
-   "created": 1790863623,
-   "context_length": 1048576
   },
   {
    "id": "unbiased/pareto-26.9",
