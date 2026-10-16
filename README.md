@@ -99,31 +99,31 @@ ls raw/                                                   # one folder per day
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-16T23:27:50+00:00 UTC)
+## Current status (2026-10-16T23:40:14+00:00 UTC)
 
 467 models polled, 1461 inference endpoints:
-up 954, degraded 61, down 32, idle 414.
+up 938, degraded 64, down 33, idle 426.
 
-Currently down (32):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `coreweave/fp8` | CoreWeave | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `coreweave/fp8` | CoreWeave | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 13% | 50% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 22% | n/a |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 90% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 20% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | 25% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 17% | 60% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 56% | n/a |
 | `meta-llama/llama-3.3-70b-instruct` | `together` | Together | 0% | n/a |
-| `meta-llama/llama-4-scout` | `novita/bf16` | Novita | 80% | 100% |
 | `meta/muse-spark-open` | `fireworks` | Fireworks | 0% | 0% |
-| `minimax/minimax-m2.5` | `novita/fp8` | Novita | 0% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
 | `moonshotai/kimi-k2.6` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| plus 17 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 33% | 0% |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
