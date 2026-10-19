@@ -86,10 +86,11 @@ python3 scripts/reparse.py raw/2026-07-04/140117.json.gz  # rebuild from raw
 ls raw/                                                   # one folder per day
 ```
 
-## Upstream history archive
+## Upstream data archive
 
-A separate daily job archives the existing history of `dthinkr/openrouter-uptime`
-since 2026-07-04 on the independent `upstream-data` branch. It preserves source
+A separate daily job archives `dthinkr/openrouter-uptime` observations dated
+2026-10-19 UTC onward on the independent `upstream-data` branch. Older data
+is not imported. It preserves source
 checksums, historical revisions and observation gaps without changing this fork's
 own collection. See [archive operation and data access](docs/upstream-archive.md).
 

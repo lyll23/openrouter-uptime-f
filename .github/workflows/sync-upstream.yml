@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Archive and verify upstream history
+      - name: Archive upstream data from 2026-10-19 UTC
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/sync_upstream.py --store "$RUNNER_TEMP/upstream-archive"

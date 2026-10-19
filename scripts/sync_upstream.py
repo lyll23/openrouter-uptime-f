@@ -17,14 +17,16 @@ import urllib.request
 
 UPSTREAM = 'dthinkr/openrouter-uptime'
 BRANCH = 'upstream-data'
-START = '2026-07-04'
+# Fixed user-approved UTC boundary; never a rolling 'today' window.
+START = '2026-10-19'
 MAX_BLOB = 95 * 1024 * 1024
 BATCH_BYTES = 128 * 1024 * 1024
 RAW = re.compile(r'raw/(\d{4}-\d{2}-\d{2})/([0-2]\d[0-5]\d[0-5]\d)\.json\.gz\Z')
 DERIVED = re.compile(r'derived/(\d{4}-\d{2}-\d{2})\.csv\Z')
-STATUS = {'status/' + p for p in ('audit.json', 'coverage.json', 'incidents.jsonl',
-    'last_seen.json', 'latest.json', 'model_changes.jsonl', 'models.json',
-    'provider_changes.jsonl', 'providers.json')}
+# Current snapshots only. Historical incidents/change logs and cumulative
+# coverage/audit/last_seen are intentionally excluded from this scope.
+STATUS = {'status/latest.json', 'status/models.json', 'status/providers.json'}
+SCOPE = {'start_date': START, 'status_paths': sorted(STATUS)}
 SHA = re.compile(r'[0-9a-f]{40}\Z')
 
 
@@ -103,7 +105,15 @@ def snapshot():
     if not SHA.fullmatch(commit):
         raise ValueError('Invalid upstream commit')
     tree = api('git/trees/' + commit + '?recursive=1')
-    return {'commit': commit, 'files': select_tree(tree)}
+    return {'scope': SCOPE, 'commit': commit, 'files': select_tree(tree)}
+
+
+def validate_snapshot(pending):
+    if pending.get('scope') != SCOPE or not SHA.fullmatch(pending.get('commit', '')):
+        raise ValueError('Snapshot scope or commit mismatch; refusing old-history resume')
+    for path, item in pending['files'].items():
+        if not allowed(path) or not SHA.fullmatch(item['sha']) or not 0 <= item['size'] < MAX_BLOB:
+            raise ValueError('Snapshot contains a path outside the approved scope')
 
 
 def download(item, commit):
@@ -159,7 +169,7 @@ def coverage(files, manifest):
             day['missing_vs_nominal_96'] = max(0, 96 - day['upstream_samples'])
             day['all_existing_raw_archived'] = day['archived_samples'] == day['upstream_samples']
             date += dt.timedelta(days=1)
-    return {'source': UPSTREAM, 'start': START, 'days': days,
+    return {'source': UPSTREAM, 'scope': SCOPE, 'start': START, 'days': days,
             'note': '96/day is a comparison baseline, not a historical SLA. Day closure does not imply complete observations. Filename timestamps only; no inferred samples.'}
 
 
@@ -185,10 +195,14 @@ class Store:
             self.head = self.git('rev-parse', 'FETCH_HEAD').decode().strip()
             self.git('read-tree', self.head)
         self.manifest = self.read('manifest.json') if self.head else {
-            'schema': 1, 'source': UPSTREAM, 'start': START, 'complete_commit': None, 'files': {}}
-        if self.manifest.get('source') != UPSTREAM or self.manifest.get('schema') != 1:
-            raise ValueError('Unexpected archive manifest')
+            'schema': 2, 'source': UPSTREAM, 'scope': SCOPE, 'start': START,
+            'complete_commit': None, 'files': {}}
+        if (self.manifest.get('source') != UPSTREAM or self.manifest.get('schema') != 2
+                or self.manifest.get('scope') != SCOPE or self.manifest.get('start') != START):
+            raise ValueError('Archive manifest scope mismatch; explicit migration required')
         self.pending = self.read('pending.json') if self.head else None
+        if self.pending is not None:
+            validate_snapshot(self.pending)
         if self.head:
             self.verify_objects()
 
@@ -266,6 +280,7 @@ class Store:
 
 
 def sync(store, pending, workers=8):
+    validate_snapshot(pending)
     commit, files = pending['commit'], pending['files']
     todo = [(p, e) for p, e in sorted(files.items())
             if store.manifest['files'].get(p, {}).get('sha') != e['sha']]
