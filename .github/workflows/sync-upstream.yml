@@ -1,0 +1,39 @@
+name: sync-upstream
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-upstream.yml"
+      - "scripts/sync_upstream.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: upstream-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'lyll23/openrouter-uptime-f' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Archive and verify upstream history
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync_upstream.py --store "$RUNNER_TEMP/upstream-archive"

@@ -86,6 +86,13 @@ python3 scripts/reparse.py raw/2026-07-04/140117.json.gz  # rebuild from raw
 ls raw/                                                   # one folder per day
 ```
 
+## Upstream history archive
+
+A separate daily job archives the existing history of `dthinkr/openrouter-uptime`
+since 2026-07-04 on the independent `upstream-data` branch. It preserves source
+checksums, historical revisions and observation gaps without changing this fork's
+own collection. See [archive operation and data access](docs/upstream-archive.md).
+
 ## Notes
 
 - Keyless: `poll.py` uses only OpenRouter's public API.
@@ -148,4 +155,5 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
 <!-- AUTOGEN:EVENTS:END -->
+
 
