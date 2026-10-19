@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T14:35:27+00:00 UTC)
+## Current status (2026-10-19T19:59:27+00:00 UTC)
 
-469 models polled, 1476 inference endpoints:
-up 996, degraded 64, down 50, idle 366.
+470 models polled, 1477 inference endpoints:
+up 984, degraded 61, down 18, idle 414.
 
-Currently down (50):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `anthropic/claude-sonnet-4.6` | `azure/global` | Azure | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp8` | BaseTen | 13% | 80% |
-| `deepseek/deepseek-v4-flash-0731` | `baseten/fp32` | BaseTen | 4% | 33% |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 41% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 15% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `parasail/fp8` | Parasail | 0% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/global` | Google | 33% | 0% |
-| `google/gemini-2.5-pro` | `google-vertex/eu` | Google | 25% | n/a |
-| `google/gemini-2.5-pro-preview` | `google-vertex/global` | Google | 33% | 0% |
-| `google/gemini-2.5-pro-preview` | `google-vertex/eu` | Google | 25% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 72% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 37% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| plus 35 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `reka` | Reka | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 33% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 50% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 100% |
+| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
+| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 29% | 0% |
+| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
+| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 11% | 0% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -156,5 +156,4 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
 <!-- AUTOGEN:EVENTS:END -->
-
 
