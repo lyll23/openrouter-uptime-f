@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T19:59:27+00:00 UTC)
+## Current status (2026-10-19T23:46:35+00:00 UTC)
 
-470 models polled, 1477 inference endpoints:
-up 984, degraded 61, down 18, idle 414.
+470 models polled, 1479 inference endpoints:
+up 918, degraded 73, down 39, idle 449.
 
-Currently down (18):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `reka` | Reka | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 67% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 33% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 33% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 55% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 27% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 74% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 47% | 100% |
-| `qwen/qwen3.5-9b` | `together` | Together | 0% | n/a |
-| `qwen/qwen3.8-27b` | `coreweave/fp8` | CoreWeave | 29% | 0% |
-| `x-ai/grok-4.20-multi-agent` | `xai` | xAI | 0% | n/a |
-| `xiaomi/mimo-v2.5` | `streamlake` | StreamLake | 11% | 0% |
-| plus 3 more | | | | |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 67% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 67% | 100% |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
