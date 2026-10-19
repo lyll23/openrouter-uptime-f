@@ -93,7 +93,8 @@ def request(url, limit, token=None):
 
 
 def api(path):
-    return json.loads(request('https://api.github.com/repos/' + UPSTREAM + '/' + path,
+    suffix = '/' + path if path else ''
+    return json.loads(request('https://api.github.com/repos/' + UPSTREAM + suffix,
                               32 * 1024 * 1024, os.getenv('GITHUB_TOKEN')))
 
 

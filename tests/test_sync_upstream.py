@@ -22,6 +22,15 @@ def tree_entry(path, data):
 
 
 class SyncTests(unittest.TestCase):
+    def test_repository_metadata_url_has_no_trailing_slash(self):
+        with patch.object(s, 'request', return_value=b'{"default_branch":"main"}') as req:
+            self.assertEqual(s.api('')['default_branch'], 'main')
+            self.assertEqual(req.call_args.args[0], 'https://api.github.com/repos/' + s.UPSTREAM)
+        with patch.object(s, 'request', return_value=b'{}') as req:
+            s.api('git/trees/' + 'a' * 40 + '?recursive=1')
+            self.assertEqual(req.call_args.args[0], 'https://api.github.com/repos/' + s.UPSTREAM
+                             + '/git/trees/' + 'a' * 40 + '?recursive=1')
+
     def test_allowlist(self):
         for path in ['raw/2026-10-19/000001.json.gz', 'derived/2026-10-19.csv', 'status/latest.json', 'LICENSE']:
             self.assertTrue(s.allowed(path))
