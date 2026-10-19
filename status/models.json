@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-19T06:58:18+00:00",
- "count": 471,
+ "generated": "2026-10-19T13:36:21+00:00",
+ "count": 469,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -361,12 +361,6 @@
    "name": "DeepSeek: DeepSeek V3.1",
    "created": 1755779628,
    "context_length": 163840
-  },
-  {
-   "id": "deepseek/deepseek-r1",
-   "name": "DeepSeek: R1",
-   "created": 1737381095,
-   "context_length": 64000
   },
   {
    "id": "deepseek/deepseek-r1-0528",
@@ -840,7 +834,7 @@
    "id": "meta-llama/llama-4-maverick",
    "name": "Meta: Llama 4 Maverick",
    "created": 1743881822,
-   "context_length": 1048576
+   "context_length": 524288
   },
   {
    "id": "meta-llama/llama-4-scout",
@@ -909,12 +903,6 @@
    "context_length": 16384
   },
   {
-   "id": "microsoft/wizardlm-2-8x22b",
-   "name": "WizardLM-2 8x22B",
-   "created": 1713225600,
-   "context_length": 65535
-  },
-  {
    "id": "minimax/minimax-01",
    "name": "MiniMax: MiniMax-01",
    "created": 1736915462,
@@ -961,6 +949,12 @@
    "name": "MiniMax: MiniMax M3",
    "created": 1780245374,
    "context_length": 1048576
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash:free",
+   "name": "MiniMax: MiniMax M3.1 Flash (free)",
+   "created": 1792379569,
+   "context_length": 1000000
   },
   {
    "id": "mistralai/codestral-2508",
@@ -2352,12 +2346,6 @@
    "id": "sao10k/l3.1-euryale-70b",
    "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
    "created": 1724803200,
-   "context_length": 131072
-  },
-  {
-   "id": "sao10k/l3.3-euryale-70b",
-   "name": "Sao10K: Llama 3.3 Euryale 70B",
-   "created": 1734535928,
    "context_length": 131072
   },
   {
