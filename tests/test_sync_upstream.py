@@ -81,6 +81,37 @@ class SyncTests(unittest.TestCase):
         self.assertFalse(result['2026-07-04']['all_existing_raw_archived'])
         self.assertEqual(result['2026-07-04']['missing_vs_nominal_96'], 95)
 
+    def test_download_failure_resumes_published_checkpoint(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            remote = root / 'remote.git'
+            subprocess.run(['git', 'init', '--bare', '-q', str(remote)], check=True)
+            subprocess.run(['git', '-C', str(remote), 'config', 'uploadpack.allowFilter', 'true'], check=True)
+            data = {'LICENSE': b'MIT', 'derived/2026-07-04.csv': b'rows',
+                    'raw/2026-07-04/000000.json.gz': gzip.compress(b'{}')}
+            snap = {'commit': 'd' * 40, 'files': {p: entry(v) for p, v in data.items()}}
+            store = s.Store(root / 'first', str(remote))
+            real_download = s.download
+            seen = []
+            def download(item, commit):
+                seen.append(item[0])
+                with patch.object(s, 'request', return_value=data[item[0]]):
+                    return real_download(item, commit)
+            def fail_after_license(item, commit):
+                if item[0] != 'LICENSE': raise OSError('simulated interrupted download')
+                return download(item, commit)
+            with patch.object(s, 'BATCH_BYTES', 1), patch.object(s, 'download', side_effect=fail_after_license):
+                with self.assertRaises(OSError): s.sync(store, snap, workers=1)
+            resumed = s.Store(root / 'second', 'file://' + str(remote))
+            self.assertEqual(resumed.pending['commit'], 'd' * 40)
+            self.assertIsNone(resumed.manifest['complete_commit'])
+            seen.clear()
+            with patch.object(s, 'download', side_effect=download):
+                report = s.sync(resumed, resumed.pending, workers=1)
+            self.assertNotIn('LICENSE', seen)
+            self.assertEqual(report['verified_files'], 3)
+            self.assertTrue(report['snapshot_complete'])
+
     def test_git_checkpoints_resume_revisions_and_deletion_retention(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

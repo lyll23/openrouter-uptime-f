@@ -38,7 +38,8 @@ zero timestamp; `encoding: gzip` means decompress once to recover original bytes
 - `manifest.json`: source repository, last fully completed source commit, and
   per-source-path current archived version, sizes, SHA-1, SHA-256, encoding,
   content-addressed object path, source commit, previous versions and presence.
-- `objects/`: immutable `.gz` objects named by their original Git blob SHA.
+- `objects/`: immutable `.gz` objects named by their original Git blob SHA and
+  storage encoding, so equal source bytes with different encodings never alias.
 - `pending.json`: pinned source commit and full target tree for an incomplete
   import; `null` means that target completed.
 - `coverage.json`: counts of expected and verified files, snapshot completeness,
@@ -89,7 +90,12 @@ The archive uses partial-clone (`blob:none`) fetch plus Git index/tree operation
 it does not check out old data. Ordinary daily runs transfer metadata and changed
 files, not the entire historical dataset. Binary archives are content-addressed;
 text datasets are losslessly compressed to reduce repository growth. Git delta
-search is disabled to avoid hydrating old objects during push. Bootstrap processes
+search is disabled to avoid hydrating old objects during push.
+The manifest's `stored_git_sha` is compared with the current Git tree for every
+current and retained object, without reading blob bodies. Missing or changed
+objects fail closed. `git write-tree --missing-ok` is intentional: the default
+command would fetch every promised historical blob to check it locally.
+Bootstrap processes
 at most 512 files / 128 MiB of source bytes in each checkpoint, far below GitHub's
 single-push limit, rather than pushing the entire ~2.56 GB uncompressed source
 snapshot at once. Each stored blob is below 95 MiB. Initial raw archives still

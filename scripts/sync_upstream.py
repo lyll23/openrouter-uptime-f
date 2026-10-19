@@ -242,7 +242,10 @@ class Store:
         report = coverage(pending['files'], self.manifest)
         report.update(snapshot_commit=pending['commit'], snapshot_complete=complete,
             expected_files=len(pending['files']), verified_files=sum(
-                self.manifest['files'].get(p, {}).get('sha') == e['sha'] for p, e in pending['files'].items()))
+                self.manifest['files'].get(p, {}).get('sha') == e['sha'] for p, e in pending['files'].items()),
+            expected_source_bytes=sum(e['size'] for e in pending['files'].values()),
+            verified_source_bytes=sum(e['size'] for p, e in pending['files'].items()
+                if self.manifest['files'].get(p, {}).get('sha') == e['sha']))
         self.put('coverage.json', encode(report))
         # Prior remote objects are verified by tree SHA and intentionally absent
         # locally. Default write-tree would hydrate every promised blob.
