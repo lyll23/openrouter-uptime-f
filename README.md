@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T17:55:44+00:00 UTC)
+## Current status (2026-10-20T19:21:09+00:00 UTC)
 
 468 models polled, 1464 inference endpoints:
-up 999, degraded 58, down 18, idle 389.
+up 977, degraded 58, down 31, idle 398.
 
-Currently down (18):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 30% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 13% | 0% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 50% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 69% | 100% |
+| `deepseek/deepseek-v4-flash-0731` | `together` | Together | 3% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `fireworks` | Fireworks | 3% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks` | Fireworks | 7% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 55% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 75% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global` | Google | 47% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 80% | 75% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 33% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-6.1-sol` | `openai/flex` | OpenAI | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `nebius/fp8` | Nebius | 63% | 40% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 25% | n/a |
-| `z-ai/glm-4.7` | `venice/fp4` | Venice | 0% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| `z-ai/glm-5.1` | `chutes/fp8` | Chutes | 75% | n/a |
-| `z-ai/glm-5.1` | `venice/fp8` | Venice | n/a | n/a |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| plus 3 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `together` | Together | 0% | 0% |
+| `openai/gpt-5.4-nano` | `openai/flex` | OpenAI | 60% | 100% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
