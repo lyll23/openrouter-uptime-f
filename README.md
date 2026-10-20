@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-19T23:46:35+00:00 UTC)
+## Current status (2026-10-20T02:09:24+00:00 UTC)
 
 470 models polled, 1479 inference endpoints:
-up 918, degraded 73, down 39, idle 449.
+up 926, degraded 75, down 23, idle 455.
 
-Currently down (39):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 83% | 20% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `parasail/fp8` | Parasail | 33% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `parasail/fp8` | Parasail | 55% | 50% |
-| `deepseek/deepseek-v4.1-flash-1017` | `alibaba` | Alibaba | 27% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 25% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemma-3-27b-it` | `parasail/fp8` | Parasail | 67% | 100% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 48% | 75% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 41% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 52% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 67% | 100% |
-| plus 24 more | | | | |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 20% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 80% |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 56% | 60% |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 0% | 0% |
+| `minimax/minimax-m3` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-oss-120b` | `novita/fp4` | Novita | 86% | n/a |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
