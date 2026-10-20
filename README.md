@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T04:59:01+00:00 UTC)
+## Current status (2026-10-20T07:42:56+00:00 UTC)
 
-470 models polled, 1481 inference endpoints:
-up 971, degraded 58, down 21, idle 431.
+470 models polled, 1483 inference endpoints:
+up 978, degraded 66, down 25, idle 414.
 
-Currently down (21):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 52% | 33% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 73% | 100% |
-| `google/gemini-2.5-flash` | `google-vertex` | Google | 33% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 74% | 100% |
+| `arcee-ai/trinity-large-thinking` | `arcee-ai` | Arcee AI | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 55% | 100% |
+| `google/gemini-2.5-flash` | `google-vertex` | Google | 23% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 67% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/gemma-3-12b-it` | `nextbit/int4` | NextBit | 50% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 33% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `crusoe/bf16` | Crusoe | 20% | n/a |
-| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
-| `qwen/qwen3.5-27b` | `alibaba` | Alibaba | 0% | n/a |
-| plus 6 more | | | | |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 73% | 60% |
+| `google/gemma-3-27b-it` | `novita/bf16` | Novita | 73% | 40% |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 56% | 100% |
+| `google/gemma-4-31b-it` | `deepinfra/fp8/flex` | DeepInfra | 43% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
