@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-20T22:24:34+00:00 UTC)
+## Current status (2026-10-21T00:05:03+00:00 UTC)
 
-468 models polled, 1473 inference endpoints:
-up 997, degraded 52, down 17, idle 407.
+468 models polled, 1470 inference endpoints:
+up 923, degraded 101, down 33, idle 413.
 
-Currently down (17):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `open-inference/fp4` | OpenInference | 50% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `venice` | Venice | 83% | 100% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 55% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 18% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `open-inference/fp4` | OpenInference | 78% | 100% |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 53% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 27% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `google-vertex/global` | Google | 4% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 33% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 20% | 20% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 27% | 0% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-2` | Amazon Bedrock | 11% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 27% | 80% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
-| `z-ai/glm-5.2` | `phala/fp8` | Phala | n/a | n/a |
-| plus 2 more | | | | |
+| `nvidia/nemotron-3.5-super-vl` | `venice/fp4` | Venice | 0% | n/a |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
