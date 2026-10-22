@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-21T22:15:45+00:00 UTC)
+## Current status (2026-10-22T00:43:29+00:00 UTC)
 
-468 models polled, 1478 inference endpoints:
-up 989, degraded 60, down 27, idle 402.
+468 models polled, 1479 inference endpoints:
+up 960, degraded 40, down 28, idle 451.
 
-Currently down (27):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 33% | 75% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 65% | 100% |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 23% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 87% | 100% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 65% | 0% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 40% | 60% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 20% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 64% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 40% | 20% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 62% | 100% |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo-instruct` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-oss-20b` | `google-vertex/us-central1` | Google | 0% | 0% |
-| `openai/gpt-oss-20b` | `groq` | Groq | 63% | 100% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 50% | 80% |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 0% | 0% |
-| plus 12 more | | | | |
+| `qwen/qwen3-235b-a22b-2507` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 30% | 20% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
