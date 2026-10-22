@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-22T10:33:11+00:00 UTC)
+## Current status (2026-10-22T13:52:42+00:00 UTC)
 
-468 models polled, 1476 inference endpoints:
-up 1000, degraded 55, down 37, idle 384.
+468 models polled, 1475 inference endpoints:
+up 975, degraded 66, down 32, idle 402.
 
-Currently down (37):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | n/a | n/a |
+| `deepseek/deepseek-v3.2` | `atlas-cloud/fp8` | AtlasCloud | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
+| `deepseek/deepseek-v4-pro` | `parasail/fp8` | Parasail | 64% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 65% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 79% | 100% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 13% | 0% |
-| `meta/muse-wonder` | `meta` | Meta | 40% | 60% |
-| `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
-| plus 22 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 59% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global` | Google | 10% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 22% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 7% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 7% | 0% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
