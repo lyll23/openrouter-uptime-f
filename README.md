@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T01:29:22+00:00 UTC)
+## Current status (2026-10-24T05:59:04+00:00 UTC)
 
-469 models polled, 1499 inference endpoints:
-up 973, degraded 48, down 39, idle 439.
+469 models polled, 1501 inference endpoints:
+up 957, degraded 39, down 38, idle 467.
 
-Currently down (39):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 38% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `atlas-cloud/fp4` | AtlasCloud | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 11% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 65% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 60% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 6% | 0% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 62% | 50% |
 | `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m3.1-flash` | `modelrun/fp4` | ModelRun | 0% | n/a |
+| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 53% | 0% |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | n/a | n/a |
-| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 0% | n/a |
-| plus 24 more | | | | |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
