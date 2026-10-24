@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-23T23:03:00+00:00 UTC)
+## Current status (2026-10-24T00:47:01+00:00 UTC)
 
-469 models polled, 1497 inference endpoints:
-up 996, degraded 38, down 33, idle 430.
+469 models polled, 1498 inference endpoints:
+up 986, degraded 53, down 31, idle 428.
 
-Currently down (33):
+Currently down (31):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 55% | n/a |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 67% | n/a |
-| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 97% | 80% |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 43% | 100% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | n/a |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 27% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 60% | 60% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 17% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 60% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 3% | 0% |
+| `moonshotai/kimi-k3` | `pareto-alpha/us` | ParetoAlpha | 20% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 18 more | | | | |
+| `openai/gpt-3.5-turbo` | `openai` | OpenAI | 0% | 0% |
+| plus 16 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
