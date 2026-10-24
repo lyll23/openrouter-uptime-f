@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T06:23:05+00:00 UTC)
+## Current status (2026-10-24T11:12:54+00:00 UTC)
 
-469 models polled, 1501 inference endpoints:
-up 954, degraded 46, down 40, idle 461.
+469 models polled, 1502 inference endpoints:
+up 1048, degraded 45, down 38, idle 371.
 
-Currently down (40):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 17% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `reka` | Reka | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `novita/fp8` | Novita | 17% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 4% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 9% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 73% | 100% |
-| `minimax/minimax-m2` | `minimax/fp8` | Minimax | 0% | n/a |
-| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 100% | n/a |
-| `minimax/minimax-m2.5` | `gmicloud/fp8` | GMICloud | 33% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 47% | 100% |
-| plus 25 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 26% | 100% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 3% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 30% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 57% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 23% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 80% |
+| `meta/muse-glimmer-30b` | `together` | Together | 7% | 40% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 23% | 40% |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
