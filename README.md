@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-24T11:30:15+00:00 UTC)
+## Current status (2026-10-24T14:37:54+00:00 UTC)
 
-469 models polled, 1502 inference endpoints:
-up 1044, degraded 46, down 43, idle 369.
+469 models polled, 1501 inference endpoints:
+up 968, degraded 46, down 51, idle 436.
 
-Currently down (43):
+Currently down (51):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 39% | 33% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 27% | 0% |
 | `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 80% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 67% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 40% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 57% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `liquid/lfm-2.5-2.6b:free` | `liquid/fp8` | Liquid | 37% | 40% |
+| `meta-llama/llama-3.1-8b-instruct` | `novita/fp8` | Novita | 0% | 0% |
+| `meta-llama/llama-3.3-70b-instruct` | `novita/bf16` | Novita | 0% | 0% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 33% | 40% |
-| `minimax/minimax-m3.1-flash` | `nebius/fp4` | Nebius | 0% | n/a |
-| plus 28 more | | | | |
+| plus 36 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
