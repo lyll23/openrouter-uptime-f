@@ -107,10 +107,10 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-25T16:31:44+00:00 UTC)
+## Current status (2026-10-25T17:35:38+00:00 UTC)
 
 467 models polled, 1500 inference endpoints:
-up 996, degraded 41, down 37, idle 426.
+up 980, degraded 41, down 37, idle 442.
 
 Currently down (37):
 
@@ -119,18 +119,18 @@ Currently down (37):
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 17% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 14% | 0% |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 87% | 20% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 18% | 50% |
+| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 41% | 60% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 8% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 15% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 3% | 0% |
+| `gryphe/mythomax-l2-13b` | `mancer/fp8` | Mancer 2 | n/a | n/a |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 11% | 0% |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 10% | 0% |
 | `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-4-turbo` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
 | plus 22 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
