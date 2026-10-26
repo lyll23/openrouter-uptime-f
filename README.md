@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T19:24:11+00:00 UTC)
+## Current status (2026-10-26T21:50:16+00:00 UTC)
 
-468 models polled, 1509 inference endpoints:
-up 1025, degraded 50, down 40, idle 394.
+468 models polled, 1508 inference endpoints:
+up 994, degraded 49, down 39, idle 426.
 
-Currently down (40):
+Currently down (39):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 60% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 86% | 40% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 41% | 67% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 23% | 0% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 59% | 80% |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 94% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 3% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
 | `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 25 more | | | | |
+| `minimax/minimax-m2-her` | `minimax` | Minimax | 81% | 100% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 62% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 80% |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 24 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
