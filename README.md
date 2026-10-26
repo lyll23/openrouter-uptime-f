@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T21:50:16+00:00 UTC)
+## Current status (2026-10-26T23:56:06+00:00 UTC)
 
-468 models polled, 1508 inference endpoints:
-up 994, degraded 49, down 39, idle 426.
+462 models polled, 1505 inference endpoints:
+up 987, degraded 32, down 43, idle 443.
 
-Currently down (39):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | 0% |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 77% | 40% |
+| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 59% | 80% |
-| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 94% | 80% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `deepseek/deepseek-v3.2` | `mara` | Mara | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 60% |
+| `deepseek/deepseek-v4.1-flash` | `mancer/fp8` | Mancer 2 | 39% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 86% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `reka` | Reka | 60% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 43% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 82% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
-| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 81% | 100% |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 62% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 80% |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 24 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 39% | 33% |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-03 08:14** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 08:14** — provider `tenstorrent` changed its status page.
 - **2026-10-09 16:18** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
 - **2026-10-13 18:07** — **4 models added to the catalog in one poll**: `google/gemini-4-argon`, `liquid/lfm-2.5-24b-a2b`, `scaledown/extract`, `scaledown/summarize`.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-24 17:39** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
 - **2026-10-26 13:19** — provider `azure` changed its terms of service url.
 - **2026-10-26 13:19** — provider `azure` changed its privacy policy url.
+- **2026-10-26 23:56** — **6 models removed from the catalog in one poll**: `ibm-granite/granite-4.0-h-micro`, `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
