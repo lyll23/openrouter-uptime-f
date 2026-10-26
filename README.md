@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-26T11:28:40+00:00 UTC)
+## Current status (2026-10-26T13:19:44+00:00 UTC)
 
-467 models polled, 1503 inference endpoints:
-up 1010, degraded 50, down 38, idle 405.
+466 models polled, 1502 inference endpoints:
+up 996, degraded 62, down 43, idle 401.
 
-Currently down (38):
+Currently down (43):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat-v3.1` | `mara` | Mara | 0% | n/a |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `mara` | Mara | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 45% | 33% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 25% | 50% |
-| `google/gemini-3.1-pro-preview` | `google-ai-studio` | Google AI Studio | 13% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 8% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/us` | Google | 57% | 80% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 7% | 20% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-ai-studio` | Google AI Studio | 43% | 100% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 13% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 3% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 19% | 50% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `meta/muse-glimmer-30b` | `together` | Together | 0% | 0% |
-| `minimax/minimax-m3` | `mara` | Mara | 0% | n/a |
-| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 23 more | | | | |
+| `inclusionai/ling-3.0-flash` | `deepinfra/bf16` | DeepInfra | 4% | 0% |
+| `meta/muse-glimmer-30b` | `together` | Together | 33% | 60% |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
+| plus 28 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,8 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-09-23 14:59** — **4 models added to the catalog in one poll**: `aion-labs/aion-3.5`, `aion-labs/aion-3.5-mini`, `stealth/space-bunny-alpha`, `upstage/solar-mini4`.
-- **2026-09-29 20:04** — **4 models added to the catalog in one poll**: `openai/gpt-6.1-sol`, `openai/gpt-6.1-sol-pro`, `openai/gpt-6.1-sol-pro:batch`, `openai/gpt-6.1-sol:batch`.
 - **2026-10-03 08:14** — provider `tenstorrent` changed its terms of service url.
 - **2026-10-03 08:14** — provider `tenstorrent` changed its status page.
 - **2026-10-09 16:18** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
@@ -152,6 +150,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-17 22:25** — provider `inferact-vllm` changed its privacy policy url.
 - **2026-10-19 13:36** — **3 models removed from the catalog in one poll**: `deepseek/deepseek-r1`, `microsoft/wizardlm-2-8x22b`, `sao10k/l3.3-euryale-70b`.
 - **2026-10-24 17:39** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
+- **2026-10-26 13:19** — provider `azure` changed its terms of service url.
+- **2026-10-26 13:19** — provider `azure` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
