@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-27T06:10:52+00:00 UTC)
+## Current status (2026-10-27T10:40:03+00:00 UTC)
 
-464 models polled, 1508 inference endpoints:
-up 1006, degraded 44, down 43, idle 415.
+463 models polled, 1509 inference endpoints:
+up 994, degraded 74, down 41, idle 400.
 
-Currently down (43):
+Currently down (41):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 33% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 21% | 100% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 73% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 58% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | 20% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 95% | n/a |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 60% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 42% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 21% | 0% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 80% |
-| `minimax/minimax-m2` | `minimax/fp8` | Minimax | 0% | n/a |
-| `minimax/minimax-m3` | `gmicloud/fp8` | GMICloud | 0% | n/a |
+| `minimax/minimax-m2` | `google-vertex` | Google | n/a | n/a |
+| `minimax/minimax-m2.5` | `minimax/highspeed` | Minimax | 62% | n/a |
+| `minimax/minimax-m3` | `parasail/fp8` | Parasail | 0% | n/a |
 | `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | n/a | n/a |
-| plus 28 more | | | | |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| plus 26 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
