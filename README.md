@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T06:53:41+00:00 UTC)
+## Current status (2026-10-28T07:30:31+00:00 UTC)
 
-464 models polled, 1515 inference endpoints:
-up 1003, degraded 59, down 35, idle 418.
+464 models polled, 1513 inference endpoints:
+up 998, degraded 71, down 33, idle 411.
 
-Currently down (35):
+Currently down (33):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 29% | 100% |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
 | `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | n/a |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | n/a |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 84% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 3% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 14% | 20% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 77% | 100% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 89% | 75% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
 | `minimax/minimax-m2` | `google-vertex` | Google | 0% | n/a |
-| `moonshotai/kimi-k2.7-code` | `nebius/fp4` | Nebius | 58% | n/a |
+| `moonshotai/kimi-k2-thinking` | `google-vertex` | Google | 0% | n/a |
 | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-3.5-turbo-16k` | `openai` | OpenAI | n/a | n/a |
 | `openai/gpt-4-turbo` | `openai` | OpenAI | n/a | n/a |
-| `openai/gpt-4.1-nano` | `openai` | OpenAI | 0% | 0% |
-| plus 20 more | | | | |
+| plus 18 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
