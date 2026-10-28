@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-28T14:24:11+00:00 UTC)
+## Current status (2026-10-28T19:38:27+00:00 UTC)
 
-464 models polled, 1514 inference endpoints:
-up 1037, degraded 69, down 38, idle 370.
+456 models polled, 1494 inference endpoints:
+up 1032, degraded 57, down 23, idle 382.
 
-Currently down (38):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 77% | 40% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 60% | 60% |
-| `deepseek/deepseek-v3.2` | `google-vertex` | Google | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `relace/fp4` | Relace | 10% | 75% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 59% | 75% |
+| `deepseek/deepseek-chat` | `deepinfra/fp4` | DeepInfra | 53% | 60% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 89% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 31% | 20% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 47% | 40% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 3% | 0% |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 31% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.5-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemma-4-26b-a4b-it` | `darkbloom` | Darkbloom | 60% | 80% |
-| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 72% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
-| plus 23 more | | | | |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 60% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 44% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `moonshotai/kimi-k2.6` | `digitalocean` | DigitalOcean | 0% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 60% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 23% | 20% |
+| `openai/gpt-5.4` | `openai/flex` | OpenAI | 0% | n/a |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,10 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-03 08:14** — provider `tenstorrent` changed its status page.
-- **2026-10-09 16:18** — **11 models removed from the catalog in one poll**: `qwen/qwen-plus-2025-07-28`, `qwen/qwen3-235b-a22b`, `qwen/qwen3-30b-a3b-thinking-2507`, `qwen/qwen3-8b`, `qwen/qwen3-coder-plus`, `qwen/qwen3-max`, `qwen/qwen3-max-thinking`, `qwen/qwen3-vl-235b-a22b-thinking`, +3 more.
-- **2026-10-13 18:07** — **4 models added to the catalog in one poll**: `google/gemini-4-argon`, `liquid/lfm-2.5-24b-a2b`, `scaledown/extract`, `scaledown/summarize`.
-- **2026-10-13 19:20** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-10-15 23:07** — provider `makora` changed its status page.
 - **2026-10-17 22:25** — provider `inferact-vllm` changed its terms of service url.
 - **2026-10-17 22:25** — provider `inferact-vllm` changed its privacy policy url.
@@ -152,6 +148,10 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-26 13:19** — provider `azure` changed its terms of service url.
 - **2026-10-26 13:19** — provider `azure` changed its privacy policy url.
 - **2026-10-26 23:56** — **6 models removed from the catalog in one poll**: `ibm-granite/granite-4.0-h-micro`, `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-medium-3.1:batch`, `mistralai/mistral-small-2603:batch`.
+- **2026-10-28 19:38** — **8 models removed from the catalog in one poll**: `openai/gpt-4-turbo`, `openai/o1`, `openai/o1-pro`, `openai/o3-mini`, `openai/o3-mini-high`, `openai/o4-mini`, `openai/o4-mini-high`, `qwen/qwen3-next-80b-a3b-thinking`.
+- **2026-10-28 19:38** — provider `primalabs` changed its terms of service url.
+- **2026-10-28 19:38** — provider `primalabs` changed its privacy policy url.
+- **2026-10-28 19:38** — provider `primalabs` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
