@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-29T02:55:54+00:00 UTC)
+## Current status (2026-10-29T05:57:15+00:00 UTC)
 
 457 models polled, 1505 inference endpoints:
-up 1004, degraded 54, down 26, idle 421.
+up 1003, degraded 50, down 23, idle 429.
 
-Currently down (26):
+Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 40% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | 25% |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 53% | 60% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 0% | 0% |
+| `bytedance/ui-tars-1.5-7b` | `parasail/bf16` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 61% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `nebius/fp8` | Nebius | 33% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/priority` | DeepInfra | 43% | 80% |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 7% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 71% | n/a |
 | `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 68% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `google/gemma-4-31b-it` | `deepinfra/fp8/priority` | DeepInfra | 80% | 100% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 29% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inference-net/schematron-v2-turbo` | `inference-net/us` | InferenceNet | 0% | n/a |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 30% | 80% |
-| `meta/muse-spark-open` | `nebius/fp4` | Nebius | 3% | 0% |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 0% | 0% |
-| plus 11 more | | | | |
+| `meta/muse-glimmer-30b` | `together` | Together | 23% | 0% |
+| plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
