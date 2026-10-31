@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-10-31T08:46:57+00:00 UTC)
+## Current status (2026-10-31T14:50:15+00:00 UTC)
 
-456 models polled, 1511 inference endpoints:
-up 992, degraded 46, down 23, idle 450.
+452 models polled, 1505 inference endpoints:
+up 988, degraded 32, down 38, idle 447.
 
-Currently down (23):
+Currently down (38):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 64% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | 0% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 78% | 100% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | 100% | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 50% | 100% |
-| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 50% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `baidu/fp8` | Baidu | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | n/a | n/a |
-| `nvidia/nemotron-3-nano-30b-a3b` | `novita/fp4` | Novita | 0% | n/a |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-lightning` | `fireworks` | Fireworks | 58% | 100% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen-2.5-7b-instruct` | `phala` | Phala | 0% | 0% |
-| plus 8 more | | | | |
+| `deepseek/deepseek-v4.1-flash` | `decart/fp4` | Decart | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash` | `phala` | Phala | 33% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `baseten/fast` | BaseTen | 50% | 50% |
+| `deepseek/deepseek-v4.1-flash-1017` | `decart/fp4` | Decart | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 33% |
+| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `google/gemini-3.5-flash-lite` | `google-vertex/global/flex` | Google | 69% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 25% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 43% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 60% | 0% |
+| plus 23 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-15 23:07** — provider `makora` changed its status page.
 - **2026-10-17 22:25** — provider `inferact-vllm` changed its terms of service url.
 - **2026-10-17 22:25** — provider `inferact-vllm` changed its privacy policy url.
 - **2026-10-19 13:36** — **3 models removed from the catalog in one poll**: `deepseek/deepseek-r1`, `microsoft/wizardlm-2-8x22b`, `sao10k/l3.3-euryale-70b`.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-28 19:38** — provider `primalabs` changed its terms of service url.
 - **2026-10-28 19:38** — provider `primalabs` changed its privacy policy url.
 - **2026-10-28 19:38** — provider `primalabs` changed its status page.
+- **2026-10-31 14:50** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
