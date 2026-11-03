@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-03T02:56:43+00:00 UTC)
+## Current status (2026-11-03T09:25:44+00:00 UTC)
 
-451 models polled, 1516 inference endpoints:
-up 1039, degraded 41, down 31, idle 405.
+451 models polled, 1517 inference endpoints:
+up 1022, degraded 60, down 35, idle 400.
 
-Currently down (31):
+Currently down (35):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-lite-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 25% | n/a |
+| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 82% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v3.2` | `sambanova` | SambaNova | n/a | n/a |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `siliconflow/fp8` | SiliconFlow | 57% | 100% |
+| `deepseek/deepseek-v4-pro` | `novita/fp8` | Novita | 35% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `gmicloud/fp8` | GMICloud | 67% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 13% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 100% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `gmicloud/fp8` | GMICloud | 0% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 71% | 20% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `openai/gpt-5.6-luna` | `openai/flex` | OpenAI | 47% | 60% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| plus 16 more | | | | |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 60% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 100% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 100% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 50% | 0% |
+| plus 20 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
