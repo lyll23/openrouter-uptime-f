@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-02T20:50:03+00:00 UTC)
+## Current status (2026-11-03T01:52:18+00:00 UTC)
 
-451 models polled, 1519 inference endpoints:
-up 1015, degraded 61, down 27, idle 416.
+451 models polled, 1515 inference endpoints:
+up 998, degraded 55, down 30, idle 432.
 
-Currently down (27):
+Currently down (30):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-micro-v1` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 50% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 46% | 75% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 96% | 100% |
 | `deepseek/deepseek-v4-flash` | `alibaba/fp8/us-east-1` | Alibaba | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 62% | n/a |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `deepseek/deepseek-v4-pro` | `cloudflare` | Cloudflare | 71% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 100% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 60% | 100% |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2-her` | `minimax` | Minimax | 20% | 0% |
-| `minimax/minimax-m2.7` | `minimax/highspeed` | Minimax | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `venice/int4` | Venice | 31% | n/a |
+| `ibm-granite/granite-4.2-8b` | `deepinfra/bf16` | DeepInfra | 91% | 100% |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 0% | 0% |
+| `moonshotai/kimi-k3` | `decart/mxfp4` | Decart | 67% | n/a |
 | `moonshotai/kimi-k3` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | Nvidia | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 57% | n/a |
-| `openai/gpt-6-luna` | `openai/flex` | OpenAI | 0% | 0% |
-| plus 12 more | | | | |
+| plus 15 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,8 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-17 22:25** — provider `inferact-vllm` changed its terms of service url.
-- **2026-10-17 22:25** — provider `inferact-vllm` changed its privacy policy url.
 - **2026-10-19 13:36** — **3 models removed from the catalog in one poll**: `deepseek/deepseek-r1`, `microsoft/wizardlm-2-8x22b`, `sao10k/l3.3-euryale-70b`.
 - **2026-10-24 17:39** — **3 models removed from the catalog in one poll**: `openai/gpt-3.5-turbo`, `openai/gpt-3.5-turbo-instruct`, `openai/gpt-3.5-turbo:batch`.
 - **2026-10-26 13:19** — provider `azure` changed its terms of service url.
@@ -152,6 +150,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-10-28 19:38** — provider `primalabs` changed its privacy policy url.
 - **2026-10-28 19:38** — provider `primalabs` changed its status page.
 - **2026-10-31 14:50** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
+- **2026-11-03 01:52** — provider `kt` changed its terms of service url.
+- **2026-11-03 01:52** — provider `kt` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
