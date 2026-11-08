@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-08T21:56:40+00:00 UTC)
+## Current status (2026-11-08T22:56:28+00:00 UTC)
 
-461 models polled, 1526 inference endpoints:
-up 1011, degraded 42, down 28, idle 445.
+461 models polled, 1523 inference endpoints:
+up 999, degraded 41, down 25, idle 458.
 
-Currently down (28):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 77% | 60% |
-| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 53% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `baidu/fp8` | Baidu | 62% | 60% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 37% | 40% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 0% |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 95% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 81% | 100% |
-| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 71% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 100% |
-| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 44% | 50% |
-| plus 13 more | | | | |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 50% | 50% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 75% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 53% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 71% | n/a |
+| `meta/muse-spark-open` | `fireworks/us` | Fireworks | 20% | 60% |
+| `meta/muse-spark-open` | `fireworks` | Fireworks | 100% | n/a |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 56% | n/a |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 20% | 0% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
