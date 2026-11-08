@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-07T23:53:05+00:00",
- "count": 460,
+ "generated": "2026-11-08T05:50:00+00:00",
+ "count": 461,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -429,6 +429,12 @@
    "context_length": 1048576
   },
   {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "created": 1792225624,
+   "context_length": 1048576
+  },
+  {
    "id": "deepseek/deepseek-v4.1-flash:batch",
    "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
    "created": 1789021285,
@@ -721,24 +727,6 @@
    "name": "IBM: Granite 4.2 8B",
    "created": 1788206780,
    "context_length": 131072
-  },
-  {
-   "id": "inception/mercury-2",
-   "name": "Inception: Mercury 2",
-   "created": 1772636275,
-   "context_length": 128000
-  },
-  {
-   "id": "inception/mercury-2.5",
-   "name": "Inception: Mercury 2.5",
-   "created": 1788892137,
-   "context_length": 260000
-  },
-  {
-   "id": "inception/mercury-3",
-   "name": "Inception: Mercury 3",
-   "created": 1792158337,
-   "context_length": 1000000
   },
   {
    "id": "inclusionai/ling-3.0-flash",
@@ -1161,8 +1149,20 @@
    "context_length": 262144
   },
   {
+   "id": "morph/morph-v3-fast:batch",
+   "name": "Morph: Morph V3 Fast (batch)",
+   "created": 1751910002,
+   "context_length": 81920
+  },
+  {
    "id": "morph/morph-v3-large",
    "name": "Morph: Morph V3 Large",
+   "created": 1751910858,
+   "context_length": 262144
+  },
+  {
+   "id": "morph/morph-v3-large:batch",
+   "name": "Morph: Morph V3 Large (batch)",
    "created": 1751910858,
    "context_length": 262144
   },
@@ -2597,6 +2597,12 @@
   {
    "id": "z-ai/glm-5.2",
    "name": "Z.ai: GLM 5.2",
+   "created": 1781631930,
+   "context_length": 1048576
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
    "created": 1781631930,
    "context_length": 1048576
   },
