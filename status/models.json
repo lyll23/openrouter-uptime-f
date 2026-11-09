@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-09T19:13:10+00:00",
- "count": 463,
+ "generated": "2026-11-09T22:29:03+00:00",
+ "count": 464,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -95,7 +95,13 @@
   {
    "id": "anthropic/claude-fable-5.2",
    "name": "Anthropic: Claude Fable 5.2",
-   "created": 1794015854,
+   "created": 1794253781,
+   "context_length": 1000000
+  },
+  {
+   "id": "anthropic/claude-fable-5.2:batch",
+   "name": "Anthropic: Claude Fable 5.2 (batch)",
+   "created": 1794253781,
    "context_length": 1000000
   },
   {
@@ -2301,12 +2307,6 @@
    "context_length": 1000000
   },
   {
-   "id": "stealth/crouton-alpha",
-   "name": "Crouton Alpha",
-   "created": 1793669930,
-   "context_length": 1048576
-  },
-  {
    "id": "stepfun/step-3.5-flash",
    "name": "StepFun: Step 3.5 Flash",
    "created": 1769728337,
@@ -2395,6 +2395,12 @@
    "name": "Thinking Machines: Inkling",
    "created": 1784325956,
    "context_length": 524288
+  },
+  {
+   "id": "thinkingmachines/inkling-2-small:free",
+   "name": "Thinking Machines: Inkling 2 Small (free)",
+   "created": 1794261847,
+   "context_length": 1048576
   },
   {
    "id": "thinkingmachines/inkling-small",
