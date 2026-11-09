@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-09T11:45:49+00:00 UTC)
+## Current status (2026-11-09T19:13:10+00:00 UTC)
 
-461 models polled, 1516 inference endpoints:
-up 1047, degraded 48, down 29, idle 392.
+463 models polled, 1509 inference endpoints:
+up 1034, degraded 57, down 25, idle 393.
 
-Currently down (29):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | 0% |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 13% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 64% | 100% |
+| `deepseek/deepseek-chat-v3.1` | `sambanova/fp8` | SambaNova | 0% | n/a |
+| `deepseek/deepseek-v3.2` | `baidu/fp8` | Baidu | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `gmicloud/fp8` | GMICloud | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 24% | 100% |
+| `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `google/gemini-3.1-flash-lite-image` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 55% | 0% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 0% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 50% | n/a |
-| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 83% | 60% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | 33% |
-| plus 14 more | | | | |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 55% | 40% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 7% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | 0% |
+| `openai/gpt-5-image-mini` | `openai` | OpenAI | 0% | 0% |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-10-28 19:38** — provider `primalabs` changed its privacy policy url.
 - **2026-10-28 19:38** — provider `primalabs` changed its status page.
 - **2026-10-31 14:50** — **4 models removed from the catalog in one poll**: `poolside/laguna-s-2.1`, `poolside/laguna-s-2.1:free`, `poolside/laguna-xs-2.1`, `poolside/laguna-xs-2.1:free`.
 - **2026-11-03 01:52** — provider `kt` changed its terms of service url.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-06 21:35** — **5 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 05:50** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
 - **2026-11-08 05:50** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
+- **2026-11-09 19:13** — **3 models added to the catalog in one poll**: `anthropic/claude-fable-5.2`, `meta/muse-ember`, `qwen/qwen3.8-max-0902:batch`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 

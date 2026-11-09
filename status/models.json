@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-09T11:45:49+00:00",
- "count": 461,
+ "generated": "2026-11-09T19:13:10+00:00",
+ "count": 463,
  "models": [
   {
    "id": "aion-labs/aion-2.0",
@@ -90,6 +90,12 @@
    "id": "anthropic/claude-fable-5.1:batch",
    "name": "Anthropic: Claude Fable 5.1 (batch)",
    "created": 1788285838,
+   "context_length": 1000000
+  },
+  {
+   "id": "anthropic/claude-fable-5.2",
+   "name": "Anthropic: Claude Fable 5.2",
+   "created": 1794015854,
    "context_length": 1000000
   },
   {
@@ -855,6 +861,12 @@
    "context_length": 163840
   },
   {
+   "id": "meta/muse-ember",
+   "name": "Meta: Muse Ember",
+   "created": 1794247648,
+   "context_length": 1048576
+  },
+  {
    "id": "meta/muse-glimmer-30b",
    "name": "Meta: Muse Glimmer 30B",
    "created": 1786302394,
@@ -915,22 +927,16 @@
    "context_length": 16384
   },
   {
-   "id": "minimax/minimax-m1",
-   "name": "MiniMax: MiniMax M1",
-   "created": 1750200414,
-   "context_length": 1000000
-  },
-  {
    "id": "minimax/minimax-m2.5",
    "name": "MiniMax: MiniMax M2.5",
    "created": 1770908502,
-   "context_length": 204800
+   "context_length": 200000
   },
   {
    "id": "minimax/minimax-m2.7",
    "name": "MiniMax: MiniMax M2.7",
    "created": 1773836697,
-   "context_length": 204800
+   "context_length": 196608
   },
   {
    "id": "minimax/minimax-m3",
@@ -2187,6 +2193,12 @@
    "context_length": 1000000
   },
   {
+   "id": "qwen/qwen3.8-max-0902:batch",
+   "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+   "created": 1788469704,
+   "context_length": 262144
+  },
+  {
    "id": "qwen/qwen3.8-max-prime",
    "name": "Qwen: Qwen3.8 Max Prime",
    "created": 1790191228,
@@ -2310,7 +2322,7 @@
    "id": "stepfun/step-5-preview",
    "name": "StepFun: Step 5 Preview",
    "created": 1791462849,
-   "context_length": 1048576
+   "context_length": 1000000
   },
   {
    "id": "tencent/hunyuan-a13b-instruct",
@@ -2508,7 +2520,7 @@
    "id": "xiaomi/mimo-v2.5-pro",
    "name": "Xiaomi: MiMo-V2.5-Pro",
    "created": 1776874273,
-   "context_length": 1050000
+   "context_length": 1024000
   },
   {
    "id": "xiaomi/mimo-v2.6-flash",
