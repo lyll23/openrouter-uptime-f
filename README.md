@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T16:17:09+00:00 UTC)
+## Current status (2026-11-11T17:24:44+00:00 UTC)
 
-466 models polled, 1498 inference endpoints:
-up 1058, degraded 45, down 28, idle 367.
+466 models polled, 1499 inference endpoints:
+up 1031, degraded 56, down 24, idle 388.
 
-Currently down (28):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 25% | 75% |
 | `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 50% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 7% | 40% |
-| `google/gemini-4-carbon` | `google-vertex/us` | Google | 20% | 50% |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 52% | 60% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | n/a | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 53% | 0% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 60% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | 0% |
 | `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 5% | 0% |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 30% | 100% |
-| plus 13 more | | | | |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 7% | 25% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 50% | 60% |
+| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | 0% |
+| `nvidia/nemotron-3.5-super-vl:free` | `nvidia` | Nvidia | 0% | 0% |
+| `openai/gpt-5.1-codex-mini` | `azure` | Azure | 20% | 100% |
+| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 30% | 20% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 39% | 20% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
