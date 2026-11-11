@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-11T09:33:56+00:00 UTC)
+## Current status (2026-11-11T16:17:09+00:00 UTC)
 
-469 models polled, 1499 inference endpoints:
-up 1022, degraded 58, down 33, idle 386.
+466 models polled, 1498 inference endpoints:
+up 1058, degraded 45, down 28, idle 367.
 
-Currently down (33):
+Currently down (28):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `anthropic/claude-opus-4.8` | `amazon-bedrock` | Amazon Bedrock | 35% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 67% | 50% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 25% | 75% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
 | `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | 100% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 0% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 67% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `minimax/minimax-m2.5` | `venice` | Venice | 33% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `nex-agi/nex-n2.5-mini` | `nex-agi/bf16` | Nex AGI | 0% | n/a |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 33% | 0% |
-| plus 18 more | | | | |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 50% | 0% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 7% | 40% |
+| `google/gemini-4-carbon` | `google-vertex/us` | Google | 20% | 50% |
+| `google/gemma-3-12b-it` | `deepinfra/bf16` | DeepInfra | 52% | 60% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 80% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | n/a |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 5% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 30% | 100% |
+| plus 13 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-03 01:52** — provider `kt` changed its terms of service url.
 - **2026-11-03 01:52** — provider `kt` changed its privacy policy url.
 - **2026-11-04 17:35** — provider `antdigital` changed its terms of service url.
 - **2026-11-04 17:35** — provider `antdigital` changed its privacy policy url.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-09 19:13** — **3 models added to the catalog in one poll**: `anthropic/claude-fable-5.2`, `meta/muse-ember`, `qwen/qwen3.8-max-0902:batch`.
 - **2026-11-10 09:59** — provider `primeintellect` changed its terms of service url.
 - **2026-11-10 09:59** — provider `primeintellect` changed its privacy policy url.
+- **2026-11-11 16:17** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
