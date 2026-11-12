@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T12:52:24+00:00 UTC)
+## Current status (2026-11-12T13:09:49+00:00 UTC)
 
 468 models polled, 1507 inference endpoints:
-up 1052, degraded 53, down 20, idle 382.
+up 1048, degraded 46, down 26, idle 387.
 
-Currently down (20):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 67% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 33% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 5% | 0% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 53% | 0% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 81% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 78% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 57% | 25% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 25% | n/a |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 80% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 50% |
+| `minimax/minimax-m2.5` | `venice` | Venice | 0% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 43% | 100% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 100% | n/a |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 100% | 100% |
+| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
 | `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 25% |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 43% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `nebius/fp8` | Nebius | 57% | 40% |
-| plus 5 more | | | | |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 60% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
