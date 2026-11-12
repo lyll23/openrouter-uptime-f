@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T13:09:49+00:00 UTC)
+## Current status (2026-11-12T20:53:54+00:00 UTC)
 
-468 models polled, 1507 inference endpoints:
-up 1048, degraded 46, down 26, idle 387.
+473 models polled, 1520 inference endpoints:
+up 1034, degraded 51, down 24, idle 411.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 78% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 70% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 57% | 25% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-4-argon` | `google-vertex/us` | Google | 25% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 17% | 80% |
-| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 75% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 50% |
-| `minimax/minimax-m2.5` | `venice` | Venice | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 55% | 67% |
+| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
+| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 53% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 73% | 60% |
+| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 87% | 40% |
+| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 100% | 100% |
-| `openai/gpt-5-image` | `openai` | OpenAI | 0% | n/a |
-| `openai/gpt-5.4-image-2` | `openai` | OpenAI | 0% | 0% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 60% | 60% |
-| plus 11 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 80% | 50% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 40% |
+| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 88% | 100% |
+| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 40% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,9 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-03 01:52** — provider `kt` changed its privacy policy url.
-- **2026-11-04 17:35** — provider `antdigital` changed its terms of service url.
-- **2026-11-04 17:35** — provider `antdigital` changed its privacy policy url.
 - **2026-11-05 18:19** — **3 models added to the catalog in one poll**: `google/gemini-omni-1.1-flash`, `google/gemini-omni-1.2-flash`, `openrouter/auto-code`.
 - **2026-11-05 18:19** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
 - **2026-11-06 21:35** — **5 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
@@ -152,6 +149,9 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-10 09:59** — provider `primeintellect` changed its terms of service url.
 - **2026-11-10 09:59** — provider `primeintellect` changed its privacy policy url.
 - **2026-11-11 16:17** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
+- **2026-11-12 20:53** — **5 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `google/gemini-4-hydrogen`, `google/gemini-4-hydrogen:batch`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
+- **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
