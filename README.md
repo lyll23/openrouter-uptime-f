@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T08:48:16+00:00 UTC)
+## Current status (2026-11-13T09:40:43+00:00 UTC)
 
-475 models polled, 1523 inference endpoints:
-up 1039, degraded 61, down 22, idle 401.
+472 models polled, 1521 inference endpoints:
+up 1058, degraded 52, down 18, idle 393.
 
-Currently down (22):
+Currently down (18):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 80% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 39% | 0% |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 13% | 20% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 90% | 100% |
+| `deepseek/deepseek-v4-flash` | `parasail/fp8` | Parasail | 38% | 100% |
+| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 83% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 40% | 20% |
 | `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | n/a |
+| `google/gemini-4-hydrogen` | `google-ai-studio` | Google AI Studio | 60% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 7% | 0% |
+| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 0% | n/a |
 | `openai/gpt-6.1-sol` | `azure` | Azure | 30% | 0% |
-| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 40% | n/a |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 40% | 0% |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 54% | 80% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 75% | 75% |
-| `qwen/qwen3.5-35b-a3b` | `parasail/fp8` | Parasail | 58% | n/a |
-| plus 7 more | | | | |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 47% | 0% |
+| `qwen/qwen3.5-9b` | `together` | Together | 75% | 100% |
+| plus 3 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-05 18:19** — **3 models added to the catalog in one poll**: `google/gemini-omni-1.1-flash`, `google/gemini-omni-1.2-flash`, `openrouter/auto-code`.
 - **2026-11-05 18:19** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
 - **2026-11-06 21:35** — **5 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 05:50** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-12 20:53** — **5 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `google/gemini-4-hydrogen`, `google/gemini-4-hydrogen:batch`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
+- **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
