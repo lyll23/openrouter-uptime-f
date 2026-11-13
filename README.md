@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-12T20:53:54+00:00 UTC)
+## Current status (2026-11-13T01:45:22+00:00 UTC)
 
-473 models polled, 1520 inference endpoints:
-up 1034, degraded 51, down 24, idle 411.
+475 models polled, 1524 inference endpoints:
+up 1065, degraded 39, down 19, idle 401.
 
-Currently down (24):
+Currently down (19):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `nebius/fp8` | Nebius | 50% | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 55% | 67% |
-| `google/gemini-4-argon` | `google-vertex/global/priority` | Google | 0% | n/a |
-| `google/gemma-3-12b-it` | `deepinfra/bf16/priority` | DeepInfra | 53% | 0% |
-| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 73% | 60% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 87% | 40% |
-| `google/gemma-4-31b-it` | `dekallm` | DekaLLM | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 33% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 50% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 62% | n/a |
+| `minimax/minimax-m3.1-flash` | `inference-net/fp4/us` | InferenceNet | 43% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 80% | 50% |
-| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 50% | 40% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 88% | 100% |
-| `openai/gpt-oss-120b` | `amazon-bedrock` | Amazon Bedrock | 40% | n/a |
-| plus 9 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 86% | 75% |
+| `moonshotai/kimi-k3.1-pro` | `nebius/fp4` | Nebius | 75% | n/a |
+| `openai/gpt-oss-120b` | `io-net/fp4` | Io Net | 92% | 100% |
+| `openai/gpt-oss-120b` | `google-vertex/global` | Google | 13% | 40% |
+| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 87% | 100% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 0% | n/a |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 0% | 0% |
+| plus 4 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
