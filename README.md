@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-13T16:47:13+00:00 UTC)
+## Current status (2026-11-13T17:50:03+00:00 UTC)
 
 470 models polled, 1517 inference endpoints:
-up 1073, degraded 51, down 23, idle 370.
+up 1040, degraded 42, down 20, idle 415.
 
-Currently down (23):
+Currently down (20):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | `baidu/fp8` | Baidu | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | 29% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 56% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | n/a |
-| `google/gemini-4-argon` | `google-ai-studio` | Google AI Studio | 7% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 40% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 25% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 30% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `together` | Together | 14% | 0% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 50% | 40% |
-| `openai/gpt-oss-120b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 54% | n/a |
-| plus 8 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `siliconflow/fp8` | SiliconFlow | 100% | 100% |
+| `deepseek/deepseek-v4-pro-0813` | `sail-research/us` | Sail Research | 27% | n/a |
+| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 63% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `mistralai/mistral-large` | `mistral` | Mistral | 57% | 100% |
+| `mistralai/mistral-large-4-0` | `mistral/eu` | Mistral | 54% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 4% | 0% |
+| `moonshotai/kimi-k3` | `chutes/mxfp4` | Chutes | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | 67% |
+| plus 5 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
