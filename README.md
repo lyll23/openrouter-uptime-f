@@ -107,31 +107,29 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-14T02:29:40+00:00 UTC)
+## Current status (2026-11-14T06:39:18+00:00 UTC)
 
-471 models polled, 1524 inference endpoints:
-up 1016, degraded 47, down 18, idle 443.
+471 models polled, 1529 inference endpoints:
+up 1027, degraded 34, down 14, idle 454.
 
-Currently down (18):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 81% | 0% |
-| `deepseek/deepseek-v4-flash` | `azure/us` | Azure | 87% | 20% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 53% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 36% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 39% | 0% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 67% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 28% | 60% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-oss-120b` | `google-vertex/global` | Google | 0% | 0% |
-| `qwen/qwen3-30b-a3b-instruct-2507` | `dekallm` | DekaLLM | 23% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `venice` | Venice | 0% | n/a |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 29% | 50% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 10% | n/a |
-| `xiaomi/mimo-v2.6-flash` | `deepinfra/fp8` | DeepInfra | 80% | 100% |
-| plus 3 more | | | | |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 89% | 60% |
+| `qwen/qwen3.5-122b-a10b` | `atlas-cloud/fp8` | AtlasCloud | 48% | 40% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 43% | 60% |
+| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 7% | 0% |
+| `qwen/qwen3.8-2.4t-a95b` | `venice` | Venice | 0% | n/a |
+| `stepfun/step-5-preview` | `featherless/fp4` | Featherless | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
