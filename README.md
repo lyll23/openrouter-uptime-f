@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T00:14:56+00:00 UTC)
+## Current status (2026-11-15T02:46:49+00:00 UTC)
 
-471 models polled, 1538 inference endpoints:
-up 1017, degraded 50, down 19, idle 452.
+470 models polled, 1568 inference endpoints:
+up 1020, degraded 33, down 22, idle 493.
 
-Currently down (19):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 71% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 71% | 33% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 100% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 10% | 60% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 70% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 70% | 0% |
+| `deepseek/deepseek-v4-flash` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 73% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | n/a |
+| `google/gemini-2.5-flash` | `google-ai-studio/priority` | Google AI Studio | 60% | 100% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 60% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-3-27b-it` | `nebius/fp8` | Nebius | 88% | 100% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 93% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 69% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
 | `openai/gpt-5.6-luna` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 33% | n/a |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 71% | 50% |
-| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 37% | 20% |
-| plus 4 more | | | | |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-oss-120b` | `deepinfra/fp8` | DeepInfra | 11% | 25% |
+| `qwen/qwen3.5-9b` | `parasail/bf16` | Parasail | 40% | 40% |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
