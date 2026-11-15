@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T11:09:13+00:00 UTC)
+## Current status (2026-11-15T14:20:58+00:00 UTC)
 
-470 models polled, 1573 inference endpoints:
-up 1061, degraded 34, down 16, idle 462.
+467 models polled, 1569 inference endpoints:
+up 1051, degraded 42, down 25, idle 451.
 
-Currently down (16):
+Currently down (25):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4-pro` | `alibaba/fp8` | Alibaba | 50% | n/a |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 64% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 46% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 60% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
-| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 38% | 100% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 70% | 80% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 20% | 50% |
+| `google/gemma-4-26b-a4b-it` | `google-vertex/global` | Google | 33% | n/a |
+| `google/gemma-4-31b-it` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `liquid/lfm-3-1.7b:free` | `liquid/fp8` | Liquid | 43% | 20% |
 | `meta-llama/llama-4-scout` | `deepinfra/fp8/priority` | DeepInfra | 93% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 40% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 20% | n/a |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 62% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 30% | 60% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 1 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 0% | 0% |
+| `openai/gpt-5.6-luna` | `azure` | Azure | 63% | 0% |
+| `openai/gpt-5.6-luna-pro` | `azure` | Azure | 50% | n/a |
+| `openai/gpt-oss-120b` | `baseten/fp4` | BaseTen | 100% | n/a |
+| plus 10 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-05 18:19** — **4 models removed from the catalog in one poll**: `minimax/minimax-01`, `minimax/minimax-m2`, `minimax/minimax-m2-her`, `minimax/minimax-m2.1`.
 - **2026-11-06 21:35** — **5 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
 - **2026-11-08 05:50** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
 - **2026-11-08 05:50** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
+- **2026-11-15 14:20** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
