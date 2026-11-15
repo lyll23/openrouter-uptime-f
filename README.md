@@ -107,25 +107,28 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-15T22:56:22+00:00 UTC)
+## Current status (2026-11-15T23:34:57+00:00 UTC)
 
 467 models polled, 1568 inference endpoints:
-up 1024, degraded 38, down 10, idle 496.
+up 1031, degraded 42, down 13, idle 482.
 
-Currently down (10):
+Currently down (13):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `coreweave/fp8` | CoreWeave | 14% | 0% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 70% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 60% | 80% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 45% | n/a |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 0% | 0% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 25% | 100% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 25% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 6% | 0% |
-| `qwen/qwen3.6-27b` | `chutes/fp8` | Chutes | 54% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 79% | 100% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `qwen/qwen3.5-397b-a17b` | `parasail/fp8` | Parasail | 10% | 0% |
+| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 70% | 20% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 17% | n/a |
+| `z-ai/glm-5.3-flash` | `coreweave/nvfp4` | CoreWeave | 57% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
