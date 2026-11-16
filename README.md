@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T10:57:45+00:00 UTC)
+## Current status (2026-11-16T11:38:39+00:00 UTC)
 
 468 models polled, 1564 inference endpoints:
-up 1075, degraded 46, down 20, idle 423.
+up 1076, degraded 45, down 24, idle 419.
 
-Currently down (20):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-chat-v3.1` | `siliconflow/fp8` | SiliconFlow | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 58% | 100% |
+| `deepseek/deepseek-r1-0528` | `siliconflow/fp8` | SiliconFlow | 73% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 3% | 0% |
-| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 43% | 50% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-31b-it` | `modal` | Modal | 25% | 0% |
-| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 80% | 60% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 80% | 100% |
+| `google/gemini-4-argon` | `google-vertex/us` | Google | 33% | 0% |
+| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 83% | 100% |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 62% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | n/a | n/a |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 33% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 67% | 60% |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `openai/gpt-oss-20b` | `parasail/fp4` | Parasail | 48% | 50% |
-| `qwen/qwen3.5-397b-a17b` | `deepinfra/fp8/priority` | DeepInfra | 50% | 0% |
-| `qwen/qwen3.6-35b-a3b` | `atlas-cloud/fp8` | AtlasCloud | 33% | n/a |
-| plus 5 more | | | | |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 79% | 67% |
+| `moonshotai/kimi-k3.1-pro` | `together` | Together | 40% | n/a |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
