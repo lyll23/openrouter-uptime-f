@@ -107,31 +107,30 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-16T20:55:34+00:00 UTC)
+## Current status (2026-11-16T22:15:51+00:00 UTC)
 
 469 models polled, 1569 inference endpoints:
-up 1063, degraded 57, down 21, idle 428.
+up 1069, degraded 59, down 15, idle 426.
 
-Currently down (21):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 79% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 50% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `atlas-cloud/fp4` | AtlasCloud | 43% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `meta-llama/llama-3.3-70b-instruct` | `parasail/fp8` | Parasail | 20% | 50% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 53% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 50% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 22% | n/a |
 | `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 80% | 20% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
 | `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
-| `nvidia/nemotron-3.5-super-vl` | `darkbloom/nvfp4` | Darkbloom | 46% | 0% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 88% | 100% |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
 | `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `openai/gpt-oss-20b` | `siliconflow/fp8` | SiliconFlow | 43% | n/a |
-| plus 6 more | | | | |
+| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 30% | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 38% | 67% |
+| `unbiased/pareto-26.10` | `unbiased` | Unbiased | 58% | 100% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 30% | 100% |
+| `z-ai/glm-5.2` | `ambient/fp8` | Ambient | 25% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
