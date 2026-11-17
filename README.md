@@ -107,30 +107,30 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T03:41:43+00:00 UTC)
+## Current status (2026-11-17T04:34:30+00:00 UTC)
 
-470 models polled, 1580 inference endpoints:
-up 1056, degraded 77, down 23, idle 424.
+470 models polled, 1579 inference endpoints:
+up 1094, degraded 49, down 23, idle 413.
 
 Currently down (23):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `deepinfra/fp8/flex` | DeepInfra | 73% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 46% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
+| `deepseek/deepseek-v4-flash` | `streamlake/fp8` | StreamLake | 50% | 0% |
+| `deepseek/deepseek-v4-flash-vision-exp` | `deepinfra/fp8/priority` | DeepInfra | 50% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 0% | 0% |
+| `google/gemini-2.5-flash-lite` | `google-ai-studio/priority` | Google AI Studio | 25% | 0% |
 | `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 57% | 0% |
-| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 20% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | 100% |
-| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 50% | n/a |
-| `moonshotai/kimi-k3` | `fireworks/fast` | Fireworks | 75% | n/a |
-| `openai/gpt-6-luna` | `azure/us` | Azure | 57% | 60% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 23% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `minimax/minimax-m3.1-flash` | `gmicloud/fp8` | GMICloud | 17% | n/a |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `moonshotai/kimi-k3` | `fireworks/us` | Fireworks | 75% | n/a |
+| `openai/gpt-6-luna` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6-luna-pro` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 7% | 0% |
 | `openai/gpt-6.1-sol-pro` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 6% | 20% |
-| `openai/gpt-oss-120b` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 95% | 100% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 44% | 50% |
 | plus 8 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
