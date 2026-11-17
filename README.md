@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-17T14:35:55+00:00 UTC)
+## Current status (2026-11-17T21:16:27+00:00 UTC)
 
-470 models polled, 1581 inference endpoints:
-up 1123, degraded 53, down 29, idle 376.
+474 models polled, 1604 inference endpoints:
+up 1077, degraded 62, down 21, idle 444.
 
-Currently down (29):
+Currently down (21):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `anthropic/claude-sonnet-4.5` | `amazon-bedrock/eu-west-1` | Amazon Bedrock | 0% | 0% |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 8% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `cloudflare` | Cloudflare | 67% | 100% |
-| `deepseek/deepseek-v4-pro-0813` | `venice` | Venice | 61% | 0% |
-| `deepseek/deepseek-v4.1-flash` | `deepinfra/fp8/flex` | DeepInfra | 13% | 40% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 47% | 60% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | 100% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 40% | 0% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 63% | 100% |
-| `google/gemma-4-31b-it` | `crusoe/bf16` | Crusoe | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `ibm-granite/granite-4.2-8b` | `coreweave/bf16` | CoreWeave | 43% | 80% |
-| `meta/muse-spark-1.3` | `google-vertex/global` | Google | 90% | 100% |
-| `minimax/minimax-m3.1-flash` | `makora/fp4` | Makora | 0% | n/a |
-| plus 14 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `cohere/command-r-08-2024` | `cohere` | Cohere | 0% | n/a |
+| `deepseek/deepseek-chat-v3-0324` | `gmicloud/fp8` | GMICloud | 73% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 27% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/flex` | DeepInfra | 57% | 100% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemma-3-4b-it` | `parasail/bf16` | Parasail | 70% | 100% |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 100% | n/a |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 71% | 100% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 0% | 0% |
+| `nvidia/nemotron-3-super-120b-a12b` | `deepinfra/bf16/priority` | DeepInfra | 40% | 40% |
+| plus 6 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,8 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-06 21:35** — **5 models added to the catalog in one poll**: `deepseek/deepseek-v4-flash-0731:batch`, `meta/muse-glimmer-30b:batch`, `minimax/minimax-m3:batch`, `qwen/qwen3.8-27b:batch`, `thinkingmachines/inkling-small:batch`.
-- **2026-11-08 05:50** — **4 models added to the catalog in one poll**: `deepseek/deepseek-v4.1-flash-1017:batch`, `morph/morph-v3-fast:batch`, `morph/morph-v3-large:batch`, `z-ai/glm-5.2:batch`.
 - **2026-11-08 05:50** — **3 models removed from the catalog in one poll**: `inception/mercury-2`, `inception/mercury-2.5`, `inception/mercury-3`.
 - **2026-11-09 19:13** — **3 models added to the catalog in one poll**: `anthropic/claude-fable-5.2`, `meta/muse-ember`, `qwen/qwen3.8-max-0902:batch`.
 - **2026-11-10 09:59** — provider `primeintellect` changed its terms of service url.
@@ -152,6 +150,8 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-15 14:20** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
+- **2026-11-17 21:16** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra`, `openai/gpt-6.2-astra-pro`, `openai/gpt-6.2-sol`, `openai/gpt-6.2-sol-pro`.
+- **2026-11-17 21:16** — provider `pearl-research` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
