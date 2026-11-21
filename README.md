@@ -107,23 +107,24 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T18:03:40+00:00 UTC)
+## Current status (2026-11-21T19:42:47+00:00 UTC)
 
-476 models polled, 1430 inference endpoints:
-up 992, degraded 23, down 8, idle 407.
+476 models polled, 1431 inference endpoints:
+up 987, degraded 31, down 9, idle 404.
 
-Currently down (8):
+Currently down (9):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 100% |
+| `google/gemini-4-carbon` | `google-vertex/global` | Google | 20% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `openai/gpt-oss-20b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 67% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 100% |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `cloudflare` | Cloudflare | 30% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 40% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
