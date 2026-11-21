@@ -107,24 +107,26 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T19:42:47+00:00 UTC)
+## Current status (2026-11-21T23:26:19+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 987, degraded 31, down 9, idle 404.
+up 992, degraded 26, down 11, idle 402.
 
-Currently down (9):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 56% | 100% |
-| `google/gemini-4-carbon` | `google-vertex/global` | Google | 20% | 100% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | n/a |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | 0% | n/a |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 67% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 47% | 100% |
+| `google/gemini-4-hydrogen` | `google-vertex/global` | Google | 43% | 100% |
+| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
+| `liquid/lfm-3-1.7b:free` | `liquid` | Liquid | 80% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 50% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `deepinfra/bf16` | DeepInfra | 56% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 47% | 100% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 25% | 100% |
 | `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 10% | 40% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
