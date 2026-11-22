@@ -107,31 +107,29 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T20:51:35+00:00 UTC)
+## Current status (2026-11-22T21:53:27+00:00 UTC)
 
 476 models polled, 1431 inference endpoints:
-up 987, degraded 37, down 21, idle 386.
+up 987, degraded 37, down 14, idle 393.
 
-Currently down (21):
+Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash` | `fireworks/spot` | Fireworks | 31% | 100% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 75% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 20% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 13% | 0% |
 | `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 77% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 0% | n/a |
-| `nvidia/nemotron-3-super-120b-a12b` | `dekallm/fp8` | DekaLLM | 0% | 0% |
-| `nvidia/nemotron-3-ultra-550b-a55b` | `coreweave/bf16` | CoreWeave | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 41% | 50% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 20% |
-| plus 6 more | | | | |
+| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
+| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 50% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 40% | 50% |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 40% |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 42% | 25% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 40% | 0% |
+| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
+| `upstage/solar-pro4` | `kt` | KT | 33% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
