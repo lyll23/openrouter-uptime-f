@@ -107,22 +107,25 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-21T23:57:21+00:00 UTC)
+## Current status (2026-11-22T06:30:56+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 976, degraded 31, down 7, idle 417.
+476 models polled, 1430 inference endpoints:
+up 993, degraded 36, down 10, idle 391.
 
-Currently down (7):
+Currently down (10):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 31% | 0% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 100% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 53% | 100% |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 0% | 0% |
-| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 0% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 3% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8/priority` | DeepInfra | 25% | n/a |
+| `qwen/qwen3-30b-a3b` | `deepinfra/fp8/priority` | DeepInfra | 63% | 100% |
+| `qwen/qwen3.8-27b` | `mancer/fp8` | Mancer 2 | 60% | n/a |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
