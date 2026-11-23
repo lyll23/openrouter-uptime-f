@@ -107,29 +107,27 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-22T21:53:27+00:00 UTC)
+## Current status (2026-11-23T01:10:37+00:00 UTC)
 
-476 models polled, 1431 inference endpoints:
-up 987, degraded 37, down 14, idle 393.
+476 models polled, 1430 inference endpoints:
+up 982, degraded 41, down 12, idle 395.
 
-Currently down (14):
+Currently down (12):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 3% | 20% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 13% | 0% |
-| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
+| `fireworks/ember-1` | `fireworks` | Fireworks | 0% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 17% | 0% |
+| `gryphe/mythomax-l2-13b` | `parasail/fp16` | Parasail | n/a | n/a |
 | `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `mistralai/voxtral-small-24b-2507` | `mistral/eu` | Mistral | 0% | n/a |
-| `moonshotai/kimi-k2.6` | `deepinfra/fp4` | DeepInfra | 50% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 40% | 50% |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 27% | 40% |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 42% | 25% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `novita/bf16` | Novita | 40% | 0% |
-| `qwen/qwen3-vl-30b-a3b-instruct` | `siliconflow/fp8` | SiliconFlow | 17% | 0% |
-| `upstage/solar-pro4` | `kt` | KT | 33% | n/a |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 54% | n/a |
+| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 13% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 20% | 40% |
+| `thedrummer/skyfall-36b-v2` | `parasail/fp8` | Parasail | 62% | 33% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 13% | 80% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
