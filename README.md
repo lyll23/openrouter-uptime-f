@@ -107,31 +107,26 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T13:06:25+00:00 UTC)
+## Current status (2026-11-23T21:31:23+00:00 UTC)
 
-477 models polled, 1426 inference endpoints:
-up 1018, degraded 33, down 16, idle 359.
+476 models polled, 1439 inference endpoints:
+up 1019, degraded 47, down 11, idle 362.
 
-Currently down (16):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 33% | 50% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 63% | 100% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 58% | 33% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 33% | 100% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 100% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `inclusionai/ling-3.0-tiny` | `antdigital/fp8` | Ant Digital | n/a | n/a |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 8% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8` | DeepInfra | 40% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 78% | 100% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 40% | 0% |
-| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 0% | 0% |
-| plus 1 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 22% | 0% |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 50% | n/a |
+| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 40% | 60% |
+| `openai/gpt-6.1-sol` | `azure` | Azure | 47% | 0% |
+| `openai/gpt-6.1-sol-pro` | `azure` | Azure | 8% | 0% |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 53% | 20% |
+| `z-ai/glm-4.7-flash` | `novita/bf16` | Novita | 7% | 0% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,9 +135,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-09 19:13** — **3 models added to the catalog in one poll**: `anthropic/claude-fable-5.2`, `meta/muse-ember`, `qwen/qwen3.8-max-0902:batch`.
-- **2026-11-10 09:59** — provider `primeintellect` changed its terms of service url.
-- **2026-11-10 09:59** — provider `primeintellect` changed its privacy policy url.
 - **2026-11-11 16:17** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 20:53** — **5 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `google/gemini-4-hydrogen`, `google/gemini-4-hydrogen:batch`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
@@ -152,6 +144,9 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-17 21:16** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra`, `openai/gpt-6.2-astra-pro`, `openai/gpt-6.2-sol`, `openai/gpt-6.2-sol-pro`.
 - **2026-11-17 21:16** — provider `pearl-research` changed its status page.
 - **2026-11-17 22:57** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra-pro:batch`, `openai/gpt-6.2-astra:batch`, `openai/gpt-6.2-sol-pro:batch`, `openai/gpt-6.2-sol:batch`.
+- **2026-11-23 21:31** — provider `relace` changed its terms of service url.
+- **2026-11-23 21:31** — provider `relace` changed its privacy policy url.
+- **2026-11-23 21:31** — provider `relace` changed its status page.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
