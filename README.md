@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-23T02:53:02+00:00 UTC)
+## Current status (2026-11-23T09:12:07+00:00 UTC)
 
-476 models polled, 1430 inference endpoints:
-up 958, degraded 51, down 21, idle 400.
+477 models polled, 1427 inference endpoints:
+up 999, degraded 33, down 32, idle 363.
 
-Currently down (21):
+Currently down (32):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 10% | 0% |
-| `google/gemma-4-26b-a4b-it` | `akashml/fp4` | AkashML | 29% | n/a |
-| `google/gemma-4-26b-a4b-it` | `coreweave/bf16` | CoreWeave | 80% | 100% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 9% | 0% |
-| `minimax/minimax-m3` | `coreweave/fp4` | CoreWeave | 67% | 80% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
-| `moonshotai/kimi-k3` | `amazon-bedrock/us-east-1` | Amazon Bedrock | 0% | n/a |
-| `nvidia/nemotron-3.5-lightning` | `coreweave/bf16` | CoreWeave | 0% | n/a |
-| `openai/gpt-oss-120b` | `dekallm/bf16` | DekaLLM | 0% | 0% |
-| `openai/gpt-oss-20b` | `akashml/fp4` | AkashML | 60% | 100% |
-| `openai/gpt-oss-20b` | `coreweave/fp4` | CoreWeave | 80% | 100% |
-| `qwen/qwen3-coder` | `deepinfra/turbo` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-coder` | `venice/fp8` | Venice | 53% | 20% |
-| `qwen/qwen3.6-35b-a3b` | `coreweave/fp8` | CoreWeave | 57% | 100% |
-| plus 6 more | | | | |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | 0% |
+| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 80% | 100% |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | 0% |
+| `google/gemini-3-flash-preview` | `google-vertex/global/flex` | Google | 41% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 17% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 62% | 100% |
+| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-26b-a4b-it` | `siliconflow/fp8` | SiliconFlow | 82% | n/a |
+| `google/lyria-3-clip-preview` | `google-ai-studio` | Google AI Studio | 100% | 100% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `minimax/minimax-m3.1-flash` | `fireworks` | Fireworks | 60% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 73% | n/a |
+| `openai/gpt-oss-120b` | `deepinfra/bf16` | DeepInfra | 25% | 80% |
+| plus 17 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
