@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T11:04:12+00:00 UTC)
+## Current status (2026-11-24T16:16:17+00:00 UTC)
 
-473 models polled, 1429 inference endpoints:
-up 1029, degraded 36, down 21, idle 343.
+470 models polled, 1422 inference endpoints:
+up 1015, degraded 44, down 27, idle 336.
 
-Currently down (21):
+Currently down (27):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash` | `fireworks` | Fireworks | 83% | 100% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 50% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 93% | 80% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 44% | 0% |
 | `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
 | `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 44% | 100% |
-| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 11% | n/a |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-nano-banana-2.1` | `google-vertex/global` | Google | 33% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `fireworks/us` | Fireworks | 4% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| plus 6 more | | | | |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
+| `google/gemini-3.6-flash` | `google-ai-studio/priority` | Google AI Studio | 29% | n/a |
+| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 28% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
+| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `minimax/minimax-m3` | `venice/fp8` | Venice | 10% | 0% |
+| `minimax/minimax-m3` | `parasail/fast` | Parasail | 62% | 100% |
+| plus 12 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-11 16:17** — **3 models removed from the catalog in one poll**: `bytedance-seed/seed-1.6`, `bytedance-seed/seed-1.6-flash`, `bytedance-seed/seed-2.0-code`.
 - **2026-11-12 20:53** — **5 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `google/gemini-4-hydrogen`, `google/gemini-4-hydrogen:batch`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 21:31** — provider `relace` changed its terms of service url.
 - **2026-11-23 21:31** — provider `relace` changed its privacy policy url.
 - **2026-11-23 21:31** — provider `relace` changed its status page.
+- **2026-11-24 16:16** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
