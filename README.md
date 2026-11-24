@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T16:16:17+00:00 UTC)
+## Current status (2026-11-24T21:20:49+00:00 UTC)
 
-470 models polled, 1422 inference endpoints:
-up 1015, degraded 44, down 27, idle 336.
+469 models polled, 1419 inference endpoints:
+up 969, degraded 42, down 26, idle 382.
 
-Currently down (27):
+Currently down (26):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro` | `venice` | Venice | 44% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepseek` | DeepSeek | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 17% | 20% |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepseek` | DeepSeek | 0% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemini-3.6-flash` | `google-ai-studio/priority` | Google AI Studio | 29% | n/a |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 28% | 50% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 14% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `minimax/minimax-m3` | `venice/fp8` | Venice | 10% | 0% |
-| `minimax/minimax-m3` | `parasail/fast` | Parasail | 62% | 100% |
-| plus 12 more | | | | |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 13% | 80% |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 64% | 0% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `openai/gpt-4.1-mini` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-4.1-nano` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-4o` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5-mini` | `azure` | Azure | 0% | n/a |
+| `openai/gpt-5-nano` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5.2` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5.6-sol` | `azure` | Azure | 0% | 0% |
+| `openai/gpt-5.6-terra` | `azure` | Azure | 0% | 0% |
+| plus 11 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
