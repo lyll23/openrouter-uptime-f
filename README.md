@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T00:51:33+00:00 UTC)
+## Current status (2026-11-25T04:20:20+00:00 UTC)
 
-472 models polled, 1424 inference endpoints:
-up 996, degraded 30, down 24, idle 374.
+472 models polled, 1431 inference endpoints:
+up 1007, degraded 50, down 22, idle 352.
 
-Currently down (24):
+Currently down (22):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
+| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | n/a | n/a |
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
-| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | 60% |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 40% |
+| `deepseek/deepseek-v4-pro` | `venice` | Venice | 29% | n/a |
+| `deepseek/deepseek-v4-pro` | `deepinfra/fp8/priority` | DeepInfra | 38% | 0% |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 33% | 20% |
+| `deepseek/deepseek-v4.1-flash-1017` | `ambient/fp4` | Ambient | 76% | 100% |
+| `google/gemini-3.6-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
 | `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `meta/muse-ember` | `meta` | Meta | 33% | 100% |
-| `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
-| `meta/muse-spark-1.2` | `meta` | Meta | 29% | 100% |
-| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 33% | 100% |
-| `meta/muse-spark-1.3` | `meta` | Meta | 33% | 100% |
-| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 33% | 100% |
-| plus 9 more | | | | |
+| `mistralai/mistral-small-3.2-24b-instruct` | `venice/fp8` | Venice | 26% | 0% |
+| `mistralai/mistral-small-3.2-24b-instruct` | `parasail/bf16` | Parasail | 22% | 0% |
+| `moonshotai/kimi-k3.1-pro` | `akashml/fp4` | AkashML | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 14% | 0% |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | 0% |
+| `openai/gpt-oss-20b` | `primeintellect/fp4` | PrimeIntellect | 0% | n/a |
+| plus 7 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
