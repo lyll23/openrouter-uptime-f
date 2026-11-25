@@ -107,31 +107,31 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-24T21:20:49+00:00 UTC)
+## Current status (2026-11-25T00:51:33+00:00 UTC)
 
-469 models polled, 1419 inference endpoints:
-up 969, degraded 42, down 26, idle 382.
+472 models polled, 1424 inference endpoints:
+up 996, degraded 30, down 24, idle 374.
 
-Currently down (26):
+Currently down (24):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
+| `amazon/nova-2-lite-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
 | `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
-| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 13% | 80% |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | n/a |
-| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `google/gemma-4-31b-it` | `primeintellect/fp8` | PrimeIntellect | 64% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
-| `openai/gpt-4.1-mini` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-4.1-nano` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-4o` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5-mini` | `azure` | Azure | 0% | n/a |
-| `openai/gpt-5-nano` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.2` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.6-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-5.6-terra` | `azure` | Azure | 0% | 0% |
-| plus 11 more | | | | |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | n/a |
+| `deepseek/deepseek-v4-pro-0813` | `deepinfra/fp8/priority` | DeepInfra | 3% | 0% |
+| `google/gemini-3.1-flash-lite` | `google-vertex/global/flex` | Google | 23% | 60% |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 50% | 100% |
+| `google/gemini-omni-1.2-flash` | `google-ai-studio` | Google AI Studio | 0% | n/a |
+| `google/gemma-4-31b-it` | `novita/bf16` | Novita | 40% | 40% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `meta/muse-ember` | `meta` | Meta | 33% | 100% |
+| `meta/muse-spark-1.1` | `meta` | Meta | 0% | n/a |
+| `meta/muse-spark-1.2` | `meta` | Meta | 29% | 100% |
+| `meta/muse-spark-1.2-contributor` | `meta` | Meta | 33% | 100% |
+| `meta/muse-spark-1.3` | `meta` | Meta | 33% | 100% |
+| `meta/muse-spark-1.3-contributor` | `meta` | Meta | 33% | 100% |
+| plus 9 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +140,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-12 20:53** — **5 models added to the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `google/gemini-4-hydrogen`, `google/gemini-4-hydrogen:batch`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
@@ -152,6 +151,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 21:31** — provider `relace` changed its privacy policy url.
 - **2026-11-23 21:31** — provider `relace` changed its status page.
 - **2026-11-24 16:16** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
+- **2026-11-25 00:51** — **3 models added to the catalog in one poll**: `upstage/solar-mini-4-5`, `upstage/solar-pro-4-contributor`, `xiaomi/mimo-v2.6-flash-mopd`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
