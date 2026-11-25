@@ -107,29 +107,29 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-25T14:37:20+00:00 UTC)
+## Current status (2026-11-25T19:25:15+00:00 UTC)
 
-472 models polled, 1428 inference endpoints:
-up 1022, degraded 38, down 14, idle 354.
+470 models polled, 1425 inference endpoints:
+up 1003, degraded 44, down 14, idle 364.
 
 Currently down (14):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `deepseek/deepseek-v3.2` | `featherless/fp8` | Featherless | 53% | 20% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 70% | 0% |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 57% | 0% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 38% | n/a |
-| `google/gemini-4-carbon` | `google-vertex/global/priority` | Google | 18% | 0% |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 29% | 0% |
-| `minimax/minimax-m3` | `deepinfra/fp8/flex` | DeepInfra | 8% | 20% |
-| `openai/gpt-6.1-sol` | `azure` | Azure | 0% | 0% |
-| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | 0% | n/a |
-| `qwen/qwen3-235b-a22b-2507` | `deepinfra/fp8` | DeepInfra | 4% | 100% |
-| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `together/fast` | Together | 12% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 100% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 44% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 48% | 60% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 67% | n/a |
+| `openai/gpt-oss-120b` | `fireworks` | Fireworks | n/a | n/a |
+| `openai/gpt-oss-20b` | `deepinfra/bf16/flex` | DeepInfra | n/a | n/a |
+| `qwen/qwen3-coder` | `venice/fp8` | Venice | 7% | 0% |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8` | DeepInfra | 61% | n/a |
+| `qwen/qwen3-next-80b-a3b-instruct` | `deepinfra/fp8/priority` | DeepInfra | 62% | n/a |
+| `z-ai/glm-4.7` | `venice/fp4` | Venice | 59% | 100% |
+| `z-ai/glm-4.7` | `mancer/fp4` | Mancer 2 | 67% | 100% |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -138,7 +138,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-12 20:53** — provider `recraft` changed its terms of service url.
 - **2026-11-12 20:53** — provider `recraft` changed its privacy policy url.
 - **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-15 14:20** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
@@ -150,6 +149,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-23 21:31** — provider `relace` changed its status page.
 - **2026-11-24 16:16** — **3 models removed from the catalog in one poll**: `dots-studio/dots-3-note-preview:free`, `mistralai/mistral-medium-3`, `mistralai/mistral-medium-3.1`.
 - **2026-11-25 00:51** — **3 models added to the catalog in one poll**: `upstage/solar-mini-4-5`, `upstage/solar-pro-4-contributor`, `xiaomi/mimo-v2.6-flash-mopd`.
+- **2026-11-25 19:25** — **3 models removed from the catalog in one poll**: `unbiased/pareto-26.10`, `unbiased/pareto-26.10-preview`, `unbiased/pareto-26.9`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
