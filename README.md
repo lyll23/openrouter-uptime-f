@@ -107,26 +107,30 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T19:07:08+00:00 UTC)
+## Current status (2026-11-26T20:28:53+00:00 UTC)
 
 477 models polled, 1428 inference endpoints:
-up 1027, degraded 32, down 11, idle 358.
+up 990, degraded 52, down 15, idle 371.
 
-Currently down (11):
+Currently down (15):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
 | `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8` | DeepInfra | 0% | n/a |
 | `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 25% | 100% |
-| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
-| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 37% | 80% |
-| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 71% | n/a |
-| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
-| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
+| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
+| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | n/a | n/a |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 0% | n/a |
+| `google/gemma-4-31b-it` | `sambanova` | SambaNova | 4% | 50% |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | n/a |
 | `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
-| `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | Nvidia | 50% | 100% |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia/nvfp4` | Nvidia | 30% | 100% |
+| `nvidia/nemotron-3.5-super-vl` | `primalabs/nvfp4` | PrimaLabs | 0% | 0% |
+| `openai/gpt-6.2-astra` | `amazon-bedrock/global` | Amazon Bedrock | 33% | 0% |
+| `qwen/qwen3.5-35b-a3b` | `siliconflow/fp8` | SiliconFlow | 33% | n/a |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
