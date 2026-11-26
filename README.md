@@ -107,31 +107,26 @@ own collection. See [archive operation and data access](docs/upstream-archive.md
 
 <!-- AUTOGEN:STATUS -->
 
-## Current status (2026-11-26T11:25:33+00:00 UTC)
+## Current status (2026-11-26T19:07:08+00:00 UTC)
 
-474 models polled, 1433 inference endpoints:
-up 1025, degraded 42, down 16, idle 350.
+477 models polled, 1428 inference endpoints:
+up 1027, degraded 32, down 11, idle 358.
 
-Currently down (16):
+Currently down (11):
 
 | model | endpoint | provider | 30m uptime | 5m uptime |
 |---|---|---|---|---|
-| `amazon/nova-premier-v1` | `amazon-bedrock` | Amazon Bedrock | 0% | n/a |
-| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 75% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | 0% | n/a |
-| `deepseek/deepseek-v4.1-flash-1017` | `deepinfra/fp8/priority` | DeepInfra | 30% | 0% |
-| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 0% | n/a |
-| `google/gemini-3-pro-image` | `google-ai-studio/global` | Google AI Studio | 0% | n/a |
-| `google/gemini-3.1-pro-preview` | `google-vertex/global/flex` | Google | 0% | 0% |
-| `google/gemma-4-26b-a4b-it` | `novita/bf16` | Novita | 0% | 0% |
-| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | n/a |
+| `deepseek/deepseek-v4-flash-0731` | `deepinfra/fp8/flex` | DeepInfra | 0% | 0% |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4/us` | Sail Research | 0% | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `sail-research/fp4` | Sail Research | n/a | n/a |
+| `deepseek/deepseek-v4.1-flash-1017` | `fireworks/spot` | Fireworks | 25% | 100% |
+| `google/gemini-3.7-flash` | `google-vertex/global/flex` | Google | 17% | n/a |
+| `google/gemini-3.8-flash` | `google-vertex/global/flex` | Google | 37% | 80% |
+| `google/gemma-3-27b-it` | `deepinfra/fp8/priority` | DeepInfra | 71% | n/a |
+| `google/lyria-3-pro-preview` | `google-ai-studio` | Google AI Studio | 0% | 0% |
+| `mistralai/mistral-nemo` | `parasail/fp8` | Parasail | 0% | n/a |
+| `moonshotai/kimi-k3.1-pro` | `river` | River | 0% | 0% |
 | `openai/gpt-oss-120b` | `fireworks` | Fireworks | 0% | n/a |
-| `openai/gpt-oss-safeguard-20b` | `groq` | Groq | 23% | 0% |
-| `qwen/qwen3-vl-235b-a22b-instruct` | `venice/fp8` | Venice | 59% | 100% |
-| `qwen/qwen3.6-35b-a3b` | `akashml/fp8` | AkashML | 10% | 0% |
-| `x-ai/grok-4.7` | `amazon-bedrock/global` | Amazon Bedrock | 50% | n/a |
-| plus 1 more | | | | |
 
 Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/incidents.jsonl`](status/incidents.jsonl).
 
@@ -140,7 +135,6 @@ Full snapshot: [`status/latest.json`](status/latest.json). Outage log: [`status/
 ### Systemic events
 _Fleet-level changes extracted from the change logs every run; per-model churn is omitted._
 
-- **2026-11-13 09:40** — **3 models removed from the catalog in one poll**: `apodex/apodex-1.1-mini:free`, `inclusionai/ling-3.0-flash-fin`, `inclusionai/ling-3.0-flash-sante`.
 - **2026-11-15 14:20** — **3 models removed from the catalog in one poll**: `qwen/qwen3-vl-30b-a3b-thinking`, `stepfun/step-3.5-flash`, `tencent/hunyuan-a13b-instruct`.
 - **2026-11-17 21:16** — **4 models added to the catalog in one poll**: `openai/gpt-6.2-astra`, `openai/gpt-6.2-astra-pro`, `openai/gpt-6.2-sol`, `openai/gpt-6.2-sol-pro`.
 - **2026-11-17 21:16** — provider `pearl-research` changed its status page.
@@ -152,6 +146,7 @@ _Fleet-level changes extracted from the change logs every run; per-model churn i
 - **2026-11-25 00:51** — **3 models added to the catalog in one poll**: `upstage/solar-mini-4-5`, `upstage/solar-pro-4-contributor`, `xiaomi/mimo-v2.6-flash-mopd`.
 - **2026-11-25 19:25** — **3 models removed from the catalog in one poll**: `unbiased/pareto-26.10`, `unbiased/pareto-26.10-preview`, `unbiased/pareto-26.9`.
 - **2026-11-25 23:40** — **4 models added to the catalog in one poll**: `mistralai/codestral-2508:batch`, `mistralai/ministral-8b-2512:batch`, `mistralai/mistral-large-2512:batch`, `mistralai/mistral-small-2603:batch`.
+- **2026-11-26 19:07** — **3 models added to the catalog in one poll**: `inclusionai/lingsante-3.1-air-vl`, `moonshotai/kimi-k2`, `moonshotai/kimi-k2-0905`.
 
 Full logs: [`status/model_changes.jsonl`](status/model_changes.jsonl), [`status/provider_changes.jsonl`](status/provider_changes.jsonl).
 
